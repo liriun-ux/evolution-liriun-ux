@@ -13,23 +13,25 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://www.liriun-ux.tecnologia.bo";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.liriun-ux.tecnologia.bo"),
+  metadataBase: new URL(SITE_URL),
 
   title: {
-    default: "LIRIUN-UX | Sitios web para negocios en Bolivia",
+    default: "LIRIUN-UX | Sitios web para negocios",
     template: "%s | LIRIUN-UX",
   },
 
   description:
-    "Creamos sitios web para negocios en Bolivia con SEO y AEO para mejorar su presencia digital y facilitar que sus clientes los encuentren.",
+    "Diseño y creación de sitios web para negocios, con SEO y AEO para mejorar su presencia digital y ayudar a que sus clientes los encuentren.",
 
   applicationName: "LIRIUN-UX",
 
   authors: [
     {
       name: "LIRIUN-UX",
-      url: "https://www.liriun-ux.tecnologia.bo",
+      url: SITE_URL,
     },
   ],
 
@@ -39,18 +41,20 @@ export const metadata: Metadata = {
   keywords: [
     "diseño web",
     "diseño de sitios web",
+    "sitios web",
+    "páginas web",
     "sitios web para negocios",
-    "páginas web Bolivia",
     "diseño web Bolivia",
+    "páginas web Bolivia",
     "SEO",
     "AEO",
     "presencia digital",
   ],
 
   alternates: {
-    canonical: "https://www.liriun-ux.tecnologia.bo/",
+    canonical: SITE_URL,
     languages: {
-      "es-BO": "https://www.liriun-ux.tecnologia.bo/",
+      "es-BO": SITE_URL,
     },
   },
 
@@ -70,22 +74,20 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_BO",
-
-    url: "https://www.liriun-ux.tecnologia.bo/",
-
+    url: SITE_URL,
     siteName: "LIRIUN-UX",
 
-    title: "LIRIUN-UX | Sitios web para negocios en Bolivia",
+    title: "LIRIUN-UX | Sitios web para negocios",
 
     description:
-      "Creamos sitios web para negocios en Bolivia con SEO y AEO para mejorar su presencia digital.",
+      "Diseño y creación de sitios web para negocios, con SEO y AEO para mejorar su presencia digital.",
 
     images: [
       {
         url: "/img/og-liriun-ux.png",
-        width: 1200,
-        height: 630,
-        alt: "LIRIUN-UX — Sitios web para negocios",
+        width: 1136,
+        height: 190,
+        alt: "LIRIUN-UX — Diseño y creación de sitios web",
       },
     ],
   },
@@ -93,10 +95,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "LIRIUN-UX | Sitios web para negocios en Bolivia",
+    title: "LIRIUN-UX | Sitios web para negocios",
 
     description:
-      "Sitios web para negocios con SEO y AEO.",
+      "Diseño y creación de sitios web para negocios, con SEO y AEO.",
 
     images: ["/img/og-liriun-ux.png"],
   },
@@ -115,27 +117,45 @@ export const viewport: Viewport = {
 
 const jsonLd = {
   "@context": "https://schema.org",
+
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.liriun-ux.tecnologia.bo/#organization",
+
+      "@id": `${SITE_URL}/#organization`,
 
       name: "LIRIUN-UX",
 
-      url: "https://www.liriun-ux.tecnologia.bo/",
+      url: SITE_URL,
 
       logo: {
         "@type": "ImageObject",
-        url: "https://www.liriun-ux.tecnologia.bo/img/logo.png",
+        url: `${SITE_URL}/img/logo.png`,
       },
+
+      email: "liriun.ux@gmail.com",
 
       description:
-        "LIRIUN-UX crea sitios web para negocios con SEO y AEO para mejorar su presencia digital.",
+        "LIRIUN-UX se dedica al diseño y creación de sitios web para negocios, incorporando buenas prácticas de SEO y AEO para mejorar su presencia digital.",
 
-      areaServed: {
-        "@type": "Country",
-        name: "Bolivia",
-      },
+      areaServed: [
+        {
+          "@type": "City",
+          name: "La Paz",
+          containedInPlace: {
+            "@type": "Country",
+            name: "Bolivia",
+          },
+        },
+        {
+          "@type": "City",
+          name: "El Alto",
+          containedInPlace: {
+            "@type": "Country",
+            name: "Bolivia",
+          },
+        },
+      ],
 
       knowsAbout: [
         "Diseño web",
@@ -149,18 +169,18 @@ const jsonLd = {
 
     {
       "@type": "WebSite",
-      "@id": "https://www.liriun-ux.tecnologia.bo/#website",
 
-      url: "https://www.liriun-ux.tecnologia.bo/",
+      "@id": `${SITE_URL}/#website`,
+
+      url: SITE_URL,
 
       name: "LIRIUN-UX",
 
       description:
-        "Sitios web para negocios con SEO y AEO.",
+        "Diseño y creación de sitios web para negocios con SEO y AEO.",
 
       publisher: {
-        "@id":
-          "https://www.liriun-ux.tecnologia.bo/#organization",
+        "@id": `${SITE_URL}/#organization`,
       },
 
       inLanguage: "es-BO",
@@ -168,23 +188,22 @@ const jsonLd = {
 
     {
       "@type": "WebPage",
-      "@id": "https://www.liriun-ux.tecnologia.bo/#webpage",
 
-      url: "https://www.liriun-ux.tecnologia.bo/",
+      "@id": `${SITE_URL}/#webpage`,
 
-      name: "LIRIUN-UX | Sitios web para negocios en Bolivia",
+      url: SITE_URL,
+
+      name: "LIRIUN-UX | Sitios web para negocios",
 
       description:
-        "Creamos sitios web para negocios en Bolivia con SEO y AEO para mejorar su presencia digital.",
+        "Diseño y creación de sitios web para negocios, con SEO y AEO para mejorar su presencia digital.",
 
       isPartOf: {
-        "@id":
-          "https://www.liriun-ux.tecnologia.bo/#website",
+        "@id": `${SITE_URL}/#website`,
       },
 
       about: {
-        "@id":
-          "https://www.liriun-ux.tecnologia.bo/#organization",
+        "@id": `${SITE_URL}/#organization`,
       },
 
       inLanguage: "es-BO",
