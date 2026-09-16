@@ -5,22 +5,458 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+    
+  --font-serif-agressive: var(--font-agressive);
+  --font-serif-hero: var(--font-hero);
+  --font-serif-raw: var(--font-raw);
+
+  --font-display-cheese: var(--font-cheese);
+  --font-display-kong: var(--font-kong);
+  --font-display-pizzaria: var(--font-pizzaria);
+
+  --font-sans-altone: var(--font-altone);
+  --font-sans-cabin: var(--font-cabin);
+  --font-sans-creato: var(--font-creato);
+  --font-sans-eight: var(--font-eight);
+  --font-sans-sansation: var(--font-sansation);
+}
+:root{
+/* NOTE: Colores de marca */
+    --color-bg: #FFFFFF;
+    --color-primary: #000000;   /* azul señal — profundo, no celeste SaaS */
+    --color-secondary: #a01005; /* verde señal/crecimiento — teal apagado, no verde IA */
+    --color-secondary: #b51f1d;
+    --color-accent: #2f4b0e;    /* naranja indicador — "esto está funcionando" */
+    --color-accent1: #f99f25;    /* naranja indicador — "esto está funcionando" */
+    --color-accent2: #eebf79;    /* naranja indicador — "esto está funcionando" */
+
+/* NOTE: colores neutros */
+
+    --color-title: #111111;
+    --color-subtitle: #3A3A3A;
+    --color-description: #666666;
+    
+    --color-title-dark: #FFFFFF;
+    --color-subtitle-dark: #D6D6D6;
+    --color-description-dark: #Aaaaaa;
+
+    --color-bg-alt: #F4F7F8;
+    --color-border: color-mix(in srgb, var(--color-title) 10%, transparent);
+    --color-primary-dark: color-mix(in srgb, var(--color-primary) 82%, black);
+
+    --color-accent-lu: color-mix(in srgb, var(--color-accent) 70%, #ff0);    /* naranja indicador — "esto está funcionando" */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background: var(--color-bg);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+
+/*  WARNING: HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: clamp(10px, 08.6vh, 100px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(2px, 3vw, 24px);
+  background: var(--color-primary);
+
+  @media (max-width: 768px) {
+    height: clamp(40px, 06.6vh, 100px);
+
+  }
+}
+.header-left{
+  height: clamp(10px, 08.6vh, 100px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(2px, 3vw, 24px);
+  background: var(--color-primary);
+}
+
+.nav-header{
+    /* background-color: red; */
+      @media (max-width: 1000px){
+          display: none;
+      }
+
+}
+.nav-header--button{
+
+  padding: 0.4rem 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-family: var(--font-serif-raw);
+  /* background: var(--color-bg); */
+  border: 1px solid var(--color-primary);
+  border-radius: 0.3rem;
+  color: var(--color-bg);
+  cursor: pointer;
+  transition:    transform 0.3s ease,    opacity 0.3s ease, font-size 0.5s ease;
+}
+
+.nav-header--button.active {
+  background: var(--color-accent);
+  /* border: 1px solid var(--color-secondary); */
+  color: var(--color-bg);
+}
+
+.nav-header--button:hover {
+  background: var(--color-bg);
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
+  font-size: 1.25rem;
+}
+
+.menuButton {
+  width: clamp(35px, 4vw, 60px);
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 6px;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+  display: none;
+  
+  @media (max-width: 1000px){
+      display: flex;
+  }
+}
+
+.menuButton span {
+  display: block;
+
+  width: clamp(35px, 4vw, 60px);
+  height: clamp(1px, 0.5vh, 10px);
+
+  background: var(--color-bg);
+  border-radius: 10px;
+    z-index: 1000;
+}
+
+.menuButton span.open {
+  animation: desaparecerBarra 0.8s ease forwards;
+    opacity: 1;
+}
+
+.menuButton span:nth-child(1).open {
+  animation-delay: 0s;
+}
+
+.menuButton span:nth-child(2).open {
+  animation-delay: 0.1s;
+}
+
+.menuButton span:nth-child(3).open {
+  animation-delay: 0.2s;
+}
+
+@keyframes desaparecerBarra {
+  0% {
+    width: clamp(35px, 4vw, 60px);
+    opacity: 1;
+  }
+
+
+  100% {
+      width: 0;
+    opacity: 0;
+  }
+}
+
+.menuButton span:not(.open) {
+  animation: aparecerBarra 0.8s ease forwards;
+    opacity: 0;
+}
+
+.menuButton span:nth-child(1):not(.open) {
+  animation-delay: 0.2s;
+}
+
+.menuButton span:nth-child(2):not(.open) {
+  animation-delay: 0.1s;
+}
+
+.menuButton span:nth-child(3):not(.open) {
+  animation-delay: 0s;
+}
+
+@keyframes aparecerBarra {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  100% {
+    width: clamp(35px, 4vw, 60px);
+    opacity: 1;
+  }
+}
+
+.closeIcon {
+  position: absolute;
+
+  width: clamp(35px, 4vw, 60px);
+  height: clamp(35px, 4vw, 60px);
+
+  right: 0;
+  margin-inline: 3vw;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 0;
+
+  transform: rotate(0deg);
+  transition: transform 1.8s ease 0.5s;
+}
+
+.closeIcon.open {
+  display: flex;
+  z-index: 1200;
+
+  transform: rotate(-360deg);
+}
+
+/* =========================
+   LÍNEAS DE LA X
+   ========================= */
+
+.closeIcon span {
+  position: absolute;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--color-secondary);
+  border-radius: 10px;
+
+  transform-origin: center;
+}
+
+.closeIcon span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.closeIcon span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+/* =========================
+   ABRIR
+   ========================= */
+
+.closeIcon.open span {
+  animation: aparecerLinea 0.8s ease forwards;
+}
+
+.closeIcon.open span:nth-child(1) {
+  animation-delay: 0.65s;
+}
+
+.closeIcon.open span:nth-child(2) {
+  animation-delay: 0.75s;
+}
+
+/* =========================
+   CÍRCULO
+   ========================= */
+
+.closeIcon {
+  position: absolute;
+
+  width: clamp(35px, 4vw, 60px);
+  height: clamp(35px, 4vw, 60px);
+
+  right: 0;
+  margin-inline: 3vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: rotate(0deg);
+}
+
+.closeIcon.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 1200;
+}
+
+.closeIcon::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border: 2px solid var(--color-secondary);
+  border-radius: 50%;
+
+  clip-path: inset(0 100% 0 0);
+
+  transition: clip-path 0.9s ease;
+}
+
+.closeIcon.open::before {
+  clip-path: inset(0 0 0 0);
+  transition-delay: 0.5s;
+}
+/* =========================
+   APARECER X
+   ========================= */
+
+@keyframes aparecerLinea {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 15px;
+  }
+}
+
+/* =========================
+   DESAPARECER
+   ========================= */
+
+.closeIcon:not(.open) span {
+  animation: desaparecerLinea 0.8s ease forwards;
+}
+
+.closeIcon:not(.open) span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.closeIcon:not(.open) span:nth-child(2) {
+  animation-delay: 0s;
+}
+
+@keyframes desaparecerLinea {
+  from {
+    width: 15px;
+  }
+
+  to {
+    width: 0;
+  }
+}
+
+
+
+.logo {
+  font-family: var(--font-display-kong);
+  margin-left: 62px;
+
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 1;
+  z-index: 1000;
+  color: var(--color-secondary);
+  background: var(--color-bg);
+
+  border: 1px solid var(--color-bg-alt);
+  border-radius: 0.5rem;
+  padding-inline: 0.5rem;
+  right: 0rem;
+
+  @media (max-width: 1000px){
+    margin-left:1vw;
+  }
+}
+.logo-acent{
+  color: var(--color-accent);
+}
+
+
+/* WARNING: MENU */
+.overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-primary);
+
+  backdrop-filter: blur(0px);
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    opacity 0.4s ease,
+    background 0.4s ease,
+    backdrop-filter 0.5s ease;
+}
+
+.overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+
+  background: color-mix(in srgb, var(--color-primary) 60%, transparent);
+  z-index: 900;
+  backdrop-filter: blur(10px);
+}
+
+
+.modal {
+  transform: scale(0.95);
+  opacity: 0;
+
+  transition:
+    opacity 0.3s ease 0.2s,
+    transform 0.4s ease 0.2s;
+}
+
+.overlay.open .modal {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 900;
+}
+
+
+.modal-content {
+  padding: clamp(0.2rem, 1.5vw, 1.25rem);
+  border-radius: 20px;
 }
