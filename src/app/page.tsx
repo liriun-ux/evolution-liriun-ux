@@ -1,14 +1,95 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sitios web para negocios | LIRIUN-UX",
+
+  description:
+    "Descubre cómo un sitio web puede ayudar a tu negocio a tener presencia digital, ser encontrado en Google y facilitar que tus clientes conozcan tus productos o servicios.",
+
+  alternates: {
+    canonical: "https://www.liriun-ux.tecnologia.bo/",
+  },
+
+  openGraph: {
+    type: "website",
+
+    url: "https://www.liriun-ux.tecnologia.bo/",
+
+    title: "Sitios web para negocios | LIRIUN-UX",
+
+    description:
+      "Descubre cómo un sitio web puede ayudar a tu negocio a tener presencia digital, ser encontrado y facilitar que tus clientes conozcan tus productos o servicios.",
+
+    images: [
+      {
+        url: "/img/og-liriun-ux.png",
+        width: 1200,
+        height: 630,
+        alt: "LIRIUN-UX — Sitios web para negocios",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Sitios web para negocios | LIRIUN-UX",
+
+    description:
+      "Sitios web para negocios con SEO y AEO para mejorar su presencia digital.",
+
+    images: ["/img/og-liriun-ux.png"],
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+
+  "@type": "WebPage",
+
+  "@id":
+    "https://www.liriun-ux.tecnologia.bo/#webpage",
+
+  url: "https://www.liriun-ux.tecnologia.bo/",
+
+  name: "Sitios web para negocios | LIRIUN-UX",
+
+  description:
+    "Descubre cómo un sitio web puede ayudar a tu negocio a tener presencia digital, ser encontrado en Google y facilitar que tus clientes conozcan tus productos o servicios.",
+
+  isPartOf: {
+    "@id":
+      "https://www.liriun-ux.tecnologia.bo/#website",
+  },
+
+  about: {
+    "@id":
+      "https://www.liriun-ux.tecnologia.bo/#organization",
+  },
+
+  inLanguage: "es-BO",
+};
 
 export default function Home() {
+
+
+
+
   return (
+      <>
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(jsonLd),
+  }}
+/>
 <main className="inicio">
 
   <header className="inicio-hero">
     <p>LIRIUN-UX</p>
 
     <h1>
-      Tu negocio puede estar en internet.
+ No pierdas clientes por no estar donde te buscan.
       ¿Pueden encontrarlo y entenderlo?
     </h1>
 
@@ -525,5 +606,6 @@ export default function Home() {
   </section>
 
 </main>
+</>
   );
 }
