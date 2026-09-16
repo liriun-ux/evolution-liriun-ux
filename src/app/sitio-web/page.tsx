@@ -1,10 +1,10 @@
 
 
-export default function Producto() {
+export default function SitioWeb() {
   return (
-<main className="producto">
+<main className="sitio-web">
 
-  <header className="producto-hero">
+  <header className="sitio-web-hero">
     <p>SITIO WEB ESTÁNDAR</p>
 
     <h1>
@@ -19,7 +19,7 @@ export default function Producto() {
   </header>
 
 
-  <section className="producto-que-es">
+  <section className="sitio-web-que-es">
     <header>
       <h2>¿Qué es?</h2>
     </header>
@@ -37,7 +37,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-para-quien">
+  <section className="sitio-web-para-quien">
     <header>
       <h2>¿Para quién es?</h2>
     </header>
@@ -78,7 +78,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-proposito">
+  <section className="sitio-web-proposito">
     <header>
       <h2>¿Qué obtiene tu negocio?</h2>
     </header>
@@ -123,7 +123,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-estructura">
+  <section className="sitio-web-estructura">
     <header>
       <h2>Una estructura adaptada a tu negocio</h2>
 
@@ -171,7 +171,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-diseno">
+  <section className="sitio-web-diseno">
     <header>
       <h2>Diseño pensado para comunicar</h2>
     </header>
@@ -222,7 +222,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-animaciones">
+  <section className="sitio-web-animaciones">
     <header>
       <h2>Animaciones que ayudan, no distraen</h2>
     </header>
@@ -245,7 +245,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-contenido">
+  <section className="sitio-web-contenido">
     <header>
       <h2>Nos encargamos de organizar la información</h2>
     </header>
@@ -292,7 +292,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-gestion">
+  <section className="sitio-web-gestion">
     <header>
       <h2>Gestiona tus productos</h2>
 
@@ -339,7 +339,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-seo-aeo">
+  <section className="sitio-web-seo-aeo">
     <header>
       <h2>SEO + AEO</h2>
 
@@ -378,7 +378,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-funcionalidades">
+  <section className="sitio-web-funcionalidades">
     <header>
       <h2>Funcionalidades incluidas</h2>
     </header>
@@ -397,7 +397,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-dominio">
+  <section className="sitio-web-dominio">
     <header>
       <h2>Dominio y publicación</h2>
     </header>
@@ -418,7 +418,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-mantenimiento">
+  <section className="sitio-web-mantenimiento">
     <header>
       <h2>3 meses de mantenimiento</h2>
     </header>
@@ -451,7 +451,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-cambios">
+  <section className="sitio-web-cambios">
     <header>
       <h2>¿Y después del mantenimiento?</h2>
     </header>
@@ -485,7 +485,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-no-incluye">
+  <section className="sitio-web-no-incluye">
     <header>
       <h2>¿Qué no incluye?</h2>
     </header>
@@ -511,7 +511,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-precio">
+  <section className="sitio-web-precio">
     <header>
       <h2>Precio y plazo</h2>
     </header>
@@ -556,7 +556,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-despues">
+  <section className="sitio-web-despues">
     <header>
       <h2>¿Qué pasa después?</h2>
     </header>
@@ -605,7 +605,7 @@ export default function Producto() {
   </section>
 
 
-  <section className="producto-cta">
+  <section className="sitio-web-cta">
     <header>
       <h2>
         ¿Quieres saber cómo sería para tu negocio?

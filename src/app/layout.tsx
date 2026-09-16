@@ -19,13 +19,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
   title: {
-    default: "LIRIUN-UX | Sitios web para negocios",
+    default: "LIRIUN-UX | Sitios web para negocios en La Paz y El Alto",
     template: "%s | LIRIUN-UX",
   },
 
-  description:
-    "Diseño y creación de sitios web para negocios, con SEO y AEO para mejorar su presencia digital y ayudar a que sus clientes los encuentren.",
-
+description: 
+    'Diseño y creación de sitios web para pymes en La Paz y El Alto, Bolivia. SEO y AEO para que tus clientes te encuentren en Google y en IA.',
   applicationName: "LIRIUN-UX",
 
   authors: [
@@ -37,8 +36,13 @@ export const metadata: Metadata = {
 
   creator: "LIRIUN-UX",
   publisher: "LIRIUN-UX",
-
   keywords: [
+      'diseño web La Paz', 
+      'diseño web El Alto',
+      'sitios web para negocios Bolivia', 
+      'páginas web pymes Bolivia', 
+      'SEO Bolivia',
+      'AEO Bolivia',
     "diseño web",
     "diseño de sitios web",
     "sitios web",
@@ -77,10 +81,10 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "LIRIUN-UX",
 
-    title: "LIRIUN-UX | Sitios web para negocios",
+    title: "LIRIUN-UX | Sitios web para negocios en La Paz y El Alto",
 
     description:
-      "Diseño y creación de sitios web para negocios, con SEO y AEO para mejorar su presencia digital.",
+      "Diseño y creación de sitios web para negocios, con SEO y AEO para mejorar su presencia digital en La Paz y El Alto, Bolivia.",
 
     images: [
       {
@@ -115,6 +119,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+const dateModified = "2026-09-08";
 const jsonLd = {
   "@context": "https://schema.org",
 
@@ -138,6 +143,7 @@ const jsonLd = {
       description:
         "LIRIUN-UX se dedica al diseño y creación de sitios web para negocios, incorporando buenas prácticas de SEO y AEO para mejorar su presencia digital.",
 
+ dateModified: dateModified,
       areaServed: [
         {
           "@type": "City",
@@ -158,8 +164,9 @@ const jsonLd = {
       ],
 
       knowsAbout: [
-        "Diseño web",
-        "Desarrollo web",
+        "Diseño web La Paz",
+        "Desarrollo web La Paz",
+        "Creacion de sitios web La Paz",
         "SEO",
         "AEO",
         "Experiencia de usuario",

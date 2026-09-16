@@ -13,15 +13,15 @@ export default function NavLinks() {
           Inicio
       </Link>
 
-      <Link href="/producto" className={`res-base--button nav-base-section-button ${pathname === "/youtube" ? "active" : ""}`}>
-          Producto
+      <Link href="/sitio-web" className={`res-base--button nav-base-section-button ${pathname === "/sitio-web" ? "active" : ""}`}>
+          Sitio Web
       </Link>
 
-      <Link href="/proceso" className={`res-base--button nav-base-section-button ${pathname === "/tiktok" ? "active" : ""}`}>
+      <Link href="/proceso" className={`res-base--button nav-base-section-button ${pathname === "/proceso" ? "active" : ""}`}>
           Proceso
       </Link>
 
-      <Link href="/sobre-liriun-ux" className={`res-base--button nav-base-section-button ${pathname === "/facebook" ? "active" : ""}`}>
+      <Link href="/sobre-liriun-ux" className={`res-base--button nav-base-section-button ${pathname === "/sobre-liriun-ux" ? "active" : ""}`}>
           Sobre Liriun
       </Link>
 
