@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Proceso",
   description:
-    "Conoce el proceso de LIRIUN-UX para crear tu sitio web: conocemos tu negocio, organizamos la información, diseñamos, desarrollamos, revisamos, publicamos y entregamos tu sitio.",
+    "Conoce el proceso de LIRIUN-UX para crear tu sitio web: conocemos tu negocio, organizamos la información,organizamos la arquitectura del sitio ,diseñamos, desarrollamos, revisamos, publicamos y entregamos tu sitio.",
 
   alternates: {
     canonical: "/proceso",

@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sitios web para negocios | LIRIUN-UX",
+  title: {
+    default: "LIRIUN-UX | Sitios web para negocios en La Paz y El Alto",
+    template: "%s | LIRIUN-UX",
+  },
 
   description:
     "Descubre cómo un sitio web puede ayudar a tu negocio a tener presencia digital, ser encontrado en Google y facilitar que tus clientes conozcan tus productos o servicios.",
