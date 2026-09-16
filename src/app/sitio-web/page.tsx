@@ -1,11 +1,52 @@
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Sitio Web Especializado",
+  description:
+    "Sitios web para pequeñas PYMEs que necesitan presentar su negocio, productos o servicios, facilitar el contacto y tener una presencia digital propia.",
+
+  alternates: {
+    canonical: "/sitio-web",
+  },
+
+  openGraph: {
+    title: "Sitio Web Especializado | LIRIUN-UX",
+    description:
+      "Un sitio web pensado para que tu negocio pueda ser encontrado, entendido y contactado por sus clientes.",
+    url: "/sitio-web",
+    siteName: "LIRIUN-UX",
+    locale: "es_BO",
+    type: "website",
+    images: [
+      {
+        url: "/img/og-liriun-ux.png",
+        width: 1200,
+        height: 630,
+        alt: "Sitio Web Especializado | LIRIUN-UX",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Sitio Web Especializado | LIRIUN-UX",
+    description:
+      "Sitios web para pequeñas PYMEs con estructura, SEO, AEO, productos, contacto y mantenimiento.",
+    images: ["/img/og-liriun-ux.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function SitioWeb() {
   return (
 <main className="sitio-web">
 
   <header className="sitio-web-hero">
-    <p>SITIO WEB ESTÁNDAR</p>
+    <p>SITIO WEB ESPECIALIZADO</p>
 
     <h1>
       Tu negocio puede ser encontrado y entendido.

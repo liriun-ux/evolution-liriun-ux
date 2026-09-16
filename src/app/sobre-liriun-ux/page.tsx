@@ -1,7 +1,125 @@
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Sobre LIRIUN-UX",
+  description:
+    "Conoce LIRIUN-UX, un proyecto enfocado en crear sitios web claros, útiles y accesibles para pequeñas PYMEs que necesitan una presencia digital propia.",
+
+  alternates: {
+    canonical: "/sobre-liriun-ux",
+  },
+
+  openGraph: {
+    title: "Sobre LIRIUN-UX | Sitios web para negocios",
+    description:
+      "Conoce qué es LIRIUN-UX, nuestro enfoque y cómo creamos sitios web para que los negocios sean encontrados y entendidos.",
+    url: "/sobre-liriun-ux",
+    siteName: "LIRIUN-UX",
+    locale: "es_BO",
+    type: "website",
+    images: [
+      {
+        url: "/img/og-liriun-ux.png",
+        width: 1200,
+        height: 630,
+        alt: "LIRIUN-UX | Sitios web para negocios",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Sobre LIRIUN-UX | Sitios web para negocios",
+    description:
+      "Conoce qué es LIRIUN-UX, nuestro enfoque y cómo creamos sitios web para que los negocios sean encontrados y entendidos.",
+    images: ["/img/og-liriun-ux.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.liriun-ux.tecnologia.bo/#organization",
+      name: "LIRIUN-UX",
+      url: "https://www.liriun-ux.tecnologia.bo/",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.liriun-ux.tecnologia.bo/img/logo.png",
+      },
+      description:
+        "LIRIUN-UX crea sitios web para pequeñas PYMEs que necesitan una presencia digital propia, clara y accesible.",
+      email: "liriun.ux@gmail.com",
+      areaServed: [
+        {
+          "@type": "City",
+          name: "La Paz",
+          containedInPlace: {
+            "@type": "Country",
+            name: "Bolivia",
+          },
+        },
+        {
+          "@type": "City",
+          name: "El Alto",
+          containedInPlace: {
+            "@type": "Country",
+            name: "Bolivia",
+          },
+        },
+      ],
+      knowsAbout: [
+        "Diseño web",
+        "Desarrollo web",
+        "Experiencia de usuario",
+        "SEO",
+        "AEO",
+        "Accesibilidad web",
+        "Sitios web para negocios",
+      ],
+    },
+
+    {
+      "@type": "AboutPage",
+      "@id":
+        "https://www.liriun-ux.tecnologia.bo/sobre-liriun-ux#webpage",
+      url: "https://www.liriun-ux.tecnologia.bo/sobre-liriun-ux",
+      name: "Sobre LIRIUN-UX",
+      headline: "Sitios web para que los negocios sean encontrados y entendidos.",
+      description:
+        "Conoce qué es LIRIUN-UX, por qué existe, nuestro enfoque, filosofía y las tecnologías que utilizamos para crear sitios web para pequeñas PYMEs.",
+      inLanguage: "es-BO",
+      isPartOf: {
+        "@type": "WebSite",
+        "@id": "https://www.liriun-ux.tecnologia.bo/#website",
+        url: "https://www.liriun-ux.tecnologia.bo/",
+        name: "LIRIUN-UX",
+      },
+      about: {
+        "@id": "https://www.liriun-ux.tecnologia.bo/#organization",
+      },
+      mainEntity: {
+        "@id": "https://www.liriun-ux.tecnologia.bo/#organization",
+      },
+    },
+  ],
+};
 
 export default function SobreLiriunUx() {
   return (
+      <>
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(jsonLd),
+  }}
+/>
 <main className="sobre-liriun">
 
   <header className="sobre-liriun-hero">
@@ -316,5 +434,6 @@ export default function SobreLiriunUx() {
   </section>
 
 </main>
+</>
   );
 }

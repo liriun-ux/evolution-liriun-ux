@@ -1,7 +1,163 @@
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Proceso",
+  description:
+    "Conoce el proceso de LIRIUN-UX para crear tu sitio web: conocemos tu negocio, organizamos la información, diseñamos, desarrollamos, revisamos, publicamos y entregamos tu sitio.",
+
+  alternates: {
+    canonical: "/proceso",
+  },
+
+  openGraph: {
+    title: "Proceso | LIRIUN-UX",
+    description:
+      "Conoce cómo trabajamos en LIRIUN-UX, desde la primera reunión hasta la publicación, entrega y mantenimiento de tu sitio web.",
+    url: "/proceso",
+    siteName: "LIRIUN-UX",
+    locale: "es_BO",
+    type: "website",
+    images: [
+      {
+        url: "/img/og-liriun-ux.png",
+        width: 1200,
+        height: 630,
+        alt: "Proceso de creación de sitios web | LIRIUN-UX",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Proceso | LIRIUN-UX",
+    description:
+      "Conoce cómo trabajamos en LIRIUN-UX para transformar la información de tu negocio en un sitio web.",
+    images: ["/img/og-liriun-ux.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.liriun-ux.tecnologia.bo/proceso#webpage",
+      url: "https://www.liriun-ux.tecnologia.bo/proceso",
+      name: "Proceso | LIRIUN-UX",
+      headline: "¿Cómo será trabajar con nosotros?",
+      description:
+        "Conoce el proceso de LIRIUN-UX para crear, publicar y entregar un sitio web para tu negocio.",
+      inLanguage: "es-BO",
+
+      isPartOf: {
+        "@type": "WebSite",
+        "@id": "https://www.liriun-ux.tecnologia.bo/#website",
+        url: "https://www.liriun-ux.tecnologia.bo/",
+        name: "LIRIUN-UX",
+      },
+
+      about: {
+        "@id": "https://www.liriun-ux.tecnologia.bo/#organization",
+      },
+
+      mainEntity: {
+        "@id": "https://www.liriun-ux.tecnologia.bo/proceso#howto",
+      },
+    },
+
+    {
+      "@type": "HowTo",
+      "@id": "https://www.liriun-ux.tecnologia.bo/proceso#howto",
+      name: "Proceso para crear un sitio web con LIRIUN-UX",
+      description:
+        "Proceso de trabajo de LIRIUN-UX para transformar la información de un negocio en un sitio web claro, funcional y preparado para publicarse.",
+      inLanguage: "es-BO",
+
+      provider: {
+        "@id": "https://www.liriun-ux.tecnologia.bo/#organization",
+      },
+
+      step: [
+        {
+          "@type": "HowToStep",
+          position: 1,
+          name: "Conocemos tu negocio",
+          text:
+            "Conocemos el negocio, sus productos o servicios, clientes, forma de venta, historia, promociones, identidad visual y recopilamos la información necesaria para comenzar el proyecto.",
+        },
+
+        {
+          "@type": "HowToStep",
+          position: 2,
+          name: "Arquitectura de información",
+          text:
+            "Organizamos la información del negocio, productos y servicios, establecemos su importancia y definimos cómo debe comunicarse de forma clara.",
+        },
+
+        {
+          "@type": "HowToStep",
+          position: 3,
+          name: "Arquitectura del sitio",
+          text:
+            "Definimos las páginas, URLs, jerarquía, secciones, navegación, títulos, descripciones y estructura del sitio según las necesidades del negocio.",
+        },
+
+        {
+          "@type": "HowToStep",
+          position: 4,
+          name: "Diseñamos",
+          text:
+            "Definimos la composición visual, colores, tipografías, componentes, botones, navegación, animaciones y estructura visual del sitio.",
+        },
+
+        {
+          "@type": "HowToStep",
+          position: 5,
+          name: "Desarrollamos",
+          text:
+            "Convertimos la información, arquitectura y diseño en un sitio web funcional, adaptado a móvil, tablet y PC, con las configuraciones necesarias para su publicación.",
+        },
+
+        {
+          "@type": "HowToStep",
+          position: 6,
+          name: "Revisamos",
+          text:
+            "Revisamos el contenido, productos, imágenes, contactos, ubicación, navegación y funcionamiento general del sitio antes de publicarlo.",
+        },
+
+        {
+          "@type": "HowToStep",
+          position: 7,
+          name: "Publicamos",
+          text:
+            "Una vez aprobado el sitio, lo publicamos para que esté disponible en internet y realizamos una comprobación final.",
+        },
+
+        {
+          "@type": "HowToStep",
+          position: 8,
+          name: "Entregamos",
+          text:
+            "Entregamos el sitio, los accesos, información del dominio, mantenimiento y documentación necesaria para utilizar y gestionar el proyecto.",
+        },
+      ],
+    },
+  ],
+};
 export default function Proceso() {
   return (
-
+<>
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(jsonLd),
+  }}
+/>
 <main className="proceso">
 
   <header className="proceso-hero">
@@ -541,5 +697,6 @@ export default function Proceso() {
   </section>
 
 </main>
+</>
 );
 }
