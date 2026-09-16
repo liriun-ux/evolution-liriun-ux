@@ -10,18 +10,18 @@ export default function NavLinks() {
   return (
     <nav className="nav-base--left" aria-label="Navegación principal">
       <Link href="/" className={`res-base--button nav-base-section-button ${pathname === "/" ? "active" : ""}`}>
-          inicio
+          Inicio
       </Link>
 
-      <Link href="/youtube" className={`res-base--button nav-base-section-button ${pathname === "/youtube" ? "active" : ""}`}>
+      <Link href="/producto" className={`res-base--button nav-base-section-button ${pathname === "/youtube" ? "active" : ""}`}>
           Producto
       </Link>
 
-      <Link href="/tiktok" className={`res-base--button nav-base-section-button ${pathname === "/tiktok" ? "active" : ""}`}>
+      <Link href="/proceso" className={`res-base--button nav-base-section-button ${pathname === "/tiktok" ? "active" : ""}`}>
           Proceso
       </Link>
 
-      <Link href="/facebook" className={`res-base--button nav-base-section-button ${pathname === "/facebook" ? "active" : ""}`}>
+      <Link href="/sobre-liriun-ux" className={`res-base--button nav-base-section-button ${pathname === "/facebook" ? "active" : ""}`}>
           Sobre Liriun
       </Link>
 
