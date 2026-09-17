@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: {
-    default: "LIRIUN-UX | Sitios web para negocios en La Paz y El Alto",
-    template: "%s | LIRIUN-UX",
-  },
+  title: "Sitios web para negocios | LIRIUN-UX",
 
   description:
-    "Descubre cómo un sitio web puede ayudar a tu negocio a tener presencia digital, ser encontrado en Google y facilitar que tus clientes conozcan tus productos o servicios.",
+    "LIRIUN-UX crea sitios web para pequeños negocios en La Paz, El Alto y toda Bolivia. Sitios web con SEO, AEO y estructura clara para presentar tu negocio, productos o servicios.",
 
   alternates: {
     canonical: "https://www.liriun-ux.tecnologia.bo/",
@@ -39,7 +36,7 @@ export const metadata: Metadata = {
     title: "Sitios web para negocios | LIRIUN-UX",
 
     description:
-      "Sitios web para negocios con SEO y AEO para mejorar su presencia digital.",
+      "Sitios web para negocios de La Paz, El Alto y Bolivia, con SEO, AEO y estructura clara.",
 
     images: ["/img/og-liriun-ux.png"],
   },
@@ -55,10 +52,11 @@ const jsonLd = {
 
   url: "https://www.liriun-ux.tecnologia.bo/",
 
+
   name: "Sitios web para negocios | LIRIUN-UX",
 
   description:
-    "Descubre cómo un sitio web puede ayudar a tu negocio a tener presencia digital, ser encontrado en Google y facilitar que tus clientes conozcan tus productos o servicios.",
+    "LIRIUN-UX crea sitios web para pequeños negocios en La Paz, El Alto y toda Bolivia, con SEO, AEO y una estructura clara para presentar negocios, productos y servicios.",
 
   isPartOf: {
     "@id":
@@ -70,7 +68,50 @@ const jsonLd = {
       "https://www.liriun-ux.tecnologia.bo/#organization",
   },
 
+      areaServed: [
+        {
+          "@type": "City",
+          name: "La Paz",
+          containedInPlace: {
+            "@type": "Country",
+            name: "Bolivia",
+          },
+        },
+        {
+          "@type": "City",
+          name: "El Alto",
+          containedInPlace: {
+            "@type": "Country",
+            name: "Bolivia",
+          },
+        },
+      ],
+
+      knowsAbout: [
+        "Diseño web La Paz",
+        "Desarrollo web La Paz",
+        "Sitios web El Alto",
+        "Sitios web La Paz",
+        "Creacion de sitios web La Paz",
+        "SEO",
+        "AEO",
+        "Experiencia de usuario",
+        "Accesibilidad web",
+      ],
+  
+  keywords: [
+    "sitios web para negocios",
+    "diseño web Bolivia",
+    "páginas web para negocios",
+    "diseño web La Paz",
+    "diseño web El Alto",
+    "sitios web Bolivia",
+    "SEO para negocios",
+    "AEO para negocios",
+  ],
+
   inLanguage: "es-BO",
+
 };
 
 export default function Home() {
@@ -97,9 +138,7 @@ export default function Home() {
     </h1>
 
     <p>
-      Creamos sitios web para pequeñas PYMEs, pensados para que las personas,
-      Google y los sistemas de IA puedan comprender qué hace tu negocio y qué
-      ofrece.
+LIRIUN-UX crea sitios web para pequeños negocios en La Paz, El Alto y toda Bolivia. Sitios web con SEO, AEO y estructura clara para presentar tu negocio, productos o servicios.
     </p>
 
     <a href="#problema">
@@ -379,6 +418,58 @@ export default function Home() {
       Ver el proceso completo
     </a>
   </section>
+
+  <section className="inicio-liriun">
+  <header>
+    <h2>
+      ¿Qué es LIRIUN-UX?
+    </h2>
+  </header>
+
+  <p>
+    LIRIUN-UX crea sitios web para negocios que necesitan una presencia
+    digital clara, accesible y pensada para ser encontrada.
+  </p>
+
+  <div>
+    <article>
+      <h3>Tu presencia digital</h3>
+      <p>
+        Creamos un espacio propio para presentar tu negocio en internet.
+      </p>
+    </article>
+
+    <article>
+      <h3>Información clara</h3>
+      <p>
+        Organizamos el contenido para que las personas puedan encontrar
+        y comprender lo que ofreces.
+      </p>
+    </article>
+
+    <article>
+      <h3>Hecho para tu negocio</h3>
+      <p>
+        Adaptamos la estructura y el contenido del sitio a las necesidades
+        de cada negocio.
+      </p>
+    </article>
+<article>
+  <h3>Creación de sitios web para El Alto y La Paz</h3>
+
+  <p>
+    LIRIUN-UX es un servicio de creación de sitios web con base en La Paz,
+    Bolivia. Brindamos atención especializada a negocios de La Paz y El Alto,
+    conociendo de cerca sus necesidades y la forma en que presentan sus
+    productos o servicios. También trabajamos con negocios de todo Bolivia.
+  </p>
+</article>
+  </div>
+
+  <a href="/sobre-liriun-ux">
+    Conocer LIRIUN-UX
+  </a>
+</section>
 
 
   <section className="inicio-ejemplos">

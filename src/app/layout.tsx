@@ -84,7 +84,7 @@ description:
     title: "LIRIUN-UX | Sitios web para negocios en La Paz y El Alto",
 
     description:
-      "Diseño y creación de sitios web para negocios, con SEO y AEO para mejorar su presencia digital en La Paz y El Alto, Bolivia.",
+      "Diseño y creación de sitios especializados , con SEO y AEO para mejorar su presencia digital en La Paz y El Alto, Bolivia.",
 
     images: [
       {
@@ -99,10 +99,10 @@ description:
   twitter: {
     card: "summary_large_image",
 
-    title: "LIRIUN-UX | Sitios web para negocios",
+    title: "LIRIUN-UX | Sitios web para negocios en La Paz y El Alto",
 
     description:
-      "Diseño y creación de sitios web para negocios, con SEO y AEO.",
+      "Diseño y creación de sitios web especializados para La Paz y El Alto, con SEO y AEO.",
 
     images: ["/img/og-liriun-ux.png"],
   },
