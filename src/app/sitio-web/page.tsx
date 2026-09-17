@@ -41,8 +41,169 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.liriun-ux.tecnologia.bo/sitio-web#webpage",
+      url: "https://www.liriun-ux.tecnologia.bo/sitio-web",
+      name: "Sitio Web Especializado | LIRIUN-UX",
+      headline: "Tu negocio puede ser encontrado y entendido.",
+      description:
+        "Sitio web especializado para pequeñas PYMEs que necesitan presentar claramente su negocio, productos o servicios y facilitar el contacto con sus clientes.",
+      inLanguage: "es-BO",
+
+      isPartOf: {
+        "@type": "WebSite",
+        "@id": "https://www.liriun-ux.tecnologia.bo/#website",
+        url: "https://www.liriun-ux.tecnologia.bo/",
+        name: "LIRIUN-UX",
+      },
+
+      about: {
+        "@id":
+          "https://www.liriun-ux.tecnologia.bo/sitio-web#product",
+      },
+
+      mainEntity: {
+        "@id":
+          "https://www.liriun-ux.tecnologia.bo/sitio-web#product",
+      },
+    },
+
+    {
+      "@type": "Product",
+      "@id": "https://www.liriun-ux.tecnologia.bo/sitio-web#product",
+
+      name: "Sitio Web Especializado",
+
+      description:
+        "Sitio web especializado para pequeñas PYMEs que necesitan presentar claramente su negocio, productos o servicios, facilitar el contacto con sus clientes y contar con una presencia digital propia.",
+
+      url: "https://www.liriun-ux.tecnologia.bo/sitio-web",
+
+      image:
+        "https://www.liriun-ux.tecnologia.bo/img/og-liriun-ux.png",
+
+      brand: {
+        "@type": "Brand",
+        name: "LIRIUN-UX",
+      },
+
+      manufacturer: {
+        "@id":
+          "https://www.liriun-ux.tecnologia.bo/#organization",
+      },
+
+      provider: {
+        "@id":
+          "https://www.liriun-ux.tecnologia.bo/#organization",
+      },
+
+      category: "Diseño y desarrollo de sitios web",
+
+      audience: {
+        "@type": "BusinessAudience",
+        audienceType: "Pequeñas PYMEs",
+      },
+
+      areaServed: [
+        {
+          "@type": "City",
+          name: "La Paz",
+          containedInPlace: {
+            "@type": "Country",
+            name: "Bolivia",
+          },
+        },
+        {
+          "@type": "City",
+          name: "El Alto",
+          containedInPlace: {
+            "@type": "Country",
+            name: "Bolivia",
+          },
+        },
+      ],
+
+      additionalProperty: [
+        {
+          "@type": "PropertyValue",
+          name: "Páginas principales",
+          value: "4 a 6 páginas",
+        },
+        {
+          "@type": "PropertyValue",
+          name: "SEO",
+          value: "Incluido",
+        },
+        {
+          "@type": "PropertyValue",
+          name: "AEO",
+          value: "Incluido",
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Animaciones",
+          value: "Animaciones estructurales y de interacción",
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Productos",
+          value: "Gestión de productos y categorías",
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Mantenimiento",
+          value: "3 meses",
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Dominio",
+          value: "Dominio .BO durante el primer año",
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Adaptación",
+          value: "Móvil, tablet y PC",
+        },
+      ],
+
+      offers: {
+        "@type": "Offer",
+
+        url: "https://www.liriun-ux.tecnologia.bo/sitio-web",
+
+        priceCurrency: "BOB",
+        price: "450",
+
+        priceValidUntil: "2026-10-10",
+
+        availability:
+          "https://schema.org/InStock",
+
+        seller: {
+          "@id":
+            "https://www.liriun-ux.tecnologia.bo/#organization",
+        },
+
+        itemCondition:
+          "https://schema.org/NewCondition",
+      },
+    },
+  ],
+};
+
 export default function SitioWeb() {
   return (
+      <>
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(jsonLd),
+  }}
+/>
 <main className="sitio-web">
 
   <header className="sitio-web-hero">
@@ -664,6 +825,6 @@ export default function SitioWeb() {
   </section>
 
 </main>
-
+</>
   );
 }
