@@ -13,8 +13,8 @@ export default function NavLinks() {
           Inicio
       </Link>
 
-      <Link href="/sitio-web" className={`res-base--button nav-base-section-button ${pathname === "/sitio-web" ? "active" : ""}`}>
-          Sitio Web
+      <Link href="/web-especializada" className={`res-base--button nav-base-section-button ${pathname === "/web-especializada" ? "active" : ""}`}>
+          Web Especializada
       </Link>
 
       <Link href="/proceso" className={`res-base--button nav-base-section-button ${pathname === "/proceso" ? "active" : ""}`}>

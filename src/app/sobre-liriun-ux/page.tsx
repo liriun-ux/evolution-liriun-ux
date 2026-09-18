@@ -142,7 +142,7 @@ export default function SobreLiriunUx() {
     </header>
 
     <p>
-      LIRIUN-UX crea presencia digital para negocios a través de sitios web,
+      LIRIUN-UX crea presencia digital para negocios a través de sitios web especializados,
       enfocada en que las personas, Google y los sistemas de IA puedan
       comprender qué hace el negocio, qué ofrece y cómo contactarlo.
     </p>

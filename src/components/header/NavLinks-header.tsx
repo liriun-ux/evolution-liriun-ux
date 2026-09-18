@@ -13,8 +13,8 @@ export default function NavHeaderLinks() {
           Inicio
       </Link>
 
-      <Link href="/sitio-web" className={`nav-header--button  ${pathname === "/sitio-web" ? "active" : ""}`}>
-          Sitio Web
+      <Link href="/web-especializada" className={`nav-header--button  ${pathname === "/web-especializada" ? "active" : ""}`}>
+          Web Especializada
       </Link>
 
       <Link href="/proceso" className={`nav-header--button ${pathname === "/proceso" ? "active" : ""}`}>

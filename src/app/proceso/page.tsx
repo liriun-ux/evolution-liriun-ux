@@ -180,7 +180,7 @@ export default function Proceso() {
     </header>
 
     <p>
-      Después de resolver tus dudas y confirmar que deseas el sitio web,
+      Después de resolver tus dudas y confirmar que deseas el sitio web especializado,
       coordinamos la primera reunión para conocer tu negocio.
     </p>
 
