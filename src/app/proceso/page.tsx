@@ -149,6 +149,9 @@ const jsonLd = {
     },
   ],
 };
+import ColoredCubeCanvas from "@/animation/ColoredCube";
+import ProcesoCanvas from "@/animation/ensamble";
+
 export default function Proceso() {
   return (
 <>
@@ -159,41 +162,51 @@ export default function Proceso() {
   }}
 />
 <main className="proceso">
+     <ProcesoCanvas/>
+<header className="proceso-hero proceso-section-trigger" data-stage="0">
+  {/* TITULO */}
+  <span className="">PROCESO DE TRABAJO</span>
 
-  <header className="proceso-hero">
-    <p>LIRIUN-UX</p>
-
-    <h1>
-      ¿Cómo será trabajar con nosotros?
-    </h1>
-
+  {/* Contenido en la esquina inferior izquierda (Fila 3, Columna 1 o 1 y 2) */}
+  <div className="hero-content">
+    <h1>¿Cómo diseñamos y desarrollamos tu sitio web paso a paso?</h1>
     <p>
-      Una vez aceptado el proyecto, LIRIUN-UX se encarga de llevar tu sitio
-      desde el conocimiento de tu negocio hasta su publicación y entrega.
+      Desde la estrategia inicial de tu negocio hasta la publicación final. 
+      Llevamos tu proyecto con un proceso transparente, estructurado y enfocado en resultados.
     </p>
-  </header>
+  </div>
+
+</header>
 
 
-  <section className="proceso-inicio">
+<section className="proceso-inicio proceso-section-trigger" data-stage="1">
+  <div className="proceso-conteiner">
+
     <header>
       <h2>Inicio del proyecto</h2>
     </header>
 
     <p>
       Después de resolver tus dudas y confirmar que deseas el sitio web especializado,
-      coordinamos la primera reunión para conocer tu negocio.
+      coordinamos la primera reunión para conocer tu negocio.<br/><br/>
     </p>
 
     <p>
       El pago inicial se realiza al comenzar esta reunión y, a partir de ese
       momento, comienza el desarrollo del proyecto.
     </p>
-  </section>
+
+  </div>
+</section>
 
 
-  <section className="proceso-etapa proceso-etapa-01">
+<section className="proceso-etapa proceso-etapa-01 proceso-section-trigger" data-stage="2">
+  <div className="proceso-conteiner">
+
     <header>
-      <p>01</p>
+      <p >
+        PASO 01 <span>| LIRIUN-UX</span>
+      </p>
 
       <h2>Conocemos tu negocio</h2>
 
@@ -242,17 +255,24 @@ export default function Proceso() {
     </div>
 
     <footer>
-      <p>
-        Resultado: comprendemos el negocio, su oferta, su funcionamiento y
-        la información necesaria para comenzar a construir el sitio.
-      </p>
+      <dl className="proceso-resultado">
+        <dt>RESULTADO: </dt>
+        <dd>comprendemos el negocio, su oferta, su funcionamiento y
+        la información necesaria para comenzar a construir el sitio.</dd>
+      </dl>
     </footer>
-  </section>
+
+  </div>
+</section>
 
 
-  <section className="proceso-etapa proceso-etapa-02">
+<section className="proceso-etapa proceso-etapa-02 proceso-section-trigger" data-stage="3">
+  <div className="proceso-conteiner">
+
     <header>
-      <p>02</p>
+      <p className="game-no">
+        PASO 02 <span className="game-genre">| LIRIUN-UX</span>
+      </p>
 
       <h2>Arquitectura de información</h2>
 
@@ -294,17 +314,24 @@ export default function Proceso() {
     </div>
 
     <footer>
-      <p>
-        Resultado: queda definida y jerarquizada la información que debe
-        comunicarse en el sitio.
-      </p>
+      <dl className="game-tech">
+        <dt>RESULTADO: </dt>
+        <dd>queda definida y jerarquizada la información que debe
+        comunicarse en el sitio.</dd>
+      </dl>
     </footer>
-  </section>
+
+  </div>
+</section>
 
 
-  <section className="proceso-etapa proceso-etapa-03">
+<section className="proceso-etapa proceso-etapa-03 proceso-section-trigger" data-stage="4">
+  <div className="proceso-conteiner">
+
     <header>
-      <p>03</p>
+      <p className="game-no">
+        PASO 03 <span className="game-genre">| LIRIUN-UX</span>
+      </p>
 
       <h2>Arquitectura del sitio</h2>
 
@@ -339,17 +366,24 @@ export default function Proceso() {
     </div>
 
     <footer>
-      <p>
-        Resultado: queda definido el mapa del sitio y cómo se organizará la
-        información para que pueda entenderse y recorrerse con facilidad.
-      </p>
+      <dl className="game-tech">
+        <dt>RESULTADO: </dt>
+        <dd>queda definido el mapa del sitio y cómo se organizará la
+        información para que pueda entenderse y recorrerse con facilidad.</dd>
+      </dl>
     </footer>
-  </section>
+
+  </div>
+</section>
 
 
-  <section className="proceso-etapa proceso-etapa-04">
+<section className="proceso-etapa proceso-etapa-04 proceso-section-trigger" data-stage="5">
+  <div className="proceso-conteiner">
+
     <header>
-      <p>04</p>
+      <p className="game-no">
+        PASO 04 <span className="game-genre">| LIRIUN-UX</span>
+      </p>
 
       <h2>Diseñamos</h2>
 
@@ -397,17 +431,24 @@ export default function Proceso() {
     </div>
 
     <footer>
-      <p>
-        Resultado: tenemos definido cómo se verá el sitio y cómo se presentará
-        visualmente la información.
-      </p>
+      <dl className="game-tech">
+        <dt>RESULTADO: </dt>
+        <dd>tenemos definido cómo se verá el sitio y cómo se presentará
+        visualmente la información.</dd>
+      </dl>
     </footer>
-  </section>
+
+  </div>
+</section>
 
 
-  <section className="proceso-etapa proceso-etapa-05">
+<section className="proceso-etapa proceso-etapa-05 proceso-section-trigger" data-stage="6">
+  <div className="proceso-conteiner">
+
     <header>
-      <p>05</p>
+      <p className="game-no">
+        PASO 05 <span className="game-genre">| LIRIUN-UX</span>
+      </p>
 
       <h2>Desarrollamos</h2>
 
@@ -449,19 +490,26 @@ export default function Proceso() {
     </div>
 
     <footer>
-      <p>
-        Resultado: existe una versión funcional del sitio preparada para
-        revisión.
-      </p>
+      <dl className="game-tech">
+        <dt>RESULTADO: </dt>
+        <dd>existe una versión funcional del sitio preparada para
+        revisión.</dd>
+      </dl>
     </footer>
-  </section>
+
+  </div>
+</section>
 
 
-  <section className="proceso-etapa proceso-etapa-06">
+<section className="proceso-etapa proceso-etapa-06 proceso-section-trigger" data-stage="7">
+  <div className="proceso-conteiner">
+
     <header>
-      <p>06</p>
+      <p className="game-no">
+        PASO 06 <span className="game-genre">| LIRIUN-UX</span>
+      </p>
 
-      <h2>Revisamos</h2>
+      <h2>Revisión general y ajustes</h2>
 
       <p>
         Antes de mostrar el sitio al cliente, LIRIUN-UX realiza una revisión
@@ -502,17 +550,25 @@ export default function Proceso() {
     </div>
 
     <footer>
-      <p>
-        Resultado: el cliente y LIRIUN-UX confirman que el sitio está listo
-        para publicarse.
-      </p>
+      <dl className="game-tech">
+        <dt>RESULTADO</dt>
+        <dd>el cliente y LIRIUN-UX confirman que el sitio está listo
+        para publicarse.</dd>
+      </dl>
     </footer>
-  </section>
+
+  </div>
+</section>
 
 
-  <section className="proceso-etapa proceso-etapa-07">
+<section className="proceso-etapa proceso-etapa-07 proceso-section-trigger" data-stage="8">
+  <div className="proceso-conteiner">
+
+
     <header>
-      <p>07</p>
+      <p className="game-no">
+        PASO 07 <span className="game-genre">| LIRIUN-UX</span>
+      </p>
 
       <h2>Publicamos</h2>
 
@@ -523,7 +579,7 @@ export default function Proceso() {
     </header>
 
     <div>
-      <h3>Antes</h3>
+      <h3>Antes:</h3>
 
       <p>
         El sitio puede mostrar un aviso indicando que todavía se encuentra
@@ -532,7 +588,7 @@ export default function Proceso() {
     </div>
 
     <div>
-      <h3>Después</h3>
+      <h3>Después:</h3>
 
       <p>
         Se retira el aviso de desarrollo y el sitio queda disponible para
@@ -541,7 +597,7 @@ export default function Proceso() {
     </div>
 
     <div>
-      <h3>Comprobación final</h3>
+      <h3>Comprobación final:</h3>
 
       <p>
         LIRIUN-UX realiza una última comprobación y se envía el sitio al
@@ -550,16 +606,23 @@ export default function Proceso() {
     </div>
 
     <footer>
-      <p>
-        Resultado: el sitio web está oficialmente disponible en internet.
-      </p>
+      <dl className="game-tech">
+        <dt>RESULTADO: </dt>
+        <dd>el sitio web está oficialmente disponible en internet.</dd>
+      </dl>
     </footer>
-  </section>
+
+  </div>
+</section>
 
 
-  <section className="proceso-etapa proceso-etapa-08">
+<section className="proceso-etapa proceso-etapa-08 proceso-section-trigger" data-stage="9">
+  <div className="proceso-conteiner">
+
     <header>
-      <p>08</p>
+      <p className="game-no">
+        PASO 08 <span className="game-genre">| LIRIUN-UX</span>
+      </p>
 
       <h2>Entregamos</h2>
 
@@ -608,20 +671,26 @@ export default function Proceso() {
     </div>
 
     <footer>
-      <p>
-        Resultado: el cliente recibe su sitio, sus accesos y la información
+      <dl className="game-tech">
+        <dt>RESULTADO: </dt>
+        <dd>el cliente recibe su sitio, sus accesos y la información
         necesaria para utilizarlo y gestionarlo.
-      </p>
+</dd>
+      </dl>
     </footer>
-  </section>
+
+  </div>
+</section>
 
 
-  <section className="proceso-mantenimiento">
+<section className="proceso-mantenimiento proceso-section-trigger" data-stage="10">
+  <div className="proceso-conteiner">
+
     <header>
       <h2>Después de la entrega</h2>
     </header>
 
-    <p>
+      <p className="entrega">
       Al finalizar la entrega comienza el período de mantenimiento incluido
       durante tres meses.
     </p>
@@ -662,10 +731,14 @@ export default function Proceso() {
         según su complejidad.
       </p>
     </div>
-  </section>
+
+  </div>
+</section>
 
 
-  <section className="proceso-cierre">
+<section className="proceso-cierre proceso-section-trigger" data-stage="11">
+  <div className="proceso-conteiner">
+
     <header>
       <h2>
         Tu negocio nos da la información. Nosotros nos encargamos de construir
@@ -678,10 +751,14 @@ export default function Proceso() {
       y enfocado en que el negocio pueda ser encontrado y entendido por sus
       posibles clientes.
     </p>
-  </section>
+
+  </div>
+</section>
 
 
-  <section className="proceso-cta">
+<section className="proceso-cta proceso-section-trigger" data-stage="12">
+  <div className="proceso-conteiner">
+
     <header>
       <h2>¿Quieres comenzar?</h2>
     </header>
@@ -694,7 +771,9 @@ export default function Proceso() {
     <a href="#">
       Hablar por WhatsApp
     </a>
-  </section>
+
+  </div>
+</section>
 
 </main>
 </>

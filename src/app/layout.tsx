@@ -1,7 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "@/style/globals.css";
 import Header from "@/components/header/header";
+import Header2 from "@/components/header2/Header";
+
+import {
+  serifFont,
+  sansFont,
+  heroFont,
+  gontserratFont
+} from "../components/fonts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -222,13 +230,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${gontserratFont.variable} ${heroFont.variable} ${serifFont.variable} ${sansFont.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
     <head>
 <script  type="application/ld+json"  dangerouslySetInnerHTML={{    __html: JSON.stringify(jsonLd),  }}/>
     </head>
       <body className="">
-        <Header/>
+        <Header2/>
       {children}
       </body>
     </html>

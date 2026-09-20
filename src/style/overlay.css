@@ -1,0 +1,245 @@
+
+/* WARNING: MENU */
+.overlay {
+  position: absolute;
+  /* Anclamos los 4 bordes a la ventana */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* En lugar de 100vw/100vh (que pueden generar barras de scroll), usamos 100% */
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-primary);
+  backdrop-filter: blur(0px);
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    opacity 0.4s ease,
+    background 0.4s ease,
+    backdrop-filter 0.5s ease;
+}
+
+.overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+  background: color-mix(in srgb, var(--color-primary) 60%, transparent);
+  backdrop-filter: blur(10px);
+
+  width: 100vw;
+  min-height: 100vh;
+}
+
+
+/* WARNING: BASE NAVEGACION*/
+
+
+.nav-base {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    bottom: -10vh;
+    position: relative;
+    padding: 1rem;
+}
+
+.nav-base--content {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+    "izq der"
+    "abajo abajo";
+  align-items: center;
+  gap: 1rem;
+}
+
+
+/* =========================
+   PARTE IZQUIERDA
+========================= */
+
+.nav-base--left {
+  grid-area: izq;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.nav-base--left a {
+    width: 60%;
+}
+.nav-base--left .res-base--button{
+    width: 60%;
+}
+/* =========================
+   PARTE DERECHA
+========================= */
+
+.nav-base--right {
+    grid-area: der;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: start;
+
+  padding: 2rem;
+
+  @media (max-width: 768px) {
+  margin-top: 0;
+  }
+}
+.nav-base--right .res-base--button{
+    background: var(--color-accent);
+    color: var(--color-primary);
+}
+.nav-base--right .res-base--button:hover{
+    background: var(--color-primary-dark);
+    color: var(--color-bg);
+}
+
+.nav-base--right .res-base--button:active{
+    background: var(--color-primary-dark);
+    color: var(--color-bg);
+}
+.nav-base-section-button.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+.nav-base-section-button.active:hover {
+  background: var(--color-bg);
+  color: var(--color-primary);
+  border-color: var(--color-accent);
+}
+.nav-base-section-button.active:active {
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+/* footer*/
+.nav-base--footer{
+    grid-area: abajo;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7rem;
+    border: 1px solid var(--color-accent-lu);
+    border-radius: 10px;
+    padding-inline: 0.8rem;
+    padding-block: 0.7rem;
+
+    background: var(--color-accent);
+    color: var(--color-primary);
+    white-space: nowrap;
+
+}
+.nav-base--icons{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    right: -1.5vw;
+    position: relative;
+}
+
+.nav-base--icon{
+  transition:    transform 0.3s ease,    opacity 0.3s ease;
+}
+.nav-base--icon:hover{
+    transform: translateY(-3px);
+}
+.nav-base--icon:active{
+    transform: translateY(0px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+  .nav-base--content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "izq"
+      "der"
+      "abajo";
+  }
+
+  .nav-base--left {
+    padding: 0;
+  }
+
+  .nav-base--right {
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    border-left: none;
+  }
+  .nav-base-section-button{
+        padding: 0.4rem 0rem;
+        margin-top: 0.3rem;
+      font-size: 0.9rem;
+  }
+  .nav-base--right .res-base--button{
+        padding: 0.4rem 1rem;
+        margin-top: 0.3rem;
+      font-size: 0.9rem;
+  }
+  .nav-base--right .res-base--description{
+      margin: 0 0 1rem;
+  }
+
+  .nav-base--footer{
+      margin: 0;
+      font-size: 0.7rem;
+      justify-content: space-around;
+  }
+
+    .nav-base--icon{
+        width: clamp(1.5rem, 3vw, 3rem);
+        height: auto;
+        margin-left: 1vw;
+    }
+}
+
+
+.nav-base--create-movil{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .nav-base--reserve{
+        display: none;
+    }
+    .nav-base--create{
+        display: none;
+    }
+    .nav-base--create-movil{
+    
+        display: flex;
+    }
+    .nav-base--icons{
+        right: 0;
+    }
+    .nav-base {
+        bottom:-2vh;
+    }
+}

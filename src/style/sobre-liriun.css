@@ -1,0 +1,224 @@
+
+:root {
+  /* ===== Colores usados en este archivo ===== */
+  --color-hero-title: #cfc6fc; /* usada en: .hero-content h1 (color) */
+  --color-hero-description: #c9e8e2; /* usada en: .hero-content p (color) */
+  --color-hero-card: #9f96dc; /* usada en: .hero-content (box-shadow) */
+
+
+  --color-card-bg : #152441d1; /* usada en: .hero-content, .proceso-conteiner (background) */
+  --color-card-shadow: #1e9a94; /* usada en: .proceso-conteiner (box-shadow) */
+
+  --color-card-line-separator: #aaaaff53; /* usada en: .proceso-conteiner h3, .proceso-conteiner dl (border-top) */
+
+  --color-card-step: #7fe6dc; /* usada en: .proceso-conteiner header p:first-child (color) */
+  --color-card-title : #e6fffa; /* usada en: .proceso-hero span, .proceso-conteiner h2 (color) */
+  --color-card-title-shadow: #00fece; /* usada en: .proceso-hero span, .proceso-conteiner h2 (text-shadow) */
+  --color-card-description-principal: #a7d7d5; /* usada en: .proceso-conteiner .entrega, .proceso-conteiner header p:last-child (color) */
+  --color-card-sub-title: #b1dddd; /* usada en: .proceso-conteiner h3 (color) */
+  --color-card-description: #b9bede; /* usada en: .proceso-conteiner, .proceso-conteiner:not(header) :is(p, ul, dd) (color) */
+  --color-card-resultado: #aaaaff; /* usada en: .proceso-conteiner dt (color) */
+  
+
+  /* ===== Tamaños de texto usados en este archivo ===== */
+  --fs-sobre-titulo: clamp(3.5rem, 9vw, 9rem); 
+
+  --fs-card-step: 11px; 
+  --fs-card-title: clamp(30px, 5.4vw, 52px); 
+  --fs-card-description-principal: clamp(12px, 1.8vw, 14px); 
+  --fs-card-subtitulo: clamp(13px, 1.8vw, 16px); 
+  --fs-card-description: clamp(16px, 1.6vw, 18px); 
+
+
+}
+
+
+.sobre-liriun{
+
+  padding-top: 2rem;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+/*NOTE: hero*/
+.sobre-liriun-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  height: 100vh;
+  min-height: 85vh;
+  box-sizing: border-box;
+  align-items: end;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 10vh 2vw;
+}
+
+@media (max-width: 880px) {
+  .sobre-liriun-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    min-height: auto;
+    gap: 2rem;
+    padding: 10vh 8vw;
+  }
+}
+
+/*NOTE: hero title*/
+.sobre-liriun-hero span {
+  font-size: var(--fs-sobre-titulo);
+  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 1.1;
+  user-select: none;
+  font-family: var(--font-serif);
+  font-style: normal;
+  color: var(--color-card-title);
+  text-shadow: 0 0 30px color-mix(in srgb, var(--color-card-title-shadow) 55%, transparent);
+  align-self: start;
+white-space: nowrap;
+}
+
+/* NOTE: card hero*/
+.hero-content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-self: end;
+  align-self: end;
+  max-width: 560px;
+  background: var(--color-card-bg );
+  border-radius: 22px;
+  padding: clamp(26px, 4vw, 44px);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 3px 6px var(--color-hero-card);
+  position: relative;
+}
+
+.hero-content  h1 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: var(--fs-card-title);
+  color: var(--color-hero-title);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 0.55em;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.hero-content p {
+  line-height: 1.3;
+  font-size: var(--fs-card-description);
+  color: var(--color-hero-description);
+  padding-top: 0.3rem;
+}
+
+.sobre-liriun section {
+  height: max-content;
+  min-height: 85vh;
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+  align-content: center;
+}
+
+.sobre-liriun section:nth-child(odd) .proceso-conteiner {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.sobre-liriun section:nth-child(even) .proceso-conteiner {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* CARD*/
+
+
+
+/* NOTE: card conteiner*/
+
+.proceso-conteiner {
+  max-width: 560px;
+  background: var(--color-card-bg );
+  border-radius: 22px;
+  padding: clamp(26px, 4vw, 44px);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 1.6em;
+  box-shadow: 0 5px 15px var(--color-card-shadow);
+}
+
+.proceso-conteiner h2 {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: var(--fs-card-title);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  margin-top: 0.55em;
+  margin-bottom: 0.55em;
+  color: var(--color-card-title );
+  text-shadow: 0 0 30px color-mix(in srgb, var(--color-card-title-shadow) 55%, transparent);
+  text-transform: uppercase;
+}
+
+.proceso-conteiner header p:first-child {
+  font-family: var(--font-gontserrat);
+  font-size: var(--fs-card-step);
+  letter-spacing: 0.14em;
+  color: var(--color-card-step);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+
+.proceso-conteiner .entrega,
+.proceso-conteiner header p:last-child {
+  display: block;
+  font-weight: 700;
+  font-size: var(--fs-card-description-principal);
+  letter-spacing: 0.04em;
+  color: var(--color-card-description-principal);
+  font-family: var(--font-gontserrat);
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.proceso-conteiner :is(h3,dt) {
+  border-top: 1px solid var(--color-card-line-separator);
+  padding-top: 0.7rem;
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+
+  font-family: var(--font-gontserrat);
+  font-size: var(--fs-card-subtitulo);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-card-sub-title);
+}
+.proceso-conteiner dt {
+  font-family: var(--font-serif);
+  color: var(--color-card-resultado);
+}
+
+.sobre-liriun .proceso-conteiner:not(header) :is(p, ul, dd) {
+  line-height: 1.04;
+  font-size: var(--fs-card-description);
+  color: var(--color-card-description);
+  padding-top: 0.5rem;
+}
+
