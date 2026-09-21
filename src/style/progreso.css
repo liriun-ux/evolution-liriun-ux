@@ -148,7 +148,6 @@
   background: var(--color-card-bg );
   border-radius: 22px;
   padding: clamp(26px, 4vw, 44px);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   margin-top: 1.6em;
   box-shadow: 0 5px 15px var(--color-card-shadow);
 }

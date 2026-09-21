@@ -1,3 +1,4 @@
+import { Card3D } from "@/animation/card3d";
 import ProcesoCanvas from "@/animation/ensamble";
 import type { Metadata } from "next";
 
@@ -129,7 +130,7 @@ export default function Home() {
         <header className="inicio-hero">
           <span>PIERDES CLIENTES?</span>
 
-    <div className="hero-content">
+    <Card3D className="hero-content">
           <h1>
             No pierdas clientes por no estar donde te buscan.
             ¿Pueden encontrarlo y entenderlo?
@@ -146,12 +147,12 @@ export default function Home() {
           <a href="/web-especializada">
             Conocer la web especializada
           </a>
-        </div>
+        </Card3D>
         </header>
 
 
 <section id="problema" className="inicio-problema">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Tu negocio puede estar en redes y aun así tener información difícil de encontrar.
@@ -179,12 +180,12 @@ export default function Home() {
       Pero ¿dónde encuentra una persona toda la información que necesita
       cuando busca tu negocio, un producto o un servicio?
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="inicio-demostracion">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         ¿Qué ocurre cuando alguien busca tu negocio?
@@ -238,12 +239,12 @@ export default function Home() {
         sus productos o servicios, su ubicación y sus medios de contacto.
       </p>
     </div>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="inicio-oportunidad">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Tu negocio puede tener un espacio propio para ser entendido.
@@ -297,12 +298,12 @@ export default function Home() {
       para facilitar su descubrimiento y comprensión por buscadores y sistemas
       de IA.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="inicio-solucion">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Una web especializada pensada para tu negocio.
@@ -342,12 +343,12 @@ export default function Home() {
     <a href="/web-especializada">
       Conocer la web especializada estándar
     </a>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="inicio-como-funciona">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Tú nos cuentas sobre tu negocio. Nosotros construimos la web especializada.
@@ -425,12 +426,12 @@ export default function Home() {
     <a href="/proceso">
       Ver el proceso completo
     </a>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="inicio-liriun">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         ¿Qué es LIRIUN-UX?
@@ -481,12 +482,12 @@ export default function Home() {
     <a href="/sobre-liriun-ux">
       Conocer LIRIUN-UX
     </a>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="inicio-ejemplos">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Cada negocio necesita una forma diferente de presentarse.
@@ -548,12 +549,12 @@ export default function Home() {
         Ver ejemplo
       </a>
     </article>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="inicio-alternativas">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         También existen otras formas de presentar tu negocio.
@@ -603,12 +604,12 @@ export default function Home() {
         negocio y las necesidades de sus posibles clientes.
       </p>
     </article>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="inicio-faq">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Preguntas frecuentes
@@ -693,12 +694,12 @@ export default function Home() {
     <a href="/web-especializada">
       Ver toda la información de la web especializada
     </a>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="inicio-cta">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         ¿Tu negocio necesita una web especializada?
@@ -717,7 +718,7 @@ export default function Home() {
     <a href="/web-especializada">
       Conocer la web especializada estándar
     </a>
-  </div>
+  </Card3D>
 </section>
 
       </main>

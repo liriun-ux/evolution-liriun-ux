@@ -1,3 +1,4 @@
+import { Card3D } from "@/animation/card3d";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -210,7 +211,7 @@ export default function WebEspecializada() {
 
           <span>web para negocios</span>
 
-    <div className="hero-content">
+    <Card3D className="hero-content">
           <h1>
             que es una web especializada?
           </h1>
@@ -220,12 +221,12 @@ export default function WebEspecializada() {
             con sus clientes.
           </p>
 
-    </div>
+    </Card3D>
         </header>
 
 
 <section className="web-especializada-que-es">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Qué es?</h2>
     </header>
@@ -240,12 +241,12 @@ export default function WebEspecializada() {
       La información se organiza y estructura para facilitar también su
       comprensión por buscadores y sistemas de IA.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-para-quien">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Para quién es?</h2>
     </header>
@@ -283,12 +284,12 @@ export default function WebEspecializada() {
       Puede ser utilizado tanto por negocios que ya tienen redes sociales como
       por negocios que todavía no tienen presencia en ellas.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-proposito">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Qué obtiene tu negocio?</h2>
     </header>
@@ -330,12 +331,12 @@ export default function WebEspecializada() {
         </p>
       </article>
     </div>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-estructura">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>Una estructura adaptada a tu negocio</h2>
 
@@ -380,12 +381,12 @@ export default function WebEspecializada() {
       El sitio estándar contempla normalmente entre 4 y 6 páginas principales,
       ajustadas a las necesidades reales del negocio.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-diseno">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>Diseño pensado para comunicar</h2>
     </header>
@@ -433,12 +434,12 @@ export default function WebEspecializada() {
       principio: no distraer al usuario del negocio ni de la información que
       está buscando.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-animaciones">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>Animaciones que ayudan, no distraen</h2>
     </header>
@@ -458,12 +459,12 @@ export default function WebEspecializada() {
       Las animaciones no están pensadas para impresionar al usuario ni para
       competir con el contenido del negocio.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-contenido">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>Nos encargamos de organizar la información</h2>
     </header>
@@ -507,12 +508,12 @@ export default function WebEspecializada() {
       Si cierta información todavía no está disponible, puede incorporarse
       posteriormente.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-gestion">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>Gestiona tus productos</h2>
 
@@ -556,12 +557,12 @@ export default function WebEspecializada() {
       La cantidad de productos se adapta al negocio y está limitada por la
       infraestructura utilizada para almacenar la información.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-seo-aeo">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>SEO + AEO</h2>
 
@@ -597,12 +598,12 @@ export default function WebEspecializada() {
       Estas prácticas no garantizan una posición determinada en Google ni
       garantizan que un sistema de IA muestre el negocio en una respuesta.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-funcionalidades">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>Funcionalidades incluidas</h2>
     </header>
@@ -618,12 +619,12 @@ export default function WebEspecializada() {
       <li>Información general del negocio.</li>
       <li>Adaptación para móvil, tablet y PC.</li>
     </ul>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-dominio">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>Dominio y publicación</h2>
     </header>
@@ -641,12 +642,12 @@ export default function WebEspecializada() {
       El dominio y la publicación forman parte de la preparación del sitio
       durante su desarrollo.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-mantenimiento">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>3 meses de mantenimiento</h2>
     </header>
@@ -676,12 +677,12 @@ export default function WebEspecializada() {
       No existe un límite de frecuencia para estos pequeños cambios durante
       el período de mantenimiento.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-cambios">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Y después del mantenimiento?</h2>
     </header>
@@ -712,12 +713,12 @@ export default function WebEspecializada() {
       Los cambios estructurales incluyen nuevas páginas, nuevas secciones
       o cambios grandes de diseño.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-no-incluye">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Qué no incluye?</h2>
     </header>
@@ -740,12 +741,12 @@ export default function WebEspecializada() {
       Estas funcionalidades pueden evaluarse como desarrollos adicionales
       cuando el proyecto lo requiera.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-precio">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>Precio y plazo</h2>
     </header>
@@ -787,12 +788,12 @@ export default function WebEspecializada() {
       Los desarrollos que salgan del alcance estándar pueden requerir un costo
       adicional.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-despues">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Qué pasa después?</h2>
     </header>
@@ -838,12 +839,12 @@ export default function WebEspecializada() {
     <a href="/proceso">
       Ver el proceso completo
     </a>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="web-especializada-cta">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         ¿Quieres saber cómo sería para tu negocio?
@@ -858,7 +859,7 @@ export default function WebEspecializada() {
     <a href="#">
       Hablar por WhatsApp
     </a>
-  </div>
+  </Card3D>
 </section>
 
       </main>

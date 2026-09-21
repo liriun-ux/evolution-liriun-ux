@@ -1,3 +1,4 @@
+import { Card3D } from '@/animation/card3d';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -106,7 +107,7 @@ export default function LaPazPage() {
         <header className="city-hero">
           <span> <span className='liriun'>LIRIUN-UX</span> La Paz</span>
 
-    <div className="hero-content">
+    <Card3D className="hero-content">
           <h1>
             Creación de webs especializadas para negocios en La Paz.<br/> ¿Tus clientes paceños te encuentran al buscar en internet?
           </h1>
@@ -117,12 +118,12 @@ export default function LaPazPage() {
 
           <a href="#problema">Ver cómo ayuda a tu negocio</a>
           <a href="/web-especializada">Conocer la web especializada</a>
-          </div>
+          </Card3D>
         </header>
 
         {/* PROBLEMA */}
         <section id="problema" className="la-paz-problema">
-          <div className="proceso-conteiner">
+          <Card3D className="proceso-conteiner">
             <header>
               <h2>
                 Tu negocio en La Paz puede estar en redes sociales, pero aún así perder clientes por la falta de información rápida.
@@ -146,12 +147,12 @@ export default function LaPazPage() {
             <p>
               Pero cuando un cliente busca en Google tu servicio desde su oficina o su casa, ¿encuentra un espacio ordenado o tiene que investigar para saber si ofreces lo que realmente necesita?
             </p>
-          </div>
+          </Card3D>
         </section>
 
         {/* DEMOSTRACIÓN */}
         <section className="la-paz-demostracion">
-          <div className="proceso-conteiner">
+          <Card3D className="proceso-conteiner">
             <header>
               <h2>¿Qué ocurre cuando alguien busca tu negocio en La Paz?</h2>
               <p>
@@ -193,12 +194,12 @@ export default function LaPazPage() {
                 Encuentra en tu propia web especializada todo tu catálogo, servicios, tarifas referenciales, tu ubicación en el mapa y un botón directo a tu WhatsApp.
               </p>
             </div>
-          </div>
+          </Card3D>
         </section>
 
         {/* OPORTUNIDAD */}
         <section className="la-paz-oportunidad">
-          <div className="proceso-conteiner">
+          <Card3D className="proceso-conteiner">
             <header>
               <h2>Dale a tu empresa en La Paz un espacio propio, formal y claro.</h2>
             </header>
@@ -240,12 +241,12 @@ export default function LaPazPage() {
             <p>
               Además, estructuramos tu web especializada siguiendo buenas prácticas de SEO y AEO para que los buscadores y la Inteligencia Artificial recomienden tu negocio.
             </p>
-          </div>
+          </Card3D>
         </section>
 
         {/* SOLUCIÓN */}
         <section className="la-paz-solucion">
-          <div className="proceso-conteiner">
+          <Card3D className="proceso-conteiner">
             <header>
               <h2>Una web especializada pensada para el mercado de La Paz.</h2>
             </header>
@@ -278,12 +279,12 @@ export default function LaPazPage() {
             </div>
 
             <a href="/web-especializada">Conocer la web especializada</a>
-          </div>
+          </Card3D>
         </section>
 
         {/* CÓMO FUNCIONA LIRIUN */}
         <section className="la-paz-como-funciona">
-          <div className="proceso-conteiner">
+          <Card3D className="proceso-conteiner">
             <header>
               <h2>Tú nos cuentas sobre tu negocio. Nosotros construimos la web especializada.</h2>
               <p>
@@ -327,12 +328,12 @@ export default function LaPazPage() {
             </ol>
 
             <a href="/proceso">Ver el proceso completo</a>
-          </div>
+          </Card3D>
         </section>
 
         {/* LIRIUN LA PAZ */}
         <section className="la-paz-liriun">
-          <div className="proceso-conteiner">
+          <Card3D className="proceso-conteiner">
             <header>
               <h2>Expertos en desarrollo web especializado para La Paz</h2>
             </header>
@@ -363,12 +364,12 @@ export default function LaPazPage() {
             </div>
 
             <a href="/sobre-liriun-ux">Conocer LIRIUN-UX</a>
-          </div>
+          </Card3D>
         </section>
 
         {/* EJEMPLOS */}
         <section className="la-paz-ejemplos">
-          <div className="proceso-conteiner">
+          <Card3D className="proceso-conteiner">
             <header>
               <h2>Ejemplos de cómo organizamos la información.</h2>
               <p>
@@ -414,12 +415,12 @@ export default function LaPazPage() {
               </ul>
               <a href="#">Ver ejemplo</a>
             </article>
-          </div>
+          </Card3D>
         </section>
 
         {/* ALTERNATIVAS */}
         <section className="la-paz-alternativas">
-          <div className="proceso-conteiner">
+          <Card3D className="proceso-conteiner">
             <header>
               <h2>Otras formas de presentar tu negocio.</h2>
               <p>
@@ -447,12 +448,12 @@ export default function LaPazPage() {
                 Nosotros construimos la plataforma basándonos en tu negocio, optimizamos el SEO local y te entregamos un producto llave en mano listo en 5 días.
               </p>
             </article>
-          </div>
+          </Card3D>
         </section>
 
         {/* FAQ */}
         <section className="la-paz-faq">
-          <div className="proceso-conteiner">
+          <Card3D className="proceso-conteiner">
             <header>
               <h2>Preguntas frecuentes sobre webs especializadas en La Paz</h2>
             </header>
@@ -500,12 +501,12 @@ export default function LaPazPage() {
             </details>
 
             <a href="/web-especializada">Ver toda la información de la web especializada</a>
-          </div>
+          </Card3D>
         </section>
 
         {/* CTA */}
         <section className="la-paz-cta">
-          <div className="proceso-conteiner">
+          <Card3D className="proceso-conteiner">
             <header>
               <h2>¿Listo para que tu negocio paceño tenga su propia web especializada?</h2>
             </header>
@@ -517,7 +518,7 @@ export default function LaPazPage() {
             {/* Recuerda cambiar el href por tu enlace real de wa.me */}
             <a href="#">Hablar por WhatsApp</a>
             <a href="/web-especializada">Conocer la web especializada</a>
-          </div>
+          </Card3D>
         </section>
 
       </main>

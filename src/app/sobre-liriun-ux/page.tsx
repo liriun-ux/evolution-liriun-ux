@@ -1,3 +1,4 @@
+import { Card3D } from "@/animation/card3d";
 import ProcesoCanvas from "@/animation/ensamble";
 import type { Metadata } from "next";
 
@@ -126,7 +127,7 @@ export default function SobreLiriunUx() {
   <header className="sobre-liriun-hero">
     <span>LIRIUN-UX</span>
 
-  <div className="hero-content">
+  <Card3D className="hero-content">
     <h1>
       Sitios web para que los negocios sean encontrados y entendidos.
     </h1>
@@ -135,12 +136,12 @@ export default function SobreLiriunUx() {
       LIRIUN-UX crea sitios web para pequeñas PYMEs que necesitan una
       presencia digital propia, clara y accesible.
     </p>
-  </div>
+  </Card3D>
   </header>
 
 
 <section className="sobre-liriun-que-es">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Qué es LIRIUN-UX?</h2>
     </header>
@@ -156,12 +157,12 @@ export default function SobreLiriunUx() {
       clientes puedan conocerlo, encontrar sus productos o servicios,
       conocer su ubicación y tomar una decisión.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="sobre-liriun-por-que">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Por qué existe LIRIUN-UX?</h2>
     </header>
@@ -182,12 +183,12 @@ export default function SobreLiriunUx() {
       un negocio o un local, pueda encontrar información que le permita
       comprenderlo y saber qué hacer a continuación.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="sobre-liriun-enfoque">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>Nuestro enfoque</h2>
 
@@ -242,12 +243,12 @@ export default function SobreLiriunUx() {
       A partir de esto definimos la información, la estructura, las páginas
       y finalmente el diseño del sitio.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="sobre-liriun-filosofia">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>Nuestra filosofía</h2>
     </header>
@@ -294,12 +295,12 @@ export default function SobreLiriunUx() {
         </p>
       </article>
     </div>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="sobre-liriun-buen-sitio">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Qué hace bueno a un sitio web?</h2>
     </header>
@@ -343,12 +344,12 @@ export default function SobreLiriunUx() {
     <p>
       El diseño debe ayudar a comunicar el negocio y no distraer de él.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="sobre-liriun-nombre">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Por qué LIRIUN-UX?</h2>
     </header>
@@ -369,12 +370,12 @@ export default function SobreLiriunUx() {
       eficiente, pero también debe ofrecer una experiencia clara y útil
       para quienes la utilizan.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="sobre-liriun-tecnologia">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>Tecnología al servicio del sitio</h2>
     </header>
@@ -418,12 +419,12 @@ export default function SobreLiriunUx() {
       La tecnología es la base del producto. El cliente recibe un sitio
       que puede utilizar sin necesidad de conocer estos detalles técnicos.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="sobre-liriun-futuro">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>Hacia dónde vamos</h2>
     </header>
@@ -437,12 +438,12 @@ export default function SobreLiriunUx() {
       Nuestro objetivo es crecer manteniendo lo que define nuestro trabajo:
       sitios claros, útiles, accesibles y enfocados en el negocio.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="sobre-liriun-cierre">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <h2>
       Sitios web pensados para que tu negocio sea entendido.
     </h2>
@@ -451,7 +452,7 @@ export default function SobreLiriunUx() {
       LIRIUN-UX está enfocado en pequeñas PYMEs que necesitan una presencia
       digital propia, clara y funcional.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 </main>

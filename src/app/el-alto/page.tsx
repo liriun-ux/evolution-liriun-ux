@@ -1,3 +1,4 @@
+import { Card3D } from '@/animation/card3d';
 import ProcesoCanvas from '@/animation/ensamble';
 import type { Metadata } from 'next';
 
@@ -111,7 +112,7 @@ export default function ElAlto() {
         <header className="city-hero">
           <span> <span className='liriun'>LIRIUN-UX</span> El Alto</span>
 
-    <div className="hero-content">
+    <Card3D className="hero-content">
           <h1>
             Creación de sitios web para negocios y emprendedores en El Alto.<br/>
             ¿Tus clientes te encuentran cuando buscan en internet?
@@ -128,12 +129,12 @@ export default function ElAlto() {
           <a href="/web-especializada">
             Conocer la web especializada
           </a>
-          </div>
+          </Card3D>
         </header>
 
         {/* PROBLEMA */}
 <section id="problema" className="el-alto-problema">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Tu negocio en El Alto puede estar en Facebook o TikTok y aun así perder clientes que buscan comprar hoy.
@@ -157,13 +158,13 @@ export default function ElAlto() {
     <p>
       Pero cuando un cliente busca en Google un producto o servicio en El Alto, ¿encuentra tu información clara en un solo lugar o termina comprando a la competencia?
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 {/* DEMOSTRACIÓN */}
 <section className="el-alto-demostracion">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         ¿Qué hace un alteño cuando busca un negocio o servicio?
@@ -207,13 +208,13 @@ export default function ElAlto() {
         El cliente entra a tu página, ve el catálogo, conoce tu dirección física en El Alto y hace clic para comunicarse contigo en segundos.
       </p>
     </div>
-  </div>
+  </Card3D>
 </section>
 
 
 {/* OPORTUNIDAD */}
 <section className="el-alto-oportunidad">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Dale a tu negocio en El Alto un espacio web formal y fácil de encontrar.
@@ -257,13 +258,13 @@ export default function ElAlto() {
     <p>
       Estructuramos el sitio con estándares modernos de SEO y AEO para facilitar que buscadores como Google e inteligencias artificiales recomienden tu negocio en la zona.
     </p>
-  </div>
+  </Card3D>
 </section>
 
 
 {/* SOLUCIÓN */}
 <section className="el-alto-solucion">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Sitios web pensados para el comercio y servicios de El Alto.
@@ -300,13 +301,13 @@ export default function ElAlto() {
     <a href="/web-especializada">
       Conoce la web especializada
     </a>
-  </div>
+  </Card3D>
 </section>
 
 
 {/* CÓMO FUNCIONA LIRIUN */}
 <section className="el-alto-como-funciona">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Nos envías la información de tu negocio. Nosotros construimos la página.
@@ -354,13 +355,13 @@ export default function ElAlto() {
     <a href="/proceso">
       Ver el proceso completo
     </a>
-  </div>
+  </Card3D>
 </section>
 
 
 {/* SOBRE LIRIUN EN EL ALTO */}
 <section className="el-alto-liriun">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Desarrollo web con entendimiento local en El Alto
@@ -393,13 +394,13 @@ export default function ElAlto() {
     <a href="/sobre-liriun-ux">
       Conocer LIRIUN-UX
     </a>
-  </div>
+  </Card3D>
 </section>
 
 
 {/* EJEMPLOS LOCALES */}
 <section className="el-alto-ejemplos">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Ejemplos de cómo se adapta la estructura a negocios de El Alto.
@@ -444,13 +445,13 @@ export default function ElAlto() {
       </ul>
       <a href="#">Ver ejemplo</a>
     </article>
-  </div>
+  </Card3D>
 </section>
 
 
 {/* ALTERNATIVAS */}
 <section className="el-alto-alternativas">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Comparación: Opciones para presentar tu negocio en El Alto.
@@ -476,13 +477,13 @@ export default function ElAlto() {
       <h3>Un sitio web desarrollado con LIRIUN-UX</h3>
       <p>Nosotros nos encargamos de todo el trabajo técnico y organizativo. Recibes tu web especializada lista en 5 días a un precio accesible.</p>
     </article>
-  </div>
+  </Card3D>
 </section>
 
 
 {/* FAQ */}
 <section className="el-alto-faq">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         Preguntas frecuentes sobre páginas web en El Alto
@@ -522,13 +523,13 @@ export default function ElAlto() {
     <a href="/web-especializada">
       Ver toda la información de la web especializada
     </a>
-  </div>
+  </Card3D>
 </section>
 
 
 {/* CTA */}
 <section className="el-alto-cta">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
     <header>
       <h2>
         ¿Quieres crear el sitio web para tu negocio en El Alto?
@@ -546,7 +547,7 @@ export default function ElAlto() {
     <a href="/web-especializada">
       Conocer la web especializada
     </a>
-  </div>
+  </Card3D>
 </section>
 
       </main>

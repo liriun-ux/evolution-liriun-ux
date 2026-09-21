@@ -151,6 +151,7 @@ const jsonLd = {
 };
 import ColoredCubeCanvas from "@/animation/ColoredCube";
 import ProcesoCanvas from "@/animation/ensamble";
+import { Card3D } from "@/animation/card3d";
 
 export default function Proceso() {
   return (
@@ -168,19 +169,19 @@ export default function Proceso() {
   <span className="">PROCESO DE TRABAJO</span>
 
   {/* Contenido en la esquina inferior izquierda (Fila 3, Columna 1 o 1 y 2) */}
-  <div className="hero-content">
+  <Card3D className="hero-content">
     <h1>¿Cómo diseñamos y desarrollamos tu sitio web paso a paso?</h1>
     <p>
       Desde la estrategia inicial de tu negocio hasta la publicación final. 
       Llevamos tu proyecto con un proceso transparente, estructurado y enfocado en resultados.
     </p>
-  </div>
+  </Card3D>
 
 </header>
 
 
 <section className="proceso-inicio proceso-section-trigger" data-stage="1">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
 
     <header>
       <h2>Inicio del proyecto</h2>
@@ -196,12 +197,12 @@ export default function Proceso() {
       momento, comienza el desarrollo del proyecto.
     </p>
 
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="proceso-etapa proceso-etapa-01 proceso-section-trigger" data-stage="2">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
 
     <header>
       <p >
@@ -262,12 +263,12 @@ export default function Proceso() {
       </dl>
     </footer>
 
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="proceso-etapa proceso-etapa-02 proceso-section-trigger" data-stage="3">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
 
     <header>
       <p className="game-no">
@@ -321,12 +322,12 @@ export default function Proceso() {
       </dl>
     </footer>
 
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="proceso-etapa proceso-etapa-03 proceso-section-trigger" data-stage="4">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
 
     <header>
       <p className="game-no">
@@ -373,12 +374,12 @@ export default function Proceso() {
       </dl>
     </footer>
 
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="proceso-etapa proceso-etapa-04 proceso-section-trigger" data-stage="5">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
 
     <header>
       <p className="game-no">
@@ -438,12 +439,12 @@ export default function Proceso() {
       </dl>
     </footer>
 
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="proceso-etapa proceso-etapa-05 proceso-section-trigger" data-stage="6">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
 
     <header>
       <p className="game-no">
@@ -497,12 +498,12 @@ export default function Proceso() {
       </dl>
     </footer>
 
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="proceso-etapa proceso-etapa-06 proceso-section-trigger" data-stage="7">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
 
     <header>
       <p className="game-no">
@@ -557,12 +558,12 @@ export default function Proceso() {
       </dl>
     </footer>
 
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="proceso-etapa proceso-etapa-07 proceso-section-trigger" data-stage="8">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
 
 
     <header>
@@ -612,12 +613,12 @@ export default function Proceso() {
       </dl>
     </footer>
 
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="proceso-etapa proceso-etapa-08 proceso-section-trigger" data-stage="9">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
 
     <header>
       <p className="game-no">
@@ -679,12 +680,12 @@ export default function Proceso() {
       </dl>
     </footer>
 
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="proceso-mantenimiento proceso-section-trigger" data-stage="10">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
 
     <header>
       <h2>Después de la entrega</h2>
@@ -732,12 +733,12 @@ export default function Proceso() {
       </p>
     </div>
 
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="proceso-cierre proceso-section-trigger" data-stage="11">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
 
     <header>
       <h2>
@@ -752,12 +753,12 @@ export default function Proceso() {
       posibles clientes.
     </p>
 
-  </div>
+  </Card3D>
 </section>
 
 
 <section className="proceso-cta proceso-section-trigger" data-stage="12">
-  <div className="proceso-conteiner">
+  <Card3D className="proceso-conteiner">
 
     <header>
       <h2>¿Quieres comenzar?</h2>
@@ -772,7 +773,7 @@ export default function Proceso() {
       Hablar por WhatsApp
     </a>
 
-  </div>
+  </Card3D>
 </section>
 
 </main>
