@@ -163,7 +163,7 @@ export default function Proceso() {
   }}
 />
 <main className="proceso">
-     <ProcesoCanvas/>
+      <ProcesoCanvas/>
 <header className="proceso-hero proceso-section-trigger" data-stage="0">
   {/* TITULO */}
   <span className="">PROCESO DE TRABAJO</span>

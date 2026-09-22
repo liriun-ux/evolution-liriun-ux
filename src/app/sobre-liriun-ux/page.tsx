@@ -123,7 +123,7 @@ export default function SobreLiriunUx() {
   }}
 />
 <main className="sobre-liriun">
-    <ProcesoCanvas/>
+      <ProcesoCanvas/>
   <header className="sobre-liriun-hero">
     <span>LIRIUN-UX</span>
 

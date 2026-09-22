@@ -151,11 +151,11 @@ body {
   /* ===== Tamaños de texto usados en este archivo ===== */
   --fs-sobre-titulo: clamp(3.5rem, 9vw, 9rem); 
 
-  --fs-card-step: 11px; 
+  --fs-card-step: clamp(12px, 1.8vw, 14px); 
   --fs-card-title: clamp(30px, 5.4vw, 52px); 
-  --fs-card-description-principal: clamp(12px, 1.8vw, 14px); 
-  --fs-card-subtitulo: clamp(14px, 1.8vw, 16px); 
-  --fs-card-description: clamp(15px, 1.6vw, 15px); 
+  --fs-card-description-principal: clamp(12px, 1.8vw, 18px); 
+  --fs-card-subtitulo: clamp(14px, 1.8vw, 18px); 
+  --fs-card-description: clamp(15px, 1.6vw, 18px); 
 }
 .header {
   position: fixed;

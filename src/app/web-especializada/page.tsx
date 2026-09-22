@@ -1,4 +1,5 @@
 import { Card3D } from "@/animation/card3d";
+import ProcesoCanvas from "@/animation/ensamble";
 import WhatsAppIcon from "@/icons/WhatsAppIcon";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -208,7 +209,7 @@ export default function WebEspecializada() {
         }}
       />
       <main className="web-especializada">
-
+      <ProcesoCanvas/>
         <header className="web-especializada-hero">
 
           <span>web para negocios</span>

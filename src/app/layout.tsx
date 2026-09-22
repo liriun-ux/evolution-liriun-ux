@@ -11,6 +11,7 @@ import {
   gontserratFont
 } from "../components/fonts";
 import Footer from "@/components/footer";
+import ProcesoCanvas from "@/animation/ensamble";
 
 const themeScript = `
   (function() {
