@@ -249,12 +249,12 @@ export default function WebEspecializada() {
   <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Para quién es?</h2>
-    </header>
-
     <p>
       Está pensado para pequeñas PYMEs que ofrecen productos o servicios y
       necesitan una presencia digital propia.
     </p>
+    </header>
+
 
     <div>
       <article>
@@ -350,9 +350,22 @@ export default function WebEspecializada() {
     <div>
       <h3>Páginas principales</h3>
 
-      <ul>
+      <ul className="tree">
         <li>Inicio</li>
-        <li>Productos o servicios</li>
+        <li>Productos o servicios
+            <ul>
+                <li>Producto 1</li>
+                <li>Producto 2</li>
+                <li>...</li>
+            </ul>
+        </li>
+        <li>Servicios
+            <ul>
+                <li>Servicio 1</li>
+                <li>Servicio 2</li>
+                <li>...</li>
+            </ul>
+        </li>
         <li>Sobre el negocio</li>
         <li>Contacto</li>
       </ul>
@@ -389,12 +402,12 @@ export default function WebEspecializada() {
   <Card3D className="proceso-conteiner">
     <header>
       <h2>Diseño pensado para comunicar</h2>
-    </header>
-
     <p>
       El diseño se crea según el negocio y la mejor forma de presentar su
       información, manteniendo como prioridad la claridad y facilidad de uso.
     </p>
+    </header>
+
 
     <div>
       <article>
@@ -442,13 +455,13 @@ export default function WebEspecializada() {
   <Card3D className="proceso-conteiner">
     <header>
       <h2>Animaciones que ayudan, no distraen</h2>
-    </header>
-
     <p>
       Las animaciones del sitio son principalmente estructurales y de
       interacción. Su función es ayudar al usuario a comprender y utilizar
       el sitio.
     </p>
+    </header>
+
 
     <p>
       Por ejemplo, un botón puede cambiar de color, aumentar ligeramente
@@ -467,13 +480,13 @@ export default function WebEspecializada() {
   <Card3D className="proceso-conteiner">
     <header>
       <h2>Nos encargamos de organizar la información</h2>
-    </header>
-
     <p>
       El cliente proporciona la información que conoce de su negocio y
       LIRIUN-UX se encarga de organizarla y convertirla en contenido
       comprensible para el sitio.
     </p>
+    </header>
+
 
     <p>
       Por ejemplo, una información como:
@@ -494,7 +507,7 @@ export default function WebEspecializada() {
     <div>
       <h3>El cliente proporciona principalmente</h3>
 
-      <ul>
+      <ul className="list">
         <li>Fotografías del negocio y sus productos.</li>
         <li>Precios y datos de los productos.</li>
         <li>Ubicación.</li>
@@ -608,7 +621,7 @@ export default function WebEspecializada() {
       <h2>Funcionalidades incluidas</h2>
     </header>
 
-    <ul>
+    <ul className="list">
       <li>WhatsApp.</li>
       <li>Formularios.</li>
       <li>Mapa y ubicación.</li>
@@ -627,12 +640,12 @@ export default function WebEspecializada() {
   <Card3D className="proceso-conteiner">
     <header>
       <h2>Dominio y publicación</h2>
-    </header>
-
     <p>
       El sitio se publica con un dominio .BO incluido durante el primer año,
       utilizando la extensión disponible que corresponda al negocio.
     </p>
+    </header>
+
 
     <p>
       La renovación del dominio después del primer año corresponde al cliente.
@@ -650,12 +663,12 @@ export default function WebEspecializada() {
   <Card3D className="proceso-conteiner">
     <header>
       <h2>3 meses de mantenimiento</h2>
-    </header>
-
     <p>
       Durante tres meses después de la entrega, LIRIUN-UX supervisa el sitio
       y comprueba que continúe funcionando correctamente.
     </p>
+    </header>
+
 
     <p>
       Durante este período también puedes solicitar pequeños cambios.
@@ -685,13 +698,13 @@ export default function WebEspecializada() {
   <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Y después del mantenimiento?</h2>
-    </header>
-
     <p>
       El sitio está pensado para continuar funcionando sin necesidad de
       mantenimiento técnico constante mientras el negocio y las necesidades
       del sitio se mantengan similares.
     </p>
+    </header>
+
 
     <h3>Cambios posteriores</h3>
 
@@ -721,13 +734,13 @@ export default function WebEspecializada() {
   <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Qué no incluye?</h2>
-    </header>
-
     <p>
       El sitio estándar está pensado para las necesidades habituales de una
       pequeña PYME. Algunas funciones corresponden a proyectos de mayor
       complejidad.
     </p>
+    </header>
+
 
     <ul>
       <li>Pasarelas de pago.</li>
@@ -754,20 +767,20 @@ export default function WebEspecializada() {
     <div>
       <h3>Precio normal</h3>
 
-      <p>
-        850 Bs.
+      <p className="precio-normal" >
+        1050 Bs.
       </p>
     </div>
 
     <div>
       <h3>Oferta</h3>
 
-      <p>
+      <p className="precio-oferta" >
         450 Bs.
       </p>
 
       <p>
-        Oferta válida hasta el 10 de octubre.
+        Oferta válida hasta el <span style={{ color: "#aff"}}>10 de octubre.</span>
       </p>
     </div>
 
@@ -775,7 +788,7 @@ export default function WebEspecializada() {
       <h3>Plazo</h3>
 
       <p>
-        5 días.
+        una semana.
       </p>
 
       <p>
@@ -798,7 +811,7 @@ export default function WebEspecializada() {
       <h2>¿Qué pasa después?</h2>
     </header>
 
-    <ol>
+    <ol className="list">
       <li>
         Confirmas que quieres el sitio web.
       </li>
@@ -836,9 +849,11 @@ export default function WebEspecializada() {
       </li>
     </ol>
 
+    <div className="card-button">
     <a href="/proceso">
       Ver el proceso completo
     </a>
+    </div>
   </Card3D>
 </section>
 
@@ -856,9 +871,11 @@ export default function WebEspecializada() {
       cómo podría estructurarse tu sitio web.
     </p>
 
+    <div className="card-button">
     <a href="#">
       Hablar por WhatsApp
     </a>
+    </div>
   </Card3D>
 </section>
 

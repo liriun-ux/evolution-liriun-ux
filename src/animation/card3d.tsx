@@ -62,7 +62,7 @@ export const Card3D: React.FC<Card3DProps> = ({ children, className = '' }) => {
       onTouchMove={handleTouchMove}
       onTouchStart={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-      className={`transition-transform duration-300 ease-out cursor-pointer ${className}`}
+      className={`transition-transform duration-300 ease-out  ${className}`}
       style={{
         transformStyle: 'preserve-3d',
         willChange: 'transform',

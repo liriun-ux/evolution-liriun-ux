@@ -60,6 +60,9 @@
   overflow: hidden;
   z-index: 1;
   padding: 10vh 2vw;
+
+  height: max-content;
+  min-height: 85vh;
 }
 
 @media (max-width: 880px) {
@@ -69,7 +72,6 @@
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-    min-height: auto;
     gap: 2rem;
     padding: 10vh 8vw;
   }
@@ -105,7 +107,6 @@ white-space: nowrap;
   background: var(--color-card-bg );
   border-radius: 22px;
   padding: clamp(26px, 4vw, 44px);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0px 3px 6px var(--color-hero-card);
   position: relative;
 }
@@ -150,13 +151,13 @@ white-space: nowrap;
   margin-right: 0;
 }
  .la-paz section:nth-child(odd) .proceso-conteiner {
-  margin-left: auto;
-  margin-right: 0;
+  margin-right: auto;
+  margin-left: 0;
 }
 
 .la-paz section:nth-child(even) .proceso-conteiner {
-  margin-right: auto;
-  margin-left: 0;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 /* CARD*/

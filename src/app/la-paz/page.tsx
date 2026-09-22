@@ -1,4 +1,5 @@
 import { Card3D } from '@/animation/card3d';
+import ProcesoCanvas from '@/animation/ensamble';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -102,7 +103,7 @@ export default function LaPazPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main className="city la-paz">
-        
+       <ProcesoCanvas/> 
         {/* HERO */}
         <header className="city-hero">
           <span> <span className='liriun'>LIRIUN-UX</span> La Paz</span>
@@ -116,8 +117,12 @@ export default function LaPazPage() {
             Diseñamos y desarrollamos webs especializadas para empresas, consultorios, tiendas y servicios en La Paz. Páginas estructuradas con SEO y AEO para que tu negocio resalte en Google y mapas.
           </p>
 
+    <div className="card-button">
           <a href="#problema">Ver cómo ayuda a tu negocio</a>
+          </div>
+    <div className="card-button">
           <a href="/web-especializada">Conocer la web especializada</a>
+          </div>
           </Card3D>
         </header>
 
@@ -128,11 +133,11 @@ export default function LaPazPage() {
               <h2>
                 Tu negocio en La Paz puede estar en redes sociales, pero aún así perder clientes por la falta de información rápida.
               </h2>
-            </header>
-
             <p>
               Por el tráfico y las distancias entre el Centro, Sopocachi o la Zona Sur, los paceños prefieren confirmar precios, catálogo y ubicación exacta en internet antes de movilizarse. Las redes sociales son buenas, pero la información suele perderse entre publicaciones antiguas.
             </p>
+            </header>
+
 
             <div>
               <h3>Tu negocio puede tener</h3>
@@ -202,11 +207,11 @@ export default function LaPazPage() {
           <Card3D className="proceso-conteiner">
             <header>
               <h2>Dale a tu empresa en La Paz un espacio propio, formal y claro.</h2>
-            </header>
-
             <p>
               Una web especializada transmite formalidad y confianza, factores clave para el consumidor paceño y las empresas locales.
             </p>
+            </header>
+
 
             <div>
               <article>
@@ -278,7 +283,9 @@ export default function LaPazPage() {
               </article>
             </div>
 
+    <div className="card-button">
             <a href="/web-especializada">Conocer la web especializada</a>
+            </div>
           </Card3D>
         </section>
 
@@ -327,7 +334,9 @@ export default function LaPazPage() {
               </li>
             </ol>
 
+    <div className="card-button">
             <a href="/proceso">Ver el proceso completo</a>
+            </div>
           </Card3D>
         </section>
 
@@ -363,7 +372,9 @@ export default function LaPazPage() {
               </article>
             </div>
 
+    <div className="card-button">
             <a href="/sobre-liriun-ux">Conocer LIRIUN-UX</a>
+            </div>
           </Card3D>
         </section>
 
@@ -379,7 +390,7 @@ export default function LaPazPage() {
 
             <article>
               <h3>Servicios Profesionales (Abogados, Consultoras)</h3>
-              <ul>
+              <ul className='tree'>
                 <li>Inicio.</li>
                 <li>Áreas de práctica / Servicios.</li>
                 <li>Equipo de profesionales.</li>
@@ -387,12 +398,14 @@ export default function LaPazPage() {
                 <li>Reserva de cita (WhatsApp/Formulario).</li>
                 <li>Ubicación de la oficina.</li>
               </ul>
+    <div className="card-button-e">
               <a href="#">Ver ejemplo</a>
+              </div>
             </article>
 
             <article>
               <h3>Salud (Clínicas, Consultorios)</h3>
-              <ul>
+              <ul className='tree'>
                 <li>Inicio.</li>
                 <li>Especialidades médicas.</li>
                 <li>Staff médico.</li>
@@ -400,12 +413,14 @@ export default function LaPazPage() {
                 <li>Agendar consulta rápida.</li>
                 <li>Ubicación y horarios.</li>
               </ul>
+    <div className="card-button-e">
               <a href="#">Ver ejemplo</a>
+              </div>
             </article>
 
             <article>
               <h3>Tienda / Importadora</h3>
-              <ul>
+              <ul className='tree'>
                 <li>Inicio.</li>
                 <li>Catálogo de productos clasificados.</li>
                 <li>Marcas exclusivas.</li>
@@ -413,7 +428,9 @@ export default function LaPazPage() {
                 <li>Nosotros.</li>
                 <li>Contacto.</li>
               </ul>
+    <div className="card-button-e">
               <a href="#">Ver ejemplo</a>
+              </div>
             </article>
           </Card3D>
         </section>
@@ -500,7 +517,9 @@ export default function LaPazPage() {
               </p>
             </details>
 
+    <div className="card-button">
             <a href="/web-especializada">Ver toda la información de la web especializada</a>
+            </div>
           </Card3D>
         </section>
 
@@ -516,8 +535,13 @@ export default function LaPazPage() {
             </p>
 
             {/* Recuerda cambiar el href por tu enlace real de wa.me */}
+
+    <div className="card-button">
             <a href="#">Hablar por WhatsApp</a>
+            </div>
+    <div className="card-button">
             <a href="/web-especializada">Conocer la web especializada</a>
+            </div>
           </Card3D>
         </section>
 

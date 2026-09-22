@@ -100,7 +100,6 @@ white-space: nowrap;
   background: var(--color-card-bg );
   border-radius: 22px;
   padding: clamp(26px, 4vw, 44px);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0px 3px 6px var(--color-hero-card);
   position: relative;
 }
@@ -214,10 +213,4 @@ white-space: nowrap;
   color: var(--color-card-resultado);
 }
 
-.sobre-liriun .proceso-conteiner:not(header) :is(p, ul, dd) {
-  line-height: 1.04;
-  font-size: var(--fs-card-description);
-  color: var(--color-card-description);
-  padding-top: 0.5rem;
-}
 

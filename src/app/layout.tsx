@@ -10,6 +10,7 @@ import {
   heroFont,
   gontserratFont
 } from "../components/fonts";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -238,6 +239,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="">
         <Header2/>
       {children}
+        <Footer/>
       </body>
     </html>
   );

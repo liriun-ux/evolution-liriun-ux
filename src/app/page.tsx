@@ -1,6 +1,7 @@
 import { Card3D } from "@/animation/card3d";
 import ProcesoCanvas from "@/animation/ensamble";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Sitios web para negocios | LIRIUN-UX",
@@ -140,13 +141,16 @@ export default function Home() {
             LIRIUN-UX crea webs especializadas para pequeños negocios en La Paz, El Alto y toda Bolivia. Webs especializadas con SEO, AEO y estructura clara para presentar tu negocio, productos o servicios.
           </p>
 
+    <div className="card-button">
           <a href="#problema">
             Ver cómo funciona
           </a>
-
+    </div>
+    <div className="card-button">
           <a href="/web-especializada">
             Conocer la web especializada
           </a>
+    </div>
         </Card3D>
         </header>
 
@@ -157,18 +161,18 @@ export default function Home() {
       <h2>
         Tu negocio puede estar en redes y aun así tener información difícil de encontrar.
       </h2>
-    </header>
-
     <p>
       Las redes sociales permiten mostrar productos, servicios y comunicarte
       con tus clientes. Pero la información puede quedar distribuida entre
       publicaciones, perfiles y diferentes plataformas.
     </p>
+    </header>
+
 
     <div>
       <h3>Tu negocio puede tener</h3>
 
-      <ul>
+      <ul className="list">
         <li>Instagram.</li>
         <li>Facebook.</li>
         <li>WhatsApp.</li>
@@ -249,12 +253,12 @@ export default function Home() {
       <h2>
         Tu negocio puede tener un espacio propio para ser entendido.
       </h2>
-    </header>
-
     <p>
       Una web especializada puede reunir la información principal de tu negocio y
       presentarla de forma clara para las personas que buscan lo que ofreces.
     </p>
+    </header>
+
 
     <div>
       <article>
@@ -308,13 +312,13 @@ export default function Home() {
       <h2>
         Una web especializada pensada para tu negocio.
       </h2>
-    </header>
-
     <p>
       No creamos una plataforma solamente para que tu negocio tenga una página.
       La construimos para que la información pueda ser encontrada, comprendida
       y utilizada por quien la necesita.
     </p>
+    </header>
+
 
     <div>
       <article>
@@ -339,10 +343,11 @@ export default function Home() {
         </p>
       </article>
     </div>
-
-    <a href="/web-especializada">
+    <div className="card-button">
+    <Link href="/web-especializada">
       Conocer la web especializada estándar
-    </a>
+    </Link>
+    </div>
   </Card3D>
 </section>
 
@@ -423,9 +428,11 @@ export default function Home() {
       </li>
     </ol>
 
+    <div className="card-button">
     <a href="/proceso">
       Ver el proceso completo
     </a>
+    </div>
   </Card3D>
 </section>
 
@@ -479,9 +486,11 @@ export default function Home() {
       </article>
     </div>
 
+    <div className="card-button">
     <a href="/sobre-liriun-ux">
       Conocer LIRIUN-UX
     </a>
+    </div>
   </Card3D>
 </section>
 
@@ -502,52 +511,85 @@ export default function Home() {
     <article>
       <h3>Ejemplo: Pizzería</h3>
 
-      <ul>
+      <ul className="tree">
         <li>Inicio.</li>
-        <li>Menú.</li>
+        <li>Menú.
+            <ul>
+            <li>Plato 1</li>
+            <li>Plato 2</li>
+            <li>...</li>
+        </ul>
+        </li>
         <li>Promociones.</li>
         <li>Nosotros.</li>
         <li>Ubicación.</li>
         <li>WhatsApp.</li>
       </ul>
 
+    <div className="card-button-e">
       <a href="#">
         Ver ejemplo
       </a>
+      </div>
     </article>
 
     <article>
       <h3>Ejemplo: Academia</h3>
 
-      <ul>
+
+      <ul className="tree">
         <li>Inicio.</li>
-        <li>Cursos.</li>
+        <li>Cursos.
+
+            <ul>
+            <li>Curso 1</li>
+            <li>Curso 2</li>
+            <li>...</li>
+        </ul>
+            </li>
         <li>Metodología.</li>
         <li>Nosotros.</li>
         <li>Preguntas frecuentes.</li>
         <li>Contacto.</li>
       </ul>
 
+    <div className="card-button-e">
       <a href="#">
         Ver ejemplo
       </a>
+      </div>
     </article>
 
     <article>
       <h3>Ejemplo: Tienda</h3>
 
-      <ul>
+      <ul className="tree">
         <li>Inicio.</li>
-        <li>Productos.</li>
-        <li>Categorías.</li>
+        <li>Productos.
+
+            <ul>
+            <li>Producto 1</li>
+            <li>Producto 2</li>
+            <li>...</li>
+        </ul>
+            </li>
+        <li>Categorías.
+            <ul>
+            <li>Categoria 1</li>
+            <li>Categoria 2</li>
+            <li>...</li>
+        </ul>
+            </li>
         <li>Promociones.</li>
         <li>Nosotros.</li>
         <li>Contacto.</li>
       </ul>
 
+    <div className="card-button-e">
       <a href="#">
         Ver ejemplo
       </a>
+      </div>
     </article>
   </Card3D>
 </section>
@@ -690,10 +732,12 @@ export default function Home() {
         descubrimiento y comprensión.
       </p>
     </details>
-
+    
+    <div className="card-button">
     <a href="/web-especializada">
       Ver toda la información de la web especializada
     </a>
+    </div>
   </Card3D>
 </section>
 
@@ -711,13 +755,16 @@ export default function Home() {
       Te explicaremos cómo podría estructurarse su web especializada.
     </p>
 
+    <div className="card-button">
     <a href="#">
       Hablar por WhatsApp
     </a>
-
+    </div>
+    <div className="card-button">
     <a href="/web-especializada">
       Conocer la web especializada estándar
     </a>
+    </div>
   </Card3D>
 </section>
 

@@ -406,8 +406,8 @@ export default function ProcesoCanvas() {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '80vw',
-    height: '80vh',
+    width: '100vw',
+    height: '100vh',
     zIndex: 0,
     pointerEvents: 'auto',
   }}

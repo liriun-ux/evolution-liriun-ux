@@ -249,17 +249,20 @@ export default function SobreLiriunUx() {
 
 <section className="sobre-liriun-filosofia">
   <Card3D className="proceso-conteiner">
-    <header>
-      <h2>Nuestra filosofía</h2>
-    </header>
+<header>
+  <h2>Nuestra filosofía</h2>
+</header>
 
-    <blockquote>
-      <p>
-        Un sitio web no debería existir solamente para ser encontrado,
-        sino para ser entendido.
-      </p>
-    </blockquote>
-
+<figure>
+  <blockquote>
+    <p className=" lopl ">
+      Un sitio web no debería existir solamente para ser encontrado,
+      sino para ser entendido.
+    </p>
+  </blockquote>
+  <figcaption>— <cite>Liriun-UX</cite></figcaption>
+</figure>
+    
     <p>
       Para LIRIUN-UX, un sitio web debe permitir comprender el negocio,
       encontrar la información necesaria y realizar una acción sin
@@ -303,12 +306,12 @@ export default function SobreLiriunUx() {
   <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Qué hace bueno a un sitio web?</h2>
-    </header>
-
     <p>
       Un buen sitio web no necesita impresionar al usuario para cumplir
       su propósito.
     </p>
+    </header>
+
 
     <div>
       <article>
@@ -352,12 +355,12 @@ export default function SobreLiriunUx() {
   <Card3D className="proceso-conteiner">
     <header>
       <h2>¿Por qué LIRIUN-UX?</h2>
-    </header>
-
     <p>
       El nombre combina dos ideas que representan nuestra forma de construir:
       Linux y UX.
     </p>
+    </header>
+
 
     <p>
       Linux representa una base potente y eficiente, mientras que UX,
@@ -378,38 +381,38 @@ export default function SobreLiriunUx() {
   <Card3D className="proceso-conteiner">
     <header>
       <h2>Tecnología al servicio del sitio</h2>
-    </header>
-
     <p>
       Utilizamos tecnologías web actuales como base estructural para crear
       sitios rápidos, modernos y mantenibles.
     </p>
+    </header>
+
 
     <div>
       <article>
         <h3>Creación</h3>
-        <p>
+        <p className="list">
           Next.js, TSX, HTML, CSS y Tailwind CSS.
         </p>
       </article>
 
       <article>
         <h3>Gestión</h3>
-        <p>
+        <p className="list">
           GitHub.
         </p>
       </article>
 
       <article>
         <h3>Despliegue</h3>
-        <p>
+        <p className="list">
           Vercel.
         </p>
       </article>
 
       <article>
         <h3>Dominio .BO</h3>
-        <p>
+        <p className="list">
           NIC.BO.
         </p>
       </article>

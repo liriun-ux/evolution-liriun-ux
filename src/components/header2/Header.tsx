@@ -142,36 +142,96 @@ export default function Header2() {
                 <div className="nav-base--content">
                   {/* PARTE IZQUIERDA */}
                   <nav className="nav-base--left" aria-label="Navegación principal">
-                    <NavLinks
-                      links={NAV_LINKS}
-                      pathname={pathname}
-                      getClassName={(active) =>
-                        `res-base--button nav-base-section-button ${active ? "active" : ""}`
-                      }
-                      onLinkClick={() => setIsOpen(false)}
-                    />
+            <ul className="footer-nav-list" onClick={() => setIsOpen((prev) => !prev)}>
+              <li>
+                <Link href="/" className="footer-nav-link">
+                  Inicio
+                </Link>
+              </li>
+              <li>
+                <Link href="/web-especializada" className="footer-nav-link">
+                  web especializada
+                </Link>
+              </li>
+              <li>
+                <Link href="/proceso" className="footer-nav-link">
+                  proceso
+                </Link>
+              </li>
+              <li>
+                <Link href="/sobre-liriun-ux" className="footer-nav-link">
+                  sobre liriun
+                </Link>
+              </li>
+            </ul>
                   </nav>
 
                   {/* PARTE DERECHA */}
                   <div className="nav-base--right">
-                    <Description
-                      className="res-base--description"
-                      text="Un sitio web bien diseñado es la base de todo lo que viste aquí: SEO, IA, redes sociales y más. Descubre cómo LIRIUN-UX puede construir esa base sólida para tu marca."
-                      highlights={[{ text: "sitio web" }, { text: "LIRIUN-UX" }]}
-                    />
-                    <ButtonVerMas title="Visitar LIRIUN-UX" href="https://www.liriun-ux.tecnologia.bo" />
+          <div className="footer-cta">
+            <p className="footer-cta-text">
+              ¿Listo para empezar tu próximo proyecto?
+            </p>
+            <Link href="/contacto" className="footer-cta-button">
+              Contactar ahora
+            </Link>
+          </div>
                   </div>
 
-                  {/* Footer */}
-                  <footer className="nav-base--footer">
-                    <small className="nav-base--reserve display">© LIRIUN-UX</small>
-                    <small className="nav-base--create-movil display">© creado por LIRIUN-UX</small>
-                    <nav className="nav-base--icons" aria-label="Redes sociales y sitio web">
-                      <SocialIcons />
-                    </nav>
-                    <small className="nav-base--create display">Creado por LIRIUN-UX</small>
-                  </footer>
+
                 </div>
+
+        <hr className="footer-divider" />
+
+
+                  {/* Footer */}
+
+        {/* --- SECCIÓN INFERIOR --- */}
+        <div className="footer-bottom">
+          
+          {/* Span Izquierdo */}
+          <span className="footer-span-left">
+            © {new Date().getFullYear()} LIRIUN-UX. Todos los derechos reservados.
+          </span>
+
+          {/* Íconos de Redes Sociales (Centro) */}
+          <div className="footer-social-icons">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="footer-social-icon"
+            >
+            F
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              className="footer-social-icon"
+            >
+            T
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="footer-social-icon"
+            >
+            I
+            </a>
+          </div>
+
+          {/* Span Derecho */}
+          <span className="footer-span-right">
+            No pierdas mas clientes
+          </span>
+
+        </div>
+
               </section>
             </div>
           </div>

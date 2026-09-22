@@ -169,7 +169,9 @@ export default function Proceso() {
   <span className="">PROCESO DE TRABAJO</span>
 
   {/* Contenido en la esquina inferior izquierda (Fila 3, Columna 1 o 1 y 2) */}
-  <Card3D className="hero-content">
+  <Card3D className="hero-content" 
+
+  >
     <h1>¿Cómo diseñamos y desarrollamos tu sitio web paso a paso?</h1>
     <p>
       Desde la estrategia inicial de tu negocio hasta la publicación final. 
@@ -220,7 +222,7 @@ export default function Proceso() {
     <div>
       <h3>Conocemos</h3>
 
-      <ul>
+      <ul className="list">
         <li>El negocio en general.</li>
         <li>Sus productos o servicios.</li>
         <li>Cómo vende y cómo contacta con sus clientes.</li>
@@ -235,7 +237,7 @@ export default function Proceso() {
     <div>
       <h3>También recopilamos</h3>
 
-      <ul>
+      <ul className="list">
         <li>Fotografías y videos del negocio.</li>
         <li>Fotografías y precios de productos.</li>
         <li>Ubicación.</li>
@@ -287,7 +289,7 @@ export default function Proceso() {
     <div>
       <h3>Organizamos</h3>
 
-      <ul>
+      <ul className="list">
         <li>La información general del negocio.</li>
         <li>Productos y servicios.</li>
         <li>Información relevante para sus clientes.</li>
@@ -344,7 +346,7 @@ export default function Proceso() {
     <div>
       <h3>Definimos</h3>
 
-      <ul>
+      <ul className="list">
         <li>Qué páginas necesita el sitio.</li>
         <li>Las rutas y URLs.</li>
         <li>La jerarquía de las páginas.</li>
@@ -397,7 +399,7 @@ export default function Proceso() {
     <div>
       <h3>Definimos</h3>
 
-      <ul>
+      <ul className="list">
         <li>Paleta de colores.</li>
         <li>Tipografías.</li>
         <li>Composición.</li>
@@ -462,7 +464,7 @@ export default function Proceso() {
     <div>
       <h3>Construimos</h3>
 
-      <ul>
+      <ul className="list">
         <li>Las páginas y componentes del sitio.</li>
         <li>La estructura definida.</li>
         <li>Los productos y la información.</li>
@@ -530,7 +532,7 @@ export default function Proceso() {
     <div>
       <h3>Revisamos</h3>
 
-      <ul>
+      <ul className="list">
         <li>Contenido.</li>
         <li>Productos y precios.</li>
         <li>Imágenes.</li>
@@ -636,7 +638,7 @@ export default function Proceso() {
     <div>
       <h3>Entregamos</h3>
 
-      <ul>
+      <ul className="list">
         <li>Acceso a GitHub.</li>
         <li>Acceso a Vercel.</li>
         <li>Acceso al DNS.</li>
@@ -704,7 +706,7 @@ export default function Proceso() {
         cambios.
       </p>
 
-      <ul>
+      <ul className="list">
         <li>Cambios de textos.</li>
         <li>Cambios de títulos.</li>
         <li>Ajustes de botones.</li>
@@ -768,10 +770,12 @@ export default function Proceso() {
       Cuéntanos qué hace tu negocio y te explicaremos cómo podemos construir
       su sitio web.
     </p>
+    <div className="card-button">
 
     <a href="#">
       Hablar por WhatsApp
     </a>
+    </div>
 
   </Card3D>
 </section>

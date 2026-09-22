@@ -122,13 +122,16 @@ export default function ElAlto() {
             Diseñamos y desarrollamos sitios web para negocios, tiendas, talleres y servicios en El Alto. Páginas claras, rápidas y estructuradas con SEO y AEO para que te encuentren en Google y mapas.
           </p>
 
+    <div className="card-button">
           <a href="#problema">
             Ver cómo ayuda a tu negocio
           </a>
-
+    </div>
+    <div className="card-button">
           <a href="/web-especializada">
             Conocer la web especializada
           </a>
+          </div>
           </Card3D>
         </header>
 
@@ -139,11 +142,11 @@ export default function ElAlto() {
       <h2>
         Tu negocio en El Alto puede estar en Facebook o TikTok y aun así perder clientes que buscan comprar hoy.
       </h2>
-    </header>
-
     <p>
       Las redes sociales son excelentes para publicar videos y fotos cotidianas. Sin embargo, en El Alto los clientes buscan respuestas rápidas: dirección exacta, horarios, catálogo y precios antes de salir a comprar o mandar un mensaje.
     </p>
+    </header>
+
 
     <div>
       <h3>Tu negocio puede tener</h3>
@@ -219,11 +222,11 @@ export default function ElAlto() {
       <h2>
         Dale a tu negocio en El Alto un espacio web formal y fácil de encontrar.
       </h2>
+    <p>
+      Un sitio web (lo que nosotros llamamos una <strong style={{color: "#aaf"}}>web especializada</strong>) no es solo para grandes empresas. Es la herramienta esencial para que cualquier negocio o taller en El Alto destaque y genere confianza.
+    </p>
     </header>
 
-    <p>
-      Un sitio web (lo que nosotros llamamos una <strong>web especializada</strong>) no es solo para grandes empresas. Es la herramienta esencial para que cualquier negocio o taller en El Alto destaque y genere confianza.
-    </p>
 
     <div>
       <article>
@@ -269,11 +272,11 @@ export default function ElAlto() {
       <h2>
         Sitios web pensados para el comercio y servicios de El Alto.
       </h2>
-    </header>
-
     <p>
       No creamos páginas genéricas ni complejas. Diseñamos webs especializadas funcionales que resuelven las dudas de tus clientes en El Alto y aceleran tus ventas.
     </p>
+    </header>
+
 
     <div>
       <article>
@@ -298,9 +301,11 @@ export default function ElAlto() {
       </article>
     </div>
 
+    <div className="card-button">
     <a href="/web-especializada">
       Conoce la web especializada
     </a>
+    </div>
   </Card3D>
 </section>
 
@@ -352,9 +357,11 @@ export default function ElAlto() {
       </li>
     </ol>
 
+    <div className="card-button">
     <a href="/proceso">
       Ver el proceso completo
     </a>
+    </div>
   </Card3D>
 </section>
 
@@ -366,11 +373,11 @@ export default function ElAlto() {
       <h2>
         Desarrollo web con entendimiento local en El Alto
       </h2>
-    </header>
-
     <p>
       LIRIUN-UX ofrece un servicio especializado de creación de sitios web (webs especializadas) para negocios en La Paz y El Alto.
     </p>
+    </header>
+
 
     <div>
       <article>
@@ -391,9 +398,11 @@ export default function ElAlto() {
       </article>
     </div>
 
+    <div className="card-button">
     <a href="/sobre-liriun-ux">
       Conocer LIRIUN-UX
     </a>
+    </div>
   </Card3D>
 </section>
 
@@ -412,38 +421,75 @@ export default function ElAlto() {
 
     <article>
       <h3>Ejemplo: Gastronomía o Restaurante</h3>
-      <ul>
+      <ul className='tree'>
         <li>Inicio.</li>
-        <li>Menú y platos del día.</li>
-        <li>Ubicación y referencias (ej. La Ceja / Satélite).</li>
+        <li>Menú 
+            <ul>
+              <li>Plato 1</li>
+              <li>Plato 2</li>
+              <li>Plato ...</li>
+            </ul>
+        </li>
+        <li>Ubicación y referencias.
+            <ul>
+              <li>Satélite</li>
+              <li>La Ceja</li>
+              <li>...</li>
+            </ul>
+        </li>
         <li>Horarios de atención.</li>
         <li>Pedidos por WhatsApp.</li>
       </ul>
+    <div className="card-button-e">
       <a href="#">Ver ejemplo</a>
+      </div>
     </article>
 
     <article>
       <h3>Ejemplo: Servicios Técnicos o Talleres</h3>
-      <ul>
+      <ul className='tree'>
         <li>Inicio.</li>
-        <li>Servicios e instalaciones.</li>
+        <li>Servicios e instalaciones.
+            <ul>
+                <li>Servicio 1</li>
+                <li>Servicio 2</li>
+                <li>Servicio ...</li>
+            </ul>
+        </li>
         <li>Trabajos realizados / Garantía.</li>
         <li>Ubicación del taller.</li>
         <li>Cotización rápida por WhatsApp.</li>
       </ul>
+    <div className="card-button-e">
       <a href="#">Ver ejemplo</a>
+      </div>
     </article>
 
     <article>
       <h3>Ejemplo: Comercializadora o Venta de Productos</h3>
-      <ul>
-        <li>Inicio.</li>
-        <li>Catálogo de productos.</li>
-        <li>Precios y ofertas.</li>
-        <li>Envíos y entregas en El Alto / La Paz.</li>
+      <ul className='tree'>
+        <li>Inicio</li>
+        <li>Catálogo de productos
+
+            <ul>
+              <li>Producto 1</li>
+              <li>Producto 2</li>
+              <li>Producto ...</li>
+            </ul>
+        </li>
+        <li>Precios y ofertas</li>
+        <li>Envíos y entregas
+            <ul>
+              <li>El Alto</li>
+              <li>La Paz</li>
+              <li>...</li>
+            </ul>
+        </li>
         <li>Contacto.</li>
       </ul>
+    <div className="card-button-e">
       <a href="#">Ver ejemplo</a>
+      </div>
     </article>
   </Card3D>
 </section>
@@ -520,9 +566,11 @@ export default function ElAlto() {
       <p>Ningún servicio puede garantizar el primer lugar de forma automática. Sin embargo, estructuramos el sitio con las mejores prácticas SEO y AEO para optimizar al máximo su visibilidad en búsquedas locales.</p>
     </details>
 
+    <div className="card-button">
     <a href="/web-especializada">
       Ver toda la información de la web especializada
     </a>
+    </div>
   </Card3D>
 </section>
 
@@ -540,13 +588,16 @@ export default function ElAlto() {
       Escríbenos y cuéntanos sobre tu negocio. Te explicaremos sin compromiso cómo organizar tu información para empezar a recibir más clientes.
     </p>
 
+    <div className="card-button">
     <a href="#">
       Hablar por WhatsApp
     </a>
-
+    </div>
+    <div className="card-button">
     <a href="/web-especializada">
       Conocer la web especializada
     </a>
+    </div>
   </Card3D>
 </section>
 

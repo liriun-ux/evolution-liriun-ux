@@ -19,14 +19,6 @@
   --color-card-resultado: #aaaaff; /* usada en: .proceso-conteiner dt (color) */
   
 
-  /* ===== Tamaños de texto usados en este archivo ===== */
-  --fs-sobre-titulo: clamp(3.5rem, 9vw, 9rem); 
-
-  --fs-card-step: 11px; 
-  --fs-card-title: clamp(30px, 5.4vw, 52px); 
-  --fs-card-description-principal: clamp(12px, 1.8vw, 14px); 
-  --fs-card-subtitulo: clamp(13px, 1.8vw, 16px); 
-  --fs-card-description: clamp(16px, 1.6vw, 18px); 
 
 
 }
@@ -95,9 +87,12 @@
   background: var(--color-card-bg );
   border-radius: 22px;
   padding: clamp(26px, 4vw, 44px);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0px 3px 6px var(--color-hero-card);
   position: relative;
+
+  transition:transform 0.3s ease-out;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
 .hero-content  h1 {
@@ -191,8 +186,8 @@
 
 .proceso-conteiner :is(h3,dt) {
   border-top: 1px solid var(--color-card-line-separator);
-  padding-top: 0.7rem;
-  margin-top: 0.3rem;
+  padding-top: 0.0rem;
+  margin-top: 0.0rem;
   text-transform: uppercase;
 
   font-family: var(--font-gontserrat);

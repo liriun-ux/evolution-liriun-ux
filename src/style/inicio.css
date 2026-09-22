@@ -46,19 +46,19 @@
 
 /*NOTE: hero*/
 .inicio-hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 1.5rem;
-  width: 100%;
-  height: max-content;
-  min-height: 85vh;
-  box-sizing: border-box;
-  align-items: end;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  padding: 10vh 2vw;
+	box-sizing: border-box;
+	z-index: 1;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+	align-items: end;
+	gap: 1.5rem;
+	width: 100%;
+	height: max-content;
+	min-height: 80vh;
+	padding: 10vh 2vw;
+	display: grid;
+	position: relative;
+	overflow: hidden;
 }
 
 @media (max-width: 880px) {
@@ -101,7 +101,6 @@
   background: var(--color-card-bg );
   border-radius: 22px;
   padding: clamp(26px, 4vw, 44px);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0px 3px 6px var(--color-hero-card);
   position: relative;
 }
@@ -137,13 +136,13 @@
 }
 
 .inicio section:nth-child(odd) .proceso-conteiner {
-  margin-left: auto;
-  margin-right: 0;
+  margin-right: auto;
+  margin-left: 0;
 }
 
 .inicio section:nth-child(even) .proceso-conteiner {
-  margin-right: auto;
-  margin-left: 0;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 /* CARD*/
@@ -165,6 +164,7 @@
   padding: clamp(26px, 4vw, 44px);
   margin-top: 1.6em;
   box-shadow: 0 5px 15px var(--color-card-shadow);
+  gap:0.7rem !important;
 }
 
 .proceso-conteiner h2 {
