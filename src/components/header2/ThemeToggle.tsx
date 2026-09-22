@@ -6,36 +6,15 @@ import { useEffect, useState } from "react";
 export default function ThemeToggle() {
   const [dark, setDark] = useState(false);
 
+  // Solo sincronizamos el estado local con la clase que ya puso el script
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-
-    if (savedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-      setDark(true);
-    } else if (savedTheme === "light") {
-      document.documentElement.classList.remove("dark");
-      setDark(false);
-    } else {
-      // Detectar preferencia del sistema
-      const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-
-      document.documentElement.classList.toggle("dark", prefersDark);
-      setDark(prefersDark);
-    }
+    setDark(document.documentElement.classList.contains("dark"));
   }, []);
 
   const toggleTheme = () => {
     const newDark = !dark;
-
     document.documentElement.classList.toggle("dark", newDark);
-
-    localStorage.setItem(
-      "theme",
-      newDark ? "dark" : "light"
-    );
-
+    localStorage.setItem("theme", newDark ? "dark" : "light");
     setDark(newDark);
   };
 
@@ -46,11 +25,7 @@ export default function ThemeToggle() {
       aria-label={dark ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
       className="header__buttonI"
     >
-  {dark ? (
-        <MoonIcon/> 
-  ) : (
-        <MoonIcon/> 
-  )}
+      <MoonIcon />
     </button>
   );
 }

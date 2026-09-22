@@ -12,6 +12,22 @@ import {
 } from "../components/fonts";
 import Footer from "@/components/footer";
 
+const themeScript = `
+  (function() {
+    try {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (e) {}
+  })();
+`;
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -232,9 +248,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       className={`${gontserratFont.variable} ${heroFont.variable} ${serifFont.variable} ${sansFont.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+suppressHydrationWarning
+      >
     <head>
 <script  type="application/ld+json"  dangerouslySetInnerHTML={{    __html: JSON.stringify(jsonLd),  }}/>
+<script dangerouslySetInnerHTML={{ __html: themeScript }} />
     </head>
       <body className="">
         <Header2/>
