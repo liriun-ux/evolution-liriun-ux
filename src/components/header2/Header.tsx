@@ -7,6 +7,10 @@ import Image from "next/image";
 import Description from "../header/description";
 import ButtonVerMas from "../header/button-ver-mas";
 import ThemeToggle from "./ThemeToggle";
+import FacebookIcon from "@/icons/facebook";
+import TikTokAltIcon from "@/icons/tiktokalt";
+import InstagramIcon from "@/icons/instagram";
+import WhatsAppIcon from "@/icons/WhatsAppIcon";
 
 // --- Datos de navegación centralizados: un solo lugar para editar los links ---
 const NAV_LINKS = [
@@ -122,8 +126,8 @@ export default function Header2() {
         {/* 3. DERECHA: Button Contact */}
         <div className={`header__action z-80 ${isVisible ? "header__action--visible" : "header__action--hidden"}`}>
             <ThemeToggle/>
-          <Link href="#contacto" className="header__button z-80">
-            Contacto
+          <Link href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?" className="header__button z-80">
+            <WhatsAppIcon className="icon-line"/> Contacto 
           </Link>
           <button
             className="header__link button-menu z-80"
@@ -170,10 +174,10 @@ export default function Header2() {
                   <div className="nav-base--right">
           <div className="footer-cta">
             <p className="footer-cta-text">
-              ¿Listo para empezar tu próximo proyecto?
+              ¿Cómo hago para que mi negocio aparezca en Google?
             </p>
-            <Link href="/contacto" className="footer-cta-button">
-              Contactar ahora
+            <Link href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?" className="footer-cta-button">
+              <WhatsAppIcon className="icon-line"/> Contactar ahora
             </Link>
           </div>
                   </div>
@@ -197,31 +201,31 @@ export default function Header2() {
           {/* Íconos de Redes Sociales (Centro) */}
           <div className="footer-social-icons">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/liriun.ux.agenci"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
               className="footer-social-icon"
             >
-            F
+            <FacebookIcon/>
             </a>
             <a
-              href="https://twitter.com"
+              href="https://www.tiktok.com/@liriunux"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Twitter"
+              aria-label="Tiktok"
               className="footer-social-icon"
             >
-            T
+            <TikTokAltIcon/>
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/liriun.ux/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
               className="footer-social-icon"
             >
-            I
+            <InstagramIcon/>
             </a>
           </div>
 

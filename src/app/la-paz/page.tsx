@@ -537,7 +537,8 @@ export default function LaPazPage() {
             {/* Recuerda cambiar el href por tu enlace real de wa.me */}
 
     <div className="card-button">
-            <a href="#">Hablar por WhatsApp</a>
+    <a href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?">
+            Hablar por WhatsApp</a>
             </div>
     <div className="card-button">
             <a href="/web-especializada">Conocer la web especializada</a>

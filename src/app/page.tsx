@@ -1,5 +1,6 @@
 import { Card3D } from "@/animation/card3d";
 import ProcesoCanvas from "@/animation/ensamble";
+import { CenteredLink } from "@/components/CentradeLink";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -155,7 +156,7 @@ export default function Home() {
         </header>
 
 
-<section id="problema" className="inicio-problema">
+<section  className="inicio-problema">
   <Card3D className="proceso-conteiner">
     <header>
       <h2>
@@ -188,9 +189,9 @@ export default function Home() {
 </section>
 
 
-<section className="inicio-demostracion">
-  <Card3D className="proceso-conteiner">
-    <header>
+<section className="inicio-demostracion" id="problema">
+  <Card3D className="proceso-conteiner" >
+    <header >
       <h2>
         ¿Qué ocurre cuando alguien busca tu negocio?
       </h2>
@@ -247,7 +248,7 @@ export default function Home() {
 </section>
 
 
-<section className="inicio-oportunidad">
+<section className="inicio-oportunidad" >
   <Card3D className="proceso-conteiner">
     <header>
       <h2>

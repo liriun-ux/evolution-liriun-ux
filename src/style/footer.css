@@ -110,6 +110,7 @@
   font-size: var(--fs-card-description);
   color: var(--color-footer-description);
   padding-top: 0.3rem;
+  text-align: center;
 }
 
 .footer-cta-button {
@@ -137,6 +138,7 @@
   height: max-content;
   margin-top: 1em;
   margin-bottom: 1em;
+  padding-left: 2rem;
   transition:
     transform var(--header-transition-duration) var(--header-transition-ease),
     opacity var(--header-transition-duration) var(--header-transition-ease);
@@ -193,11 +195,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 0.2s ease;
+  /* transition: color 0.2s ease; */
+  transition:    transform 0.3s ease,    opacity 0.3s ease, color 0.2s ease;
+  border-radius: 4px;
 }
 
 .footer-social-icon:hover {
   /* color: #ffffff; */
+    /* background: #000; */
+    color: #fff;
+    transform: translateY(-3px);
 }
 
 .footer-icon-svg {

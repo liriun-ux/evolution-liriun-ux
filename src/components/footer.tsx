@@ -1,5 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import FacebookIcon from '@/icons/facebook';
+import TikTokIcon from '@/icons/tiktok';
+import InstagramIcon from '@/icons/instagram';
+import TikTokAltIcon from '@/icons/tiktokalt';
+import WhatsAppIcon from '@/icons/WhatsAppIcon';
 
 export const Footer: React.FC = () => {
   return (
@@ -38,10 +43,11 @@ export const Footer: React.FC = () => {
           {/* Lado Derecho: Mensaje y Botón */}
           <div className="footer-cta">
             <p className="footer-cta-text">
-              ¿Listo para empezar tu próximo proyecto?
-            </p>
-            <Link href="/contacto" className="footer-cta-button">
-              Contactar ahora
+              ¿Cómo hago para que mi negocio aparezca en Google?
+              </p>
+            <Link href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?" className="footer-cta-button">
+              <WhatsAppIcon className="icon-line"/> Contactar ahora
+              
             </Link>
           </div>
 
@@ -61,31 +67,31 @@ export const Footer: React.FC = () => {
           {/* Íconos de Redes Sociales (Centro) */}
           <div className="footer-social-icons">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/liriun.ux.agenci"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
               className="footer-social-icon"
             >
-            F
+            <FacebookIcon/>
             </a>
             <a
-              href="https://twitter.com"
+              href="https://www.tiktok.com/@liriunux"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Twitter"
+              aria-label="Tiktok"
               className="footer-social-icon"
             >
-            T
+            <TikTokAltIcon/>
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/liriun.ux/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
               className="footer-social-icon"
             >
-            I
+            <InstagramIcon/>
             </a>
           </div>
 

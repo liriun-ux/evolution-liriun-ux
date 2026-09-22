@@ -772,7 +772,7 @@ export default function Proceso() {
     </p>
     <div className="card-button">
 
-    <a href="#">
+    <a href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?">
       Hablar por WhatsApp
     </a>
     </div>

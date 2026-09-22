@@ -1,5 +1,7 @@
 import { Card3D } from "@/animation/card3d";
+import WhatsAppIcon from "@/icons/WhatsAppIcon";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Web Especializada",
@@ -780,7 +782,7 @@ export default function WebEspecializada() {
       </p>
 
       <p>
-        Oferta válida hasta el <span style={{ color: "#aff"}}>10 de octubre.</span>
+        Oferta válida hasta el <span style={{ color: "var(--color-card-step)"}}>10 de octubre.</span>
       </p>
     </div>
 
@@ -801,6 +803,11 @@ export default function WebEspecializada() {
       Los desarrollos que salgan del alcance estándar pueden requerir un costo
       adicional.
     </p>
+
+            <Link href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?" className="footer-cta-button w-max" >
+              <WhatsAppIcon className="icon-line"/> Contactar ahora
+              
+            </Link>
   </Card3D>
 </section>
 
@@ -872,7 +879,7 @@ export default function WebEspecializada() {
     </p>
 
     <div className="card-button">
-    <a href="#">
+    <a href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?">
       Hablar por WhatsApp
     </a>
     </div>
