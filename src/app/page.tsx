@@ -134,13 +134,13 @@ export default function Home() {
 
     <Card3D className="hero-content">
           <h1>
-            No pierdas clientes por no estar donde te buscan.
-            ¿Pueden encontrarlo y entenderlo?
+            Cada día miles de personas buscan lo que vendes. <br/>
+               <strong> ¿Tus productos ya están en internet?</strong>
           </h1>
 
           <p>
-            LIRIUN-UX crea webs especializadas para pequeños negocios en La Paz, El Alto y toda Bolivia. Webs especializadas con SEO, AEO y estructura clara para presentar tu negocio, productos o servicios.
-          </p>
+            Pon tu negocio a la vista de todos. Liriun-UX posiciona tus productos en Google y agentes de IA para que te encuentren rápido.
+                </p>
 
     <div className="card-button">
           <a href="#problema">
@@ -156,193 +156,211 @@ export default function Home() {
         </header>
 
 
-<section  className="inicio-problema">
+<section  className="inicio-problema" id="problema">
   <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Tu negocio puede estar en redes y aun así tener información difícil de encontrar.
-      </h2>
+<header>
+    <h2>
+      El proceso por el que pierdes clientes hoy.
+    </h2>
     <p>
-      Las redes sociales permiten mostrar productos, servicios y comunicarte
-      con tus clientes. Pero la información puede quedar distribuida entre
-      publicaciones, perfiles y diferentes plataformas.
+      Cuando un cliente necesita un producto o servicio, lo primero que hace es
+      buscarlo en internet.<br/> Si tu negocio no aparece de forma clara, esa oportunidad
+      se pierde en cuestión de segundos.
     </p>
-    </header>
+  </header>
 
+  <div>
+    <h3>Proceso</h3>
 
-    <div>
-      <h3>Tu negocio puede tener</h3>
+    <ul className="list">
+      <li>Un cliente busca tu producto o servicio en internet.</li>
+      <li>Tu negocio no aparece entre los resultados de búsqueda.</li>
+      <li>El cliente encuentra a tu competencia y le compra a ellos.</li>
+      <li>Pierdes una venta.</li>
+      <li>Pierdes un cliente.</li>
+    </ul>
+  </div>
 
-      <ul className="list">
-        <li>Instagram.</li>
-        <li>Facebook.</li>
-        <li>WhatsApp.</li>
-        <li>Ubicación.</li>
-      </ul>
-    </div>
-
-    <p>
-      Pero ¿dónde encuentra una persona toda la información que necesita
-      cuando busca tu negocio, un producto o un servicio?
-    </p>
+  <p>
+    ¿Cuántos clientes crees que tiene tu competencia  solo porque
+    están en internet?<br/><br/>
+    ¿Cuántos clientes crees que estás perdiendo hoy, solo
+    porque no estás en internet?
+  </p>
   </Card3D>
 </section>
 
 
-<section className="inicio-demostracion" id="problema">
+<section className="inicio-demostracion" >
   <Card3D className="proceso-conteiner" >
-    <header >
-      <h2>
-        ¿Qué ocurre cuando alguien busca tu negocio?
-      </h2>
+<header>
+    <h2>
+      Publicar en redes o responder WhatsApp no siempre es suficiente.
+    </h2>
+    <p>
+      Tal vez ya subes fotos o contestes mensajes, pero las redes cambian
+      rápido y la información se pierde. Cuando un cliente realmente quiere
+      comprar, no quiere navegar por decenas de publicaciones para saber tus
+      precios, horarios o catálogo.
+    </p>
+  </header>
 
-      <p>
-        Imagina que una persona necesita exactamente lo que tu negocio ofrece.
-      </p>
-    </header>
+  <div>
+    <h3>Lo que busca un cliente cuando quiere comprar ya:</h3>
 
-    <div>
-      <h3>La búsqueda</h3>
+    <ul className="list">
+      <li>Ver tu catálogo de productos organizado y actualizado.</li>
+      <li>Conocer tus precios, horarios y ubicación en segundos.</li>
+      <li>Tener una respuesta inmediata sin esperar a que le contesten un mensaje.</li>
+      <li>Sentir la confianza de tener toda la información que nesesita al alcance.</li>
+    </ul>
+  </div>
 
-      <p>
-        Busca un producto, un servicio, un negocio o un local en internet.
-      </p>
-    </div>
-
-    <div>
-      <h3>La información</h3>
-
-      <p>
-        Necesita saber qué ofrece el negocio, cuánto cuesta, dónde está,
-        cómo funciona y cómo puede contactarlo.
-      </p>
-    </div>
-
-    <div>
-      <h3>La decisión</h3>
-
-      <p>
-        Con la información necesaria puede decidir si contacta, compra,
-        visita o continúa buscando.
-      </p>
-    </div>
-
-    <div>
-      <h3>Cuando la información está dispersa</h3>
-
-      <p>
-        Puede tener que revisar publicaciones, perfiles, historias o
-        diferentes plataformas para encontrar lo que necesita.
-      </p>
-    </div>
-
-    <div>
-      <h3>Cuando la información está organizada</h3>
-
-      <p>
-        Puede encontrar en un solo lugar la información principal del negocio,
-        sus productos o servicios, su ubicación y sus medios de contacto.
-      </p>
-    </div>
+  <p>
+    Cuando no facilitas esta información, el cliente no espera: busca a otro que
+    se la dé al instante.
+  </p>
   </Card3D>
 </section>
 
 
 <section className="inicio-oportunidad" >
   <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Tu negocio puede tener un espacio propio para ser entendido.
-      </h2>
+<header>
+    <h2>
+      Un sitio web es tu propio espacio digital abierto las 24 horas.
+    </h2>
     <p>
-      Una web especializada puede reunir la información principal de tu negocio y
-      presentarla de forma clara para las personas que buscan lo que ofreces.
+      Es la herramienta central que reúne, organiza y presenta toda la
+      información de tu negocio en un solo lugar.<br/> Sirve para que cualquier
+      persona que busque lo que vendes pueda encontrarlo, entenderlo y comprarte
+      de forma rápida y sencilla.
     </p>
-    </header>
+  </header>
 
+    <article>
+      <h3>Visibilidad permanente <br/>(Estar en internet)</h3>
+      <p>
+        Tu negocio deja de ser invisible. Tendrás un lugar propio disponible
+        siempre para que miles de personas te encuentren al buscar en internet.
+      </p>
+    </article>
 
-    <div>
-      <article>
-        <h3>Ser encontrado</h3>
+    <article>
+      <h3>Claridad inmediata <br/>(Ser entendido)</h3>
+      <p>
+        Organiza tus productos, servicios, precios y catálogo de forma sencilla
+        para que tus clientes entiendan en segundos qué vendes y por qué elegirte.
+      </p>
+    </article>
 
-        <p>
-          Tu negocio cuenta con un espacio propio disponible en internet.
-        </p>
-      </article>
+    <article>
+      <h3>Presencia en Google y Agentes de IA</h3>
+      <p>
+        Permite que tu información esté optimizada para que motores de búsqueda
+        como Google y nuevos asistentes de Inteligencia Artificial recomienden
+        tu negocio.
+      </p>
+    </article>
 
-      <article>
-        <h3>Ser entendido</h3>
+    <article>
+      <h3>Ventas y contactos directos</h3>
+      <p>
+        Centraliza botones a WhatsApp, llamadas, ubicación en mapa y redes
+        sociales para convertir a los visitantes interesados en clientes reales.
+      </p>
+    </article>
 
-        <p>
-          La información se organiza para que las personas puedan comprender
-          qué hace tu negocio y qué ofrece.
-        </p>
-      </article>
-
-      <article>
-        <h3>Facilitar el contacto</h3>
-
-        <p>
-          La web especializada puede mostrar WhatsApp, formularios, redes sociales y otros
-          medios de contacto.
-        </p>
-      </article>
-
-      <article>
-        <h3>Facilitar la visita</h3>
-
-        <p>
-          La ubicación del negocio puede estar disponible de forma clara para
-          quien quiera visitarlo.
-        </p>
-      </article>
-    </div>
-
-    <p>
-      Además, la información puede estructurarse siguiendo buenas prácticas
-      para facilitar su descubrimiento y comprensión por buscadores y sistemas
-      de IA.
-    </p>
+  <p>
+    Tener un sitio web convierte las búsquedas de internet en oportunidades
+    reales de ventas para tu negocio.
+  </p>
   </Card3D>
 </section>
 
 
 <section className="inicio-solucion">
   <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Una web especializada pensada para tu negocio.
-      </h2>
+<header>
+    <h2>
+      Liriun-UX hace que tu negocio sea fácil de encontrar y entender en internet
+    </h2>
     <p>
-      No creamos una plataforma solamente para que tu negocio tenga una página.
-      La construimos para que la información pueda ser encontrada, comprendida
-      y utilizada por quien la necesita.
+      Solucionamos la falta de clientes haciéndote visible donde todos buscan hoy.<br/>
+      Nos encargamos de crear el sitio web de tu negocio para que no vuelvas a
+      perder una venta por no estar en internet.<br/>
+      Lo que hacemos por tu negocio:
     </p>
-    </header>
+  </header>
 
+
+    <article>
+      <h3>Hacemos que te encuentren</h3>
+      <p>
+        Ponemos tu negocio en internet para que las personas que buscan tus
+        productos en Google y buscadores modernos te vean.
+      </p>
+    </article>
+
+    <article>
+      <h3>Presentamos tus productos de forma clara</h3>
+      <p>
+        Mostramos tus fotos, catálogo, precios y horarios de manera ordenada
+        para que tus clientes entiendan de inmediato qué vendes y cuánto cuesta.
+      </p>
+    </article>
+
+    <article>
+      <h3>Facilitamos tus ventas por WhatsApp y Mapa</h3>
+      <p>
+        Tus clientes podrán escribirte directamente al WhatsApp con un solo clic
+        o ver la ubicación exacta de tu local para ir a visitarte.
+      </p>
+    </article>
+    <article>
+      <h3>podras cambiar de precios y productos sin más costo</h3>
+      <p>
+Te entregamos una herramienta lista para cambiar precios y productos, fácil de actualizar y pensada
+    para que vendas más sin complicaciones.
+      </p>
+    </article>
+
+    <article>
+      <h3>Nosotros nos encargamos de todo el trabajo</h3>
+      <p>
+        Tú solo cuentas tu negocio y productos en una reunion, envías tus fotos y datos por WhatsApp.<br/><br/> 
+        Nosotros redactamos, diseñamos y dejamos tu sitio web funcionando en 1 semana.
+      </p>
+    </article>
+    <div>
+      <h3>Precio normal</h3>
+
+      <p className="precio-normal" >
+        1050 Bs.
+      </p>
+    </div>
 
     <div>
-      <article>
-        <h3>Tu negocio</h3>
-        <p>
-          Presentamos qué hace, qué ofrece y qué lo caracteriza.
-        </p>
-      </article>
+      <h3>Oferta</h3>
 
-      <article>
-        <h3>Tus productos o servicios</h3>
-        <p>
-          Organizamos la información para que puedan conocerse con claridad.
-        </p>
-      </article>
+      <p className="precio-oferta" >
+        450 Bs.
+      </p>
 
-      <article>
-        <h3>Tu ubicación y contacto</h3>
-        <p>
-          Facilitamos el siguiente paso para quien quiera comprar, consultar
-          o visitar.
-        </p>
-      </article>
+      <p>
+        Oferta válida hasta el <span style={{ color: "var(--color-card-step)"}}>10 de octubre.</span>
+      </p>
+    </div>
+
+  <p>
+    Sin complicaciones pronto podras tener clientes a travez de google y agentes de ia.<br/>
+    <br/>
+    su consulta no molesta.
+  </p>
+    <div className="card-button">
+    <a href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?">
+      Consultar por WhatsApp
+    </a>
     </div>
     <div className="card-button">
     <Link href="/web-especializada">
@@ -757,7 +775,7 @@ export default function Home() {
     </p>
 
     <div className="card-button">
-    <a href="#">
+    <a href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?">
       Hablar por WhatsApp
     </a>
     </div>

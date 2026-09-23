@@ -685,6 +685,7 @@ summary{
 .list li {
   position: relative;
   padding-left: 20px;
+  margin-bottom: 0.5rem;
 }
 
 .list li::before {
@@ -808,4 +809,16 @@ figure figcaption {
     margin-top: 0.4rem;
     font-weight: 500 !important;
     font-size: 18px !important;
+}
+
+.hero-content{
+
+	font-weight: 700 !important;
+	font-size: var(--fs-card-description-principal) !important;
+	letter-spacing: .04em !important;
+	color: var(--color-card-description-principal) !important;
+	font-family: var(--font-gontserrat) !important;
+	text-transform: uppercase !important;
+	/* margin-top: 0; */
+	/* display: block; */
 }
