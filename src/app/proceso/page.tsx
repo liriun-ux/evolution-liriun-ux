@@ -231,35 +231,31 @@ export default function Proceso() {
         <li>Ofertas y promociones.</li>
         <li>Delivery, cuando corresponda.</li>
         <li>Su identidad visual, si ya existe.</li>
-      </ul>
-    </div>
-
-    <div>
-      <h3>También recopilamos</h3>
-
-      <ul className="list">
-        <li>Fotografías y videos del negocio.</li>
-        <li>Fotografías y precios de productos.</li>
         <li>Ubicación.</li>
         <li>Redes sociales.</li>
         <li>Horarios.</li>
-        <li>Logo, si dispone de uno.</li>
+        <li>entre otras cosas.</li>
       </ul>
     </div>
 
-    <div>
+      <h3>LIRIUN-UX se encarga del resto</h3>
+
+      <p>
+        Desde este punto hasta la publicacion se encarga liriun-ux.
+            Usted solo debe mandar los precios, fotos u otros elementos por whatsap.
+      </p>
+
       <h3>Después de la reunión</h3>
 
       <p>
         LIRIUN-UX analiza la información proporcionada y realiza una
         investigación adicional del negocio, sus redes sociales y negocios
-        similares para comprender mejor su contexto.
+        similares para comprender mejor su contexto, y desarollar un producto a su medida.
       </p>
-    </div>
 
     <footer>
       <dl className="proceso-resultado">
-        <dt>RESULTADO: </dt>
+        <dt><br/>RESULTADO<br/><br/> </dt>
         <dd>comprendemos el negocio, su oferta, su funcionamiento y
         la información necesaria para comenzar a construir el sitio.</dd>
       </dl>
@@ -286,7 +282,6 @@ export default function Proceso() {
       </p>
     </header>
 
-    <div>
       <h3>Organizamos</h3>
 
       <ul className="list">
@@ -295,9 +290,7 @@ export default function Proceso() {
         <li>Información relevante para sus clientes.</li>
         <li>Información esencial, importante y secundaria.</li>
       </ul>
-    </div>
 
-    <div>
       <h3>Definimos la jerarquía</h3>
 
       <p>
@@ -305,20 +298,17 @@ export default function Proceso() {
         necesitar después y qué información puede ayudarlo a decidir,
         contactar o visitar el negocio.
       </p>
-    </div>
 
-    <div>
       <h3>Transformamos la información</h3>
 
       <p>
         La información del negocio se organiza y adapta para que pueda ser
         comprendida de forma clara por quienes visitan el sitio.
       </p>
-    </div>
 
     <footer>
       <dl className="game-tech">
-        <dt>RESULTADO: </dt>
+        <dt><br/>RESULTADO<br/><br/> </dt>
         <dd>queda definida y jerarquizada la información que debe
         comunicarse en el sitio.</dd>
       </dl>
@@ -343,7 +333,6 @@ export default function Proceso() {
       </p>
     </header>
 
-    <div>
       <h3>Definimos</h3>
 
       <ul className="list">
@@ -357,20 +346,16 @@ export default function Proceso() {
         <li>Los títulos, descripciones y botones.</li>
         <li>La estructura necesaria para información y productos cambiables.</li>
       </ul>
-    </div>
-
-    <div>
       <h3>Adaptamos la estructura al negocio</h3>
 
       <p>
         No todos los negocios necesitan las mismas páginas. La estructura
         depende del contenido y de lo que necesitan sus posibles clientes.
       </p>
-    </div>
 
     <footer>
       <dl className="game-tech">
-        <dt>RESULTADO: </dt>
+        <dt><br/>RESULTADO<br/><br/> </dt>
         <dd>queda definido el mapa del sitio y cómo se organizará la
         información para que pueda entenderse y recorrerse con facilidad.</dd>
       </dl>
@@ -396,7 +381,6 @@ export default function Proceso() {
       </p>
     </header>
 
-    <div>
       <h3>Definimos</h3>
 
       <ul className="list">
@@ -411,9 +395,7 @@ export default function Proceso() {
         <li>Animaciones.</li>
         <li>Estructura visual.</li>
       </ul>
-    </div>
 
-    <div>
       <h3>Diseño enfocado en el negocio</h3>
 
       <p>
@@ -421,9 +403,7 @@ export default function Proceso() {
         manteniendo el principio de que la información debe ser clara y
         fácil de comprender.
       </p>
-    </div>
 
-    <div>
       <h3>Animaciones</h3>
 
       <p>
@@ -431,11 +411,10 @@ export default function Proceso() {
         Deben ayudar al usuario y no distraerlo del contenido o de la acción
         que quiere realizar.
       </p>
-    </div>
 
     <footer>
       <dl className="game-tech">
-        <dt>RESULTADO: </dt>
+        <dt><br/>RESULTADO<br/><br/> </dt>
         <dd>tenemos definido cómo se verá el sitio y cómo se presentará
         visualmente la información.</dd>
       </dl>
@@ -461,10 +440,10 @@ export default function Proceso() {
       </p>
     </header>
 
-    <div>
       <h3>Construimos</h3>
 
       <ul className="list">
+        <li>Programación (Nextjs, css, tsx, tailwind, ...).</li>
         <li>Las páginas y componentes del sitio.</li>
         <li>La estructura definida.</li>
         <li>Los productos y la información.</li>
@@ -472,29 +451,24 @@ export default function Proceso() {
         <li>La adaptación para móvil, tablet y PC.</li>
         <li>Los elementos de contacto y navegación.</li>
       </ul>
-    </div>
 
-    <div>
       <h3>Preparamos el sitio</h3>
 
       <p>
         Durante esta etapa también se realizan las configuraciones necesarias
         para el despliegue, dominio e indexación del sitio.
       </p>
-    </div>
 
-    <div>
       <h3>El cliente no necesita supervisar cada avance</h3>
 
       <p>
         El sitio se desarrolla internamente para que el cliente pueda
         revisarlo cuando exista una versión terminada.
       </p>
-    </div>
 
     <footer>
       <dl className="game-tech">
-        <dt>RESULTADO: </dt>
+        <dt><br/>RESULTADO<br/><br/> </dt>
         <dd>existe una versión funcional del sitio preparada para
         revisión.</dd>
       </dl>
@@ -520,16 +494,13 @@ export default function Proceso() {
       </p>
     </header>
 
-    <div>
       <h3>El cliente recibe el sitio terminado</h3>
 
       <p>
         Se muestra el sitio completo para que pueda probarlo y comprobar
         que la información y el funcionamiento sean correctos.
       </p>
-    </div>
 
-    <div>
       <h3>Revisamos</h3>
 
       <ul className="list">
@@ -541,20 +512,17 @@ export default function Proceso() {
         <li>Navegación.</li>
         <li>Funcionamiento general.</li>
       </ul>
-    </div>
 
-    <div>
       <h3>Realizamos los ajustes necesarios</h3>
 
       <p>
         La revisión incluye una ronda de cambios. Durante esta etapa pueden
         incorporarse datos o información que hayan sido omitidos.
       </p>
-    </div>
 
     <footer>
       <dl className="game-tech">
-        <dt>RESULTADO</dt>
+        <dt><br/>RESULTADO<br/><br/> </dt>
         <dd>el cliente y LIRIUN-UX confirman que el sitio está listo
         para publicarse.</dd>
       </dl>
@@ -581,36 +549,30 @@ export default function Proceso() {
       </p>
     </header>
 
-    <div>
       <h3>Antes:</h3>
 
       <p>
         El sitio puede mostrar un aviso indicando que todavía se encuentra
         en desarrollo.
       </p>
-    </div>
 
-    <div>
       <h3>Después:</h3>
 
       <p>
         Se retira el aviso de desarrollo y el sitio queda disponible para
         cualquier persona que acceda a él.
       </p>
-    </div>
 
-    <div>
       <h3>Comprobación final:</h3>
 
       <p>
         LIRIUN-UX realiza una última comprobación y se envía el sitio al
         cliente para su visto bueno.
       </p>
-    </div>
 
     <footer>
       <dl className="game-tech">
-        <dt>RESULTADO: </dt>
+        <dt><br/>RESULTADO<br/><br/> </dt>
         <dd>el sitio web está oficialmente disponible en internet.</dd>
       </dl>
     </footer>
@@ -635,7 +597,6 @@ export default function Proceso() {
       </p>
     </header>
 
-    <div>
       <h3>Entregamos</h3>
 
       <ul className="list">
@@ -647,18 +608,14 @@ export default function Proceso() {
         <li>Información de mantenimiento.</li>
         <li>Información sobre futuros cambios.</li>
       </ul>
-    </div>
 
-    <div>
       <h3>Explicamos el funcionamiento</h3>
 
       <p>
         Durante la revisión se explica el funcionamiento del sitio y de la
         interfaz para gestionar los productos y su información.
       </p>
-    </div>
 
-    <div>
       <h3>Documentación</h3>
 
       <p>
@@ -671,11 +628,10 @@ export default function Proceso() {
         También se dispone de información técnica para que un programador
         externo pueda realizar modificaciones cuando sea necesario.
       </p>
-    </div>
 
     <footer>
       <dl className="game-tech">
-        <dt>RESULTADO: </dt>
+        <dt><br/>RESULTADO<br/><br/> </dt>
         <dd>el cliente recibe su sitio, sus accesos y la información
         necesaria para utilizarlo y gestionarlo.
 </dd>
@@ -698,11 +654,10 @@ export default function Proceso() {
       durante tres meses.
     </p>
 
-    <div>
       <h3>Durante los 3 meses</h3>
 
       <p>
-        LIRIUN-UX supervisa el sitio y el cliente puede solicitar pequeños
+        LIRIUN-UX supervisa el funcionamiento del sitio y el cliente puede solicitar pequeños
         cambios.
       </p>
 
@@ -713,9 +668,7 @@ export default function Proceso() {
         <li>Eliminación de productos.</li>
         <li>Pequeños ajustes en general.</li>
       </ul>
-    </div>
 
-    <div>
       <h3>Después del mantenimiento</h3>
 
       <p>
@@ -723,9 +676,7 @@ export default function Proceso() {
         mantenimiento técnico constante mientras el negocio y las
         necesidades del sitio se mantengan similares.
       </p>
-    </div>
 
-    <div>
       <h3>Cambios posteriores</h3>
 
       <p>
@@ -733,7 +684,6 @@ export default function Proceso() {
         grandes de diseño pueden realizarse mediante un presupuesto adicional
         según su complejidad.
       </p>
-    </div>
 
   </Card3D>
 </section>

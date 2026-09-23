@@ -1,6 +1,7 @@
 import { Card3D } from '@/animation/card3d';
 import ProcesoCanvas from '@/animation/ensamble';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Creación de sitios web en El Alto para negocios | LIRIUN-UX',
@@ -105,503 +106,537 @@ export default function ElAlto() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <main className="city">
+<main className="city">
+      <ProcesoCanvas />
 
-        <ProcesoCanvas/>
-        {/* HERO */}
-        <header className="city-hero">
-          <span> <span className='liriun'>LIRIUN-UX</span> El Alto</span>
+      {/* HERO */}
+      <header className="city-hero">
+        <span>
+          <span className="liriun">LIRIUN-UX</span> El Alto
+        </span>
 
-    <Card3D className="hero-content">
+        <Card3D className="hero-content">
           <h1>
-            Creación de sitios web para negocios y emprendedores en El Alto.<br/>
-            ¿Tus clientes te encuentran cuando buscan en internet?
+            Cada día personas buscan lo que vendes en El Alto. <br />
+            <strong>¿Tus productos ya están en internet?</strong>
           </h1>
 
           <p>
-            Diseñamos y desarrollamos sitios web para negocios, tiendas, talleres y servicios en El Alto. Páginas claras, rápidas y estructuradas con SEO y AEO para que te encuentren en Google y mapas.
+            Pon tu negocio, tienda o taller a la vista de todos. Diseñamos y desarrollamos páginas web claras y rápidas con SEO y AEO para que te encuentren en Google, mapas y agentes de IA.
           </p>
 
-    <div className="card-button">
-          <a href="#problema">
-            Ver cómo ayuda a tu negocio
-          </a>
-    </div>
-    <div className="card-button">
-          <a href="/web-especializada">
-            Conocer la web especializada
-          </a>
+          <div className="card-button">
+            <a href="#problema">Ver cómo funciona</a>
           </div>
-          </Card3D>
-        </header>
+          <div className="card-button">
+            <Link href="/web-especializada">Conocer la web especializada</Link>
+          </div>
+        </Card3D>
+      </header>
 
-        {/* PROBLEMA */}
-<section id="problema" className="el-alto-problema">
-  <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Tu negocio en El Alto puede estar en Facebook o TikTok y aun así perder clientes que buscan comprar hoy.
-      </h2>
-    <p>
-      Las redes sociales son excelentes para publicar videos y fotos cotidianas. Sin embargo, en El Alto los clientes buscan respuestas rápidas: dirección exacta, horarios, catálogo y precios antes de salir a comprar o mandar un mensaje.
-    </p>
-    </header>
+      {/* PROBLEMA */}
+      <section id="problema" className="el-alto-problema">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>El proceso por el que pierdes clientes hoy en El Alto</h2>
+            <p>
+              Cuando un cliente necesita un producto o servicio, lo primero que hace es buscarlo en su celular. Si tu negocio no aparece de forma clara, esa oportunidad se pierde en cuestión de segundos.
+            </p>
+          </header>
 
+          <div>
+            <h3>Proceso de pérdida de ventas:</h3>
+            <ul className="list">
+              <li>Un cliente busca tu producto o servicio desde su casa o trabajo en El Alto.</li>
+              <li>Tu negocio no aparece en Google ni en los mapas de la zona.</li>
+              <li>El cliente encuentra a tu competencia en la Ceja, Rio Seco o Satélite y les compra a ellos.</li>
+              <li>Pierdes una venta.</li>
+              <li>Pierdes un cliente.</li>
+            </ul>
+          </div>
 
-    <div>
-      <h3>Tu negocio puede tener</h3>
-      <ul>
-        <li>Página en Facebook.</li>
-        <li>Cuenta de TikTok o Instagram.</li>
-        <li>Número de WhatsApp.</li>
-        <li>Ubicación física (Ceja, Villa Adela, Río Seco, Senakata, etc.).</li>
-      </ul>
-    </div>
+          <p>
+            ¿Cuántos clientes crees que tiene tu competencia solo porque ya están en internet?
+            <br />
+            <br />
+            ¿Cuántos clientes estás perdiendo hoy en El Alto solo porque no te pueden encontrar?
+          </p>
+        </Card3D>
+      </section>
 
-    <p>
-      Pero cuando un cliente busca en Google un producto o servicio en El Alto, ¿encuentra tu información clara en un solo lugar o termina comprando a la competencia?
-    </p>
-  </Card3D>
-</section>
+      {/* DEMOSTRACIÓN */}
+      <section className="el-alto-demostracion">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Publicar en Facebook, TikTok o responder WhatsApp no siempre es suficiente</h2>
+            <p>
+              Tal vez ya subes fotos a Facebook o contestas mensajes, pero la información en redes se pierde rápido. Cuando un cliente alteño realmente quiere comprar ya, no quiere navegar por decenas de publicaciones para saber tus precios, horarios o catálogo.
+            </p>
+          </header>
 
+          <div>
+            <h3>Lo que busca un cliente cuando quiere comprar ya:</h3>
+            <ul className="list">
+              <li>Ver tu catálogo de productos organizado y actualizado.</li>
+              <li>Conocer precios, horarios y ubicación exacta en El Alto en segundos.</li>
+              <li>Tener una respuesta inmediata sin esperar horas a que le contesten un inbox.</li>
+              <li>Sentir la confianza de tener toda la información al alcance de la mano.</li>
+            </ul>
+          </div>
 
-{/* DEMOSTRACIÓN */}
-<section className="el-alto-demostracion">
-  <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        ¿Qué hace un alteño cuando busca un negocio o servicio?
-      </h2>
-      <p>
-        Imagina a alguien en El Alto necesitando urgentemente lo que tu negocio vende.
-      </p>
-    </header>
+          <p>
+            Cuando no facilitas esta información, el cliente no espera: busca a otro negocio que se la dé al instante.
+          </p>
+        </Card3D>
+      </section>
 
-    <div>
-      <h3>La búsqueda local</h3>
-      <p>
-        Escribe en su celular desde su casa o trabajo: "venta de [tu producto] en El Alto" o "servicio de [tu rubro] cerca de mí".
-      </p>
-    </div>
+      {/* OPORTUNIDAD */}
+      <section className="el-alto-oportunidad">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Un sitio web es tu propio local digital abierto las 24 horas</h2>
+            <p>
+              Es la herramienta central que reúne, organiza y presenta toda la información de tu negocio en un solo lugar. Sirve para que cualquier persona en El Alto o La Paz que busque lo que vendes te encuentre y te compre de forma rápida.
+            </p>
+          </header>
 
-    <div>
-      <h3>La necesidad de información</h3>
-      <p>
-        Necesita saber exactamente qué tienes disponible, cuánto cuesta aproximado, en qué zona o galería estás y cómo contactarte directamente por WhatsApp.
-      </p>
-    </div>
+          <article>
+            <h3>Visibilidad permanente (Estar en internet)</h3>
+            <p>
+              Tu negocio deja de ser invisible. Tendrás un lugar propio disponible siempre para que miles de personas te encuentren al buscar en internet.
+            </p>
+          </article>
 
-    <div>
-      <h3>La decisión</h3>
-      <p>
-        Si ve la información clara, presiona el botón de WhatsApp o va directo a tu local. Si no la encuentra, sigue buscando a otro negocio.
-      </p>
-    </div>
+          <article>
+            <h3>Claridad inmediata (Ser entendido)</h3>
+            <p>
+              Organiza tus productos, servicios y precios para que tus clientes entiendan en segundos qué vendes y por qué elegirte a ti antes que a otros.
+            </p>
+          </article>
 
-    <div>
-      <h3>Cuando solo usas redes sociales</h3>
-      <p>
-        El cliente tiene que revisar decenas de publicaciones pasadas, preguntar por inbox o adivinar tu horario de atención.
-      </p>
-    </div>
+          <article>
+            <h3>Presencia en Google y Agentes de IA</h3>
+            <p>
+              Optimizamos tu información para que motores de búsqueda como Google y nuevos asistentes de IA recomienden tu negocio en El Alto.
+            </p>
+          </article>
 
-    <div>
-      <h3>Cuando tienes un sitio web organizado</h3>
-      <p>
-        El cliente entra a tu página, ve el catálogo, conoce tu dirección física en El Alto y hace clic para comunicarse contigo en segundos.
-      </p>
-    </div>
-  </Card3D>
-</section>
+          <article>
+            <h3>Ventas y contactos directos</h3>
+            <p>
+              Centraliza botones a WhatsApp, llamadas, ubicación en mapa y redes sociales para convertir visitantes en clientes reales que visiten tu local.
+            </p>
+          </article>
 
+          <p>
+            Tener un sitio web convierte las búsquedas de internet en oportunidades reales de ventas para tu negocio en El Alto.
+          </p>
+        </Card3D>
+      </section>
 
-{/* OPORTUNIDAD */}
-<section className="el-alto-oportunidad">
-  <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Dale a tu negocio en El Alto un espacio web formal y fácil de encontrar.
-      </h2>
-    <p>
-      Un sitio web (lo que nosotros llamamos una <strong style={{color: "#aaf"}}>web especializada</strong>) no es solo para grandes empresas. Es la herramienta esencial para que cualquier negocio o taller en El Alto destaque y genere confianza.
-    </p>
-    </header>
+      {/* SOLUCIÓN + OFERTA */}
+      <section className="el-alto-solucion">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Liriun-UX hace que tu negocio en El Alto sea fácil de encontrar y entender</h2>
+            <p>
+              Solucionamos la falta de clientes haciéndote visible donde todos buscan hoy. Nos encargamos de crear el sitio web de tu negocio para que no vuelvas a perder una venta.
+              <br />
+              Lo que hacemos por tu negocio:
+            </p>
+          </header>
 
+          <article>
+            <h3>Hacemos que te encuentren</h3>
+            <p>
+              Ponemos tu negocio en internet para que las personas que buscan tus productos en Google y buscadores modernos te vean.
+            </p>
+          </article>
 
-    <div>
-      <article>
-        <h3>Presencia en El Alto y Bolivia</h3>
-        <p>
-          Tu negocio cuenta con una dirección web propia (URL) que puedes compartir en tus redes, tarjetas y anuncios.
-        </p>
-      </article>
+          <article>
+            <h3>Presentamos tus productos de forma clara</h3>
+            <p>
+              Mostramos tus fotos, catálogo, precios y horarios de manera ordenada para que entiendan de inmediato qué vendes y cuánto cuesta.
+            </p>
+          </article>
 
-      <article>
-        <h3>Claridad comercial</h3>
-        <p>
-          Tus productos o servicios quedan ordenados por categorías, haciendo que tus clientes entiendan rápido lo que vendes.
-        </p>
-      </article>
+          <article>
+            <h3>Facilitamos tus ventas por WhatsApp y Mapa</h3>
+            <p>
+              Tus clientes podrán escribirte directamente al WhatsApp con un solo clic o ver la ubicación exacta de tu local o taller en El Alto para ir a visitarte.
+            </p>
+          </article>
 
-      <article>
-        <h3>Contacto a un clic</h3>
-        <p>
-          Enlace directo a tu WhatsApp para recibir pedidos o consultas sin rodeos.
-        </p>
-      </article>
+          <article>
+            <h3>Podrás cambiar precios y productos sin más costo</h3>
+            <p>
+              Te entregamos una herramienta lista para cambiar precios y productos, fácil de actualizar y pensada para que vendas más sin complicaciones.
+            </p>
+          </article>
 
-      <article>
-        <h3>Ubicación geográfica clara</h3>
-        <p>
-          Muestra tu mapa, puntos de referencia e indicaciones para llegar a tu local en El Alto sin complicaciones.
-        </p>
-      </article>
-    </div>
+          <article>
+            <h3>Nosotros nos encargamos de todo el trabajo</h3>
+            <p>
+              Tú solo nos cuentas de tu negocio en una reunión y nos envías tus fotos por WhatsApp. Nosotros redactamos, diseñamos y dejamos tu sitio web funcionando en 1 semana.
+            </p>
+          </article>
 
-    <p>
-      Estructuramos el sitio con estándares modernos de SEO y AEO para facilitar que buscadores como Google e inteligencias artificiales recomienden tu negocio en la zona.
-    </p>
-  </Card3D>
-</section>
+          <div>
+            <h3>Precio normal</h3>
+            <p className="precio-normal">1050 Bs.</p>
+          </div>
 
+          <div>
+            <h3>Oferta especial El Alto</h3>
+            <p className="precio-oferta">450 Bs.</p>
+            <p>
+              Oferta válida hasta el <span style={{ color: 'var(--color-card-step)' }}>10 de octubre.</span>
+            </p>
+          </div>
 
-{/* SOLUCIÓN */}
-<section className="el-alto-solucion">
-  <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Sitios web pensados para el comercio y servicios de El Alto.
-      </h2>
-    <p>
-      No creamos páginas genéricas ni complejas. Diseñamos webs especializadas funcionales que resuelven las dudas de tus clientes en El Alto y aceleran tus ventas.
-    </p>
-    </header>
+          <p>
+            Sin complicaciones, pronto tendrás clientes a través de Google y agentes de IA.
+            <br />
+            <br />
+            Su consulta no molesta.
+          </p>
 
+          <div className="card-button">
+            <a href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio en El Alto aparezca en Google?">
+              Consultar por WhatsApp
+            </a>
+          </div>
+          <div className="card-button">
+            <Link href="/web-especializada">Conocer la web especializada estándar</Link>
+          </div>
+        </Card3D>
+      </section>
 
-    <div>
-      <article>
-        <h3>Presentación de tu negocio</h3>
-        <p>
-          Mostramos la identidad de tu emprendimiento, tu trayectoria y la garantía que ofreces a tus clientes.
-        </p>
-      </article>
+      {/* CÓMO FUNCIONA LIRIUN */}
+      <section className="el-alto-como-funciona">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Proceso de construcción</h2>
+            <p>
+              LIRIUN-UX se encarga del proceso desde la comprensión del negocio hasta la publicación y entrega de tu sitio web en El Alto.
+            </p>
+          </header>
 
-      <article>
-        <h3>Catálogo de productos o servicios</h3>
-        <p>
-          Organizamos lo que ofreces de forma clara y legible desde cualquier teléfono celular.
-        </p>
-      </article>
+          <ol className="gap-1 flex flex-col">
+            <li>
+              <h3>1. Conocemos tu negocio</h3>
+              <p>Comprendemos qué haces, qué ofreces y cómo funciona tu negocio en El Alto.</p>
+            </li>
+            <li>
+              <h3>2. Organizamos la información</h3>
+              <p>Definimos qué debe comunicarse y qué necesita conocer tu posible cliente antes de comprar.</p>
+            </li>
+            <li>
+              <h3>3. Estructuramos la web especializada</h3>
+              <p>Definimos las páginas, la navegación y dónde debe estar cada información de forma accesible.</p>
+            </li>
+            <li>
+              <h3>4. Diseñamos</h3>
+              <p>Creamos una presentación visual limpia y adaptada a tu rubro comercial sin distracciones.</p>
+            </li>
+            <li>
+              <h3>5. Desarrollamos</h3>
+              <p>Convertimos la estructura y el diseño en una web especializada ultra rápida y funcional para celulares.</p>
+            </li>
+            <li>
+              <h3>6. Revisamos</h3>
+              <p>Recibes la web especializada terminada para probarla y solicitar los ajustes correspondientes.</p>
+            </li>
+            <li>
+              <h3>7. Publicamos</h3>
+              <p>Una vez aprobada, la web especializada queda disponible públicamente en internet.</p>
+            </li>
+            <li>
+              <h3>8. Entregamos</h3>
+              <p>Recibes la web especializada, sus accesos y la información necesaria para gestionar tus productos y precios.</p>
+            </li>
+          </ol>
 
-      <article>
-        <h3>Atención directa y mapa</h3>
-        <p>
-          Ubicación estratégica, referencias locales y botones directos de atención.
-        </p>
-      </article>
-    </div>
+          <div className="card-button">
+            <Link href="/proceso">Ver el proceso completo</Link>
+          </div>
+        </Card3D>
+      </section>
 
-    <div className="card-button">
-    <a href="/web-especializada">
-      Conoce la web especializada
-    </a>
-    </div>
-  </Card3D>
-</section>
+      {/* SOBRE LIRIUN EN EL ALTO */}
+      <section className="el-alto-liriun">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>¿Qué es Liriun-UX?</h2>
+            <p>
+              Liriun-UX nace con una misión clara: poner a los pequeños negocios y talleres de El Alto y La Paz en internet de forma sencilla para que sean encontrados y entendidos por personas, Google y nuevos agentes de Inteligencia Artificial.
+            </p>
+          </header>
 
+          <article>
+            <h3>Visibilidad real para tu negocio</h3>
+            <p>
+              Nos aseguramos de que tu negocio no pierda clientes por no tener un espacio propio en internet. Te hacemos visible donde la gente de verdad busca hoy.
+            </p>
+          </article>
 
-{/* CÓMO FUNCIONA LIRIUN */}
-<section className="el-alto-como-funciona">
-  <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Nos envías la información de tu negocio. Nosotros construimos la página.
-      </h2>
-      <p>
-        Nos encargamos de todo el proceso de creación de tu sitio web en El Alto para que no pierdas tiempo en cosas técnicas.
-      </p>
-    </header>
+          <article>
+            <h3>Fácil de entender para todos</h3>
+            <p>
+              Organizamos tu información y catálogo para que tanto las personas como los motores de búsqueda entiendan exactamente qué vendes y qué ofreces.
+            </p>
+          </article>
 
-    <ol>
-      <li>
-        <h3>Entendemos tu negocio</h3>
-        <p>Analizamos qué vendes, a quién le vendes en El Alto y cuáles son las dudas más frecuentes de tus clientes.</p>
-      </li>
-      <li>
-        <h3>Organizamos los contenidos</h3>
-        <p>Seleccionamos las fotos, textos, precios y datos clave que deben estar visibles.</p>
-      </li>
-      <li>
-        <h3>Estructuramos la navegación</h3>
-        <p>Diseñamos la secuencia lógica para que el visitante encuentre lo que busca sin perderse.</p>
-      </li>
-      <li>
-        <h3>Diseñamos la página</h3>
-        <p>Creamos una apariencia limpia, profesional y adaptada a la identidad de tu marca.</p>
-      </li>
-      <li>
-        <h3>Desarrollamos el sitio web</h3>
-        <p>Programamos la página para que cargue ultra rápido en celulares con cualquier conexión a internet.</p>
-      </li>
-      <li>
-        <h3>Revisión y ajustes</h3>
-        <p>Te mostramos el sitio terminado para que lo pruebes y nos indiques si deseas cambiar algún detalle.</p>
-      </li>
-      <li>
-        <h3>Publicación en internet</h3>
-        <p>Con tu aprobación, el sitio queda activo en su dominio web para empezar a recibir visitas.</p>
-      </li>
-      <li>
-        <h3>Entrega y capacitación</h3>
-        <p>Te entregamos los accesos y te enseñamos lo básico para actualizar tus productos cuando lo necesites.</p>
-      </li>
-    </ol>
+          <article>
+            <h3>Sin complicaciones técnicas para ti</h3>
+            <p>
+              Tú no tienes que preocuparte por el diseño, la programación ni la redacción. Nos encargamos de todo el proceso para que tengas tu sitio web listo sin enredos.
+            </p>
+          </article>
 
-    <div className="card-button">
-    <a href="/proceso">
-      Ver el proceso completo
-    </a>
-    </div>
-  </Card3D>
-</section>
+          <article>
+            <h3>Conexión directa con clientes</h3>
+            <p>
+              Creamos el camino más rápido para que las personas interesadas se comuniquen directamente a tu WhatsApp o lleguen a la ubicación exacta de tu local.
+            </p>
+          </article>
 
+          <p>Para nosotros, un sitio web debe servir para que no pierdas ventas.</p>
 
-{/* SOBRE LIRIUN EN EL ALTO */}
-<section className="el-alto-liriun">
-  <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Desarrollo web con entendimiento local en El Alto
-      </h2>
-    <p>
-      LIRIUN-UX ofrece un servicio especializado de creación de sitios web (webs especializadas) para negocios en La Paz y El Alto.
-    </p>
-    </header>
+          <div className="card-button">
+            <Link href="/sobre-liriun-ux">Conocer LIRIUN-UX</Link>
+          </div>
+        </Card3D>
+      </section>
 
-
-    <div>
-      <article>
-        <h3>Tu negocio en internet</h3>
-        <p>Construimos una presencia digital propia que respalda tus campañas en redes sociales.</p>
-      </article>
-      <article>
-        <h3>Información sin rodeos</h3>
-        <p>Estructuramos el contenido pensando en la rapidez con la que compran los clientes locales.</p>
-      </article>
-      <article>
-        <h3>Enfoque a la medida</h3>
-        <p>Adaptamos cada sección según tu sector: comercio, gastronomía, educación, servicios técnicos o profesionales.</p>
-      </article>
-      <article>
-        <h3>Atención cercana en El Alto y La Paz</h3>
-        <p>Somos un equipo local que conoce el mercado paceño y alteño. Entendemos la importancia de comunicar la ubicación, los métodos de pago y la confianza en cada venta.</p>
-      </article>
-    </div>
-
-    <div className="card-button">
-    <a href="/sobre-liriun-ux">
-      Conocer LIRIUN-UX
-    </a>
-    </div>
-  </Card3D>
-</section>
-
-
-{/* EJEMPLOS LOCALES */}
-<section className="el-alto-ejemplos">
-  <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Ejemplos de cómo se adapta la estructura a negocios de El Alto.
-      </h2>
-      <p>
-        Cada rubro comercial requiere organizar la información de manera estratégica.
-      </p>
-    </header>
+      {/* EJEMPLOS LOCALES */}
+      <section className="el-alto-ejemplos">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Cada negocio necesita una forma diferente de presentarse</h2>
+            <p>
+              No usamos plantillas genéricas. Analizamos qué vende tu negocio en El Alto y qué información necesita ver tu cliente antes de comprar (precios, menú, horarios o tipos de servicio).
+            </p>
+          </header>
 
     <article>
-      <h3>Ejemplo: Gastronomía o Restaurante</h3>
-      <ul className='tree'>
-        <li>Inicio.</li>
-        <li>Menú 
-            <ul>
-              <li>Plato 1</li>
-              <li>Plato 2</li>
-              <li>Plato ...</li>
-            </ul>
-        </li>
-        <li>Ubicación y referencias.
-            <ul>
-              <li>Satélite</li>
-              <li>La Ceja</li>
-              <li>...</li>
-            </ul>
-        </li>
-        <li>Horarios de atención.</li>
-        <li>Pedidos por WhatsApp.</li>
-      </ul>
-    <div className="card-button-e">
-      <a href="#">Ver ejemplo</a>
-      </div>
-    </article>
+      <h3>Ejemplo: Academia / Cursos</h3>
+      <p>
+        Diseñado para resolver dudas frecuentes sobre métodos de enseñanza, horarios,
+        temarios de cursos y facilitar la inscripción inmediata.
+      </p>
 
-    <article>
-      <h3>Ejemplo: Servicios Técnicos o Talleres</h3>
-      <ul className='tree'>
-        <li>Inicio.</li>
-        <li>Servicios e instalaciones.
-            <ul>
-                <li>Servicio 1</li>
-                <li>Servicio 2</li>
-                <li>Servicio ...</li>
-            </ul>
-        </li>
-        <li>Trabajos realizados / Garantía.</li>
-        <li>Ubicación del taller.</li>
-        <li>Cotización rápida por WhatsApp.</li>
-      </ul>
-    <div className="card-button-e">
-      <a href="#">Ver ejemplo</a>
-      </div>
-    </article>
-
-    <article>
-      <h3>Ejemplo: Comercializadora o Venta de Productos</h3>
-      <ul className='tree'>
+      <ul className="tree">
         <li>Inicio</li>
-        <li>Catálogo de productos
-
-            <ul>
-              <li>Producto 1</li>
-              <li>Producto 2</li>
-              <li>Producto ...</li>
-            </ul>
+        <li>
+          Cursos
+          <ul>
+            <li>Curso 1</li>
+            <li>Curso 2</li>
+            <li>...</li>
+          </ul>
         </li>
-        <li>Precios y ofertas</li>
-        <li>Envíos y entregas
-            <ul>
-              <li>El Alto</li>
-              <li>La Paz</li>
-              <li>...</li>
-            </ul>
-        </li>
-        <li>Contacto.</li>
+        <li>Metodología de trabajo</li>
+        <li>Nosotros</li>
+        <li>Preguntas frecuentes</li>
+        <li>Contacto / Inscripciones</li>
       </ul>
-    <div className="card-button-e">
-      <a href="#">Ver ejemplo</a>
+
+      <div className="card-button-e">
+        <a href="#">Ver ejemplo</a>
       </div>
     </article>
-  </Card3D>
-</section>
 
+          <article>
+            <h3>Ejemplo: Servicios Técnicos o Talleres</h3>
+            <p>Diseñado para mostrar tus trabajos realizados, ubicación en mapa, tipos de reparaciones y facilitar la cotización inmediata.</p>
+            <ul className="tree">
+              <li>Inicio</li>
+              <li>
+                Servicios e instalaciones
+                <ul>
+                  <li>Servicio 1</li>
+                  <li>Servicio 2</li>
+                  <li>...</li>
+                </ul>
+              </li>
+              <li>Trabajos realizados y Garantía</li>
+              <li>Ubicación del taller en El Alto</li>
+              <li>Cotización rápida por WhatsApp</li>
+            </ul>
+            <div className="card-button-e">
+              <a >En construcción</a>
+            </div>
+          </article>
 
-{/* ALTERNATIVAS */}
-<section className="el-alto-alternativas">
-  <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Comparación: Opciones para presentar tu negocio en El Alto.
-      </h2>
-      <p>
-        Analiza las distintas alternativas antes de tomar una decisión para tu presencia digital.
-      </p>
-    </header>
+          <article>
+            <h3>Ejemplo: Comercializadora o Venta de Productos</h3>
+            <p>Pensado para organizar tu inventario por categorías claras, mostrar precios y coordinar envíos o entregas locales.</p>
+            <ul className="tree">
+              <li>Inicio</li>
+              <li>
+                Catálogo de productos
+                <ul>
+                  <li>Producto 1</li>
+                  <li>Producto 2</li>
+                  <li>...</li>
+                </ul>
+              </li>
+              <li>Precios y Ofertas</li>
+              <li>
+                Envíos y Puntos de Entrega
+                <ul>
+                  <li>El Alto</li>
+                  <li>La Paz</li>
+                </ul>
+              </li>
+              <li>Contacto directo por WhatsApp</li>
+            </ul>
+            <div className="card-button-e">
+              <a >En construcción</a>
+            </div>
+          </article>
+        </Card3D>
+      </section>
 
-    <article>
-      <h3>Solo páginas en redes sociales</h3>
-      <p>Útiles para publicar ofertas del día, pero la información sobre precios, catálogos y ubicación suele perderse entre tantas publicaciones pasadas.</p>
-    </article>
-    <article>
-      <h3>Hacerlo tú mismo en plataformas gratuitas</h3>
-      <p>Requiere invertir horas de aprendizaje, resolver fallas técnicas y lidiar con configuraciones que quitan tiempo a la atención de tu negocio.</p>
-    </article>
-    <article>
-      <h3>Contratar agencias tradicionales</h3>
-      <p>Suelen ofrecer proyectos demasiado costosos, con largos meses de desarrollo y tecnicismos innecesarios para un negocio local.</p>
-    </article>
-    <article>
-      <h3>Un sitio web desarrollado con LIRIUN-UX</h3>
-      <p>Nosotros nos encargamos de todo el trabajo técnico y organizativo. Recibes tu web especializada lista en 5 días a un precio accesible.</p>
-    </article>
-  </Card3D>
-</section>
+      {/* ALTERNATIVAS COMPLETA */}
+      <section className="el-alto-alternativas">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>¿Por qué LIRIUN-UX es la mejor opción para tu negocio en El Alto?</h2>
+            <p>
+              Antes de crear un sitio web, es normal comparar opciones. Aquí te mostramos por qué Liriun-UX te ahorra tiempo, dinero y dolores de cabeza frente a otras alternativas del mercado.
+            </p>
+          </header>
 
+          <article className="card-alternative">
+            <h3>Opción 1: Solo Redes Sociales (Facebook/TikTok)</h3>
+            <ul>
+              <li>Quedas fuera de Google y de las búsquedas por Inteligencia Artificial.</li>
+              <li>La información de tus productos se pierde entre tantas publicaciones pasadas.</li>
+              <li>Los clientes no encuentran tus precios o catálogo rápido y se van a otro lado.</li>
+            </ul>
+          </article>
 
-{/* FAQ */}
-<section className="el-alto-faq">
-  <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Preguntas frecuentes sobre páginas web en El Alto
-      </h2>
-    </header>
+          <article className="card-alternative">
+            <h3>Opción 2: Creadores Automáticos (Wix, Shopify, etc.)</h3>
+            <ul>
+              <li>Requiere que aprendas a diseñar y programar por tu cuenta.</li>
+              <li>Te consume horas y días de trabajo que podrías dedicar a tu negocio.</li>
+              <li>Suele quedar incompleto o con un diseño lento en conexiones de celular.</li>
+            </ul>
+          </article>
 
-    <details>
-      <summary>¿Si creo un sitio web, debo dejar de publicar en redes sociales?</summary>
-      <p>No. Tus redes sociales siguen sirviendo para atraer clientes cotidianos. La web especializada sirve para cerrar la venta, mostrar el catálogo completo y dar la ubicación exacta a quienes te buscan en Google.</p>
-    </details>
+          <article className="card-alternative">
+            <h3>Opción 3: Otras Agencias Web</h3>
+            <ul>
+              <li>Precios elevados (arriba de $us 120) por solo 1 o 2 páginas limitadas.</li>
+              <li>Dependes de un técnico pagado cada vez que quieras cambiar un precio o foto.</li>
+              <li>Suscripciones o contratos de mantenimiento obligatorios mes a mes.</li>
+            </ul>
+          </article>
 
-    <details>
-      <summary>¿El sitio web se ve bien en teléfonos móviles?</summary>
-      <p>Sí. La gran mayoría de búsquedas en El Alto se realizan desde celulares, por lo que adaptamos el sitio web para que cargue de forma veloz y clara en dispositivos móviles.</p>
-    </details>
+          <article className="card-liriun highlight">
+            <h3>LIRIUN-UX El Alto</h3>
+            <ul className="gap-1 flex flex-col">
+              <li>
+                <strong>Nosotros hacemos todo el trabajo:</strong> Solo nos cuentas de tu negocio y nos das tus datos por WhatsApp; nosotros nos encargamos del resto.
+              </li>
+              <li>
+                <strong>Páginas centrales para tu negocio:</strong> De 4 a 6 páginas estructuradas a la medida de lo que vendes.
+              </li>
+              <li>
+                <strong>Páginas para cada producto:</strong> Hasta 1000 páginas de productos individuales para posicionar en Google.
+              </li>
+              <li>
+                <strong>Comunicación clara:</strong> Redactamos y organizamos tus productos para que sean fáciles de entender por personas, Google e IA.
+              </li>
+              <li>
+                <strong>Entrega en 1 semana y listo para usar:</strong> Incluye gestor para que tú mismo cambies precios cuando quieras sin pagar extra.
+              </li>
+              <li>
+                <strong>3 meses de soporte y acompañamiento gratis:</strong> Supervisamos que tu sitio funcione y realizamos los pequeños ajustes que necesites.
+              </li>
+              <li>
+                <strong>Autónomo y sin costos mensuales:</strong> Tu sitio web se entrega listo para funcionar de forma continua sin obligarte a pagar mantenimientos mes a mes.
+              </li>
+            </ul>
 
-    <details>
-      <summary>¿Puedo cambiar las fotos o precios de mis productos después?</summary>
-      <p>Sí. Incluimos una interfaz intuitiva para que puedas actualizar o agregar productos y precios fácilmente sin depender de un programador.</p>
-    </details>
+            <p className="offer-tag">
+              <strong>Precio de Oferta El Alto: 450 Bs.</strong> (Válido hasta el 10 de octubre)
+            </p>
+          </article>
+        </Card3D>
+      </section>
 
-    <details>
-      <summary>¿Cuánto tiempo tarda el trabajo?</summary>
-      <p>Entregamos el sitio web terminado en un plazo estándar de 5 días hábiles a partir de la recepción de la información y el pago inicial.</p>
-    </details>
+      {/* FAQ COMPLETA */}
+      <section className="el-alto-faq">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Preguntas frecuentes</h2>
+            <p>Resolvemos tus dudas principales para que des el paso con total seguridad.</p>
+          </header>
 
-    <details>
-      <summary>¿Cuál es el costo del servicio?</summary>
-      <p>El precio regular de la web especializada estándar es de 850 Bs. Actualmente contamos con una tarifa promocional de 450 Bs por tiempo limitado.</p>
-    </details>
+          <details>
+            <summary>¿Necesito dejar de usar Facebook, TikTok o WhatsApp?</summary>
+            <p>
+              No, para nada. Tu sitio web complementa tus redes sociales: en redes publicas contenido diario y en tu web centralizas la información, precios y catálogo completo para cerrar las ventas sin que los clientes se pierdan.
+            </p>
+          </details>
 
-    <details>
-      <summary>¿Apareceré inmediatamente en el primer lugar de Google en El Alto?</summary>
-      <p>Ningún servicio puede garantizar el primer lugar de forma automática. Sin embargo, estructuramos el sitio con las mejores prácticas SEO y AEO para optimizar al máximo su visibilidad en búsquedas locales.</p>
-    </details>
+          <details>
+            <summary>¿Necesito saber de diseño o tecnología para tener mi sitio?</summary>
+            <p>
+              No necesitas saber nada de código ni diseño. En LIRIUN-UX nos encargamos de todo el proceso: redactamos, diseñamos y dejamos tu sitio 100% funcionando.
+            </p>
+          </details>
 
-    <div className="card-button">
-    <a href="/web-especializada">
-      Ver toda la información de la web especializada
-    </a>
-    </div>
-  </Card3D>
-</section>
+          <details>
+            <summary>¿Podré cambiar o agregar nuevos productos y precios yo mismo?</summary>
+            <p>
+              Sí. Te entregamos un panel muy fácil de usar desde tu celular donde podrás agregar nuevos productos, cambiar fotos, actualizar precios o eliminar lo que ya no vendas en segundos.
+            </p>
+          </details>
 
+          <details>
+            <summary>¿El sitio web se ve bien desde celulares?</summary>
+            <p>
+              Sí, totalmente. Diseñamos el sitio pensando primero en teléfonos móviles, asegurando que cargue ultra rápido incluso con conexiones de datos móviles estándar.
+            </p>
+          </details>
 
-{/* CTA */}
-<section className="el-alto-cta">
-  <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        ¿Quieres crear el sitio web para tu negocio en El Alto?
-      </h2>
-    </header>
+          <details>
+            <summary>¿En cuánto tiempo entregan el sitio web listo?</summary>
+            <p>
+              El tiempo de entrega es de solo 1 semana a partir del pago inicial de 200 Bs y la entrega de tus fotos o datos básicos.
+            </p>
+          </details>
 
-    <p>
-      Escríbenos y cuéntanos sobre tu negocio. Te explicaremos sin compromiso cómo organizar tu información para empezar a recibir más clientes.
-    </p>
+          <details>
+            <summary>¿Cuánto cuesta el servicio y qué modalidades de pago hay?</summary>
+            <p>
+              El precio normal es de 1050 Bs, pero contamos con una oferta especial de <strong>450 Bs</strong> (válida hasta el 10 de octubre). Inicias el proyecto con un adelanto de 200 Bs y cancelas el saldo al ver tu sitio terminado.
+            </p>
+          </details>
 
-    <div className="card-button">
-    <a href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?">
-      Hablar por WhatsApp
-    </a>
-    </div>
-    <div className="card-button">
-    <a href="/web-especializada">
-      Conocer la web especializada
-    </a>
-    </div>
-  </Card3D>
-</section>
+          <details>
+            <summary>¿Garantizan que saldré en el primer lugar de Google o IA?</summary>
+            <p>
+              Ninguna agencia seria puede garantizar el primer lugar.
+                  <br/>
+                  <br/>
+              Lo que sí garantizamos es aplicar toda la optimización de SEO/AEO y presentar tu información de forma impecable para que Google y las IAs te encuentren rápidamente en El Alto.
+            </p>
+          </details>
 
-      </main>
+          <div className="card-button">
+            <a href="https://wa.me/59176760684?text=Hola, tengo algunas dudas sobre el sitio web para mi negocio en El Alto">
+              ¿Tienes más dudas? Contáctanos por WhatsApp
+            </a>
+          </div>
+        </Card3D>
+      </section>
+    </main>
     </>
   );
 }

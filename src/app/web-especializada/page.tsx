@@ -228,24 +228,6 @@ export default function WebEspecializada() {
         </header>
 
 
-<section className="web-especializada-que-es">
-  <Card3D className="proceso-conteiner">
-    <header>
-      <h2>¿Qué es?</h2>
-    </header>
-
-    <p>
-      Es un sitio web creado para que las personas puedan conocer tu negocio,
-      entender qué ofrece, encontrar la información que necesitan y saber cómo
-      contactarte o visitar tu local.
-    </p>
-
-    <p>
-      La información se organiza y estructura para facilitar también su
-      comprensión por buscadores y sistemas de IA.
-    </p>
-  </Card3D>
-</section>
 
 
 <section className="web-especializada-para-quien">
@@ -259,7 +241,6 @@ export default function WebEspecializada() {
     </header>
 
 
-    <div>
       <article>
         <h3>Negocios de comida</h3>
         <p>
@@ -281,7 +262,6 @@ export default function WebEspecializada() {
           servicios.
         </p>
       </article>
-    </div>
 
     <p>
       Puede ser utilizado tanto por negocios que ya tienen redes sociales como
@@ -297,7 +277,6 @@ export default function WebEspecializada() {
       <h2>¿Qué obtiene tu negocio?</h2>
     </header>
 
-    <div>
       <article>
         <h3>Ser encontrado</h3>
 
@@ -333,7 +312,6 @@ export default function WebEspecializada() {
           a tu negocio.
         </p>
       </article>
-    </div>
   </Card3D>
 </section>
 
@@ -412,7 +390,6 @@ export default function WebEspecializada() {
     </header>
 
 
-    <div>
       <article>
         <h3>Paleta de colores</h3>
         <p>
@@ -443,7 +420,6 @@ export default function WebEspecializada() {
           diseñan según las necesidades del sitio.
         </p>
       </article>
-    </div>
 
     <p>
       El diseño puede adaptarse al rubro del negocio, pero mantiene el mismo
@@ -507,7 +483,6 @@ export default function WebEspecializada() {
       "Naranjas provenientes de los valles de Yungas, libres de herbicidas."
     </p>
 
-    <div>
       <h3>El cliente proporciona principalmente</h3>
 
       <ul className="list">
@@ -518,7 +493,6 @@ export default function WebEspecializada() {
         <li>Redes sociales.</li>
         <li>Logo, si dispone de uno.</li>
       </ul>
-    </div>
 
     <p>
       Si cierta información todavía no está disponible, puede incorporarse
@@ -588,12 +562,11 @@ export default function WebEspecializada() {
       </p>
     </header>
 
-    <div>
       <article>
         <h3>Para Google</h3>
 
         <p>
-          Organizamos la información utilizando buenas prácticas de
+          Organizamos la información utilizando procedimiento de
           estructura y contenido para facilitar su descubrimiento y
           comprensión por los buscadores.
         </p>
@@ -608,11 +581,13 @@ export default function WebEspecializada() {
           puedan comprender el negocio.
         </p>
       </article>
-    </div>
 
     <p>
-      Estas prácticas no garantizan una posición determinada en Google ni
-      garantizan que un sistema de IA muestre el negocio en una respuesta.
+Ninguna agencia seria puede garantizar el primer lugar en Google.<br/>
+Lo que sí garantizamos es aplicar todo el procedimiento y presentar tu información de forma impecable a Google.
+<br/>
+<br/>
+Google decidira en que puesto vas.
     </p>
   </Card3D>
 </section>
@@ -680,7 +655,7 @@ export default function WebEspecializada() {
     <div>
       <h3>Incluye</h3>
 
-      <ul>
+      <ul className="list">
         <li>Cambios de textos.</li>
         <li>Cambios de títulos.</li>
         <li>Ajustes de botones.</li>
@@ -716,7 +691,7 @@ export default function WebEspecializada() {
       adicional.
     </p>
 
-    <ul>
+    <ul className="list">
       <li>Pequeños cambios: 5 Bs.</li>
       <li>Cambios medios: 25 Bs.</li>
       <li>Cambios grandes: 60–150 Bs.</li>

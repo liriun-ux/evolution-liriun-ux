@@ -102,449 +102,460 @@ export default function LaPazPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="city la-paz">
-       <ProcesoCanvas/> 
-        {/* HERO */}
-        <header className="city-hero">
-          <span> <span className='liriun'>LIRIUN-UX</span> La Paz</span>
+<main className="city la-paz">
+      <ProcesoCanvas /> 
 
-    <Card3D className="hero-content">
+      {/* HERO */}
+      <header className="city-hero">
+        <span><span className='liriun'>LIRIUN-UX</span> La Paz</span>
+
+        <Card3D className="hero-content">
           <h1>
-            Creación de webs especializadas para negocios en La Paz.<br/> ¿Tus clientes paceños te encuentran al buscar en internet?
+            Creación de webs especializadas para negocios en La Paz.<br /> ¿Tus clientes paceños te encuentran al buscar en internet?
           </h1>
 
           <p>
             Diseñamos y desarrollamos webs especializadas para empresas, consultorios, tiendas y servicios en La Paz. Páginas estructuradas con SEO y AEO para que tu negocio resalte en Google y mapas.
           </p>
 
-    <div className="card-button">
-          <a href="#problema">Ver cómo ayuda a tu negocio</a>
+          <div className="card-button">
+            <a href="#problema">Ver cómo ayuda a tu negocio</a>
           </div>
-    <div className="card-button">
-          <a href="/web-especializada">Conocer la web especializada</a>
+          <div className="card-button">
+            <a href="/web-especializada">Conocer la web especializada</a>
           </div>
-          </Card3D>
-        </header>
+        </Card3D>
+      </header>
 
-        {/* PROBLEMA */}
-        <section id="problema" className="la-paz-problema">
-          <Card3D className="proceso-conteiner">
-            <header>
-              <h2>
-                Tu negocio en La Paz puede estar en redes sociales, pero aún así perder clientes por la falta de información rápida.
-              </h2>
+      {/* PROBLEMA */}
+      <section id="problema" className="la-paz-problema">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>
+              Tu negocio en La Paz puede estar en redes sociales, pero aún así perder clientes por la falta de información rápida.
+            </h2>
             <p>
               Por el tráfico y las distancias entre el Centro, Sopocachi o la Zona Sur, los paceños prefieren confirmar precios, catálogo y ubicación exacta en internet antes de movilizarse. Las redes sociales son buenas, pero la información suele perderse entre publicaciones antiguas.
             </p>
-            </header>
+          </header>
 
+          <div>
+            <h3>Tu negocio puede tener</h3>
+            <ul>
+              <li>Página en Facebook o Instagram.</li>
+              <li>Cuenta de TikTok.</li>
+              <li>Número de WhatsApp.</li>
+              <li>Local físico en una zona céntrica o comercial.</li>
+            </ul>
+          </div>
 
-            <div>
-              <h3>Tu negocio puede tener</h3>
-              <ul>
-                <li>Página en Facebook o Instagram.</li>
-                <li>Cuenta de TikTok.</li>
-                <li>Número de WhatsApp.</li>
-                <li>Local físico en una zona céntrica o comercial.</li>
-              </ul>
-            </div>
+          <p>
+            Pero cuando un cliente busca en Google tu servicio desde su oficina o su casa, ¿encuentra un espacio ordenado o tiene que investigar para saber si ofreces lo que realmente necesita?
+          </p>
+        </Card3D>
+      </section>
 
+      {/* DEMOSTRACIÓN */}
+      <section className="la-paz-demostracion">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>¿Qué ocurre cuando alguien busca tu negocio en La Paz?</h2>
             <p>
-              Pero cuando un cliente busca en Google tu servicio desde su oficina o su casa, ¿encuentra un espacio ordenado o tiene que investigar para saber si ofreces lo que realmente necesita?
+              Imagina a una persona necesitando urgentemente el producto o servicio profesional que ofreces.
             </p>
-          </Card3D>
-        </section>
+          </header>
 
-        {/* DEMOSTRACIÓN */}
-        <section className="la-paz-demostracion">
-          <Card3D className="proceso-conteiner">
-            <header>
-              <h2>¿Qué ocurre cuando alguien busca tu negocio en La Paz?</h2>
-              <p>
-                Imagina a una persona necesitando urgentemente el producto o servicio profesional que ofreces.
-              </p>
-            </header>
+          <div>
+            <h3>La búsqueda local</h3>
+            <p>
+              Escribe en su celular o computadora: "clínica dental en Sopocachi", "tienda de tecnología en el Centro" o "servicios legales en la Zona Sur".
+            </p>
+          </div>
 
-            <div>
-              <h3>La búsqueda local</h3>
-              <p>
-                Escribe en su celular o computadora: "clínica dental en Sopocachi", "tienda de tecnología en el Centro" o "servicios legales en la Zona Sur".
-              </p>
-            </div>
+          <div>
+            <h3>La necesidad de información</h3>
+            <p>
+              El cliente necesita saber si tienes el producto en stock, un rango de precios, tus horarios de atención y la dirección exacta para evitar un viaje en vano.
+            </p>
+          </div>
 
-            <div>
-              <h3>La necesidad de información</h3>
-              <p>
-                El cliente necesita saber si tienes el producto en stock, un rango de precios, tus horarios de atención y la dirección exacta para evitar un viaje en vano.
-              </p>
-            </div>
+          <div>
+            <h3>La decisión</h3>
+            <p>
+              Si encuentra esta información organizada al instante, hace clic en tu WhatsApp o se dirige a tu negocio. Si no, contacta inmediatamente a la competencia.
+            </p>
+          </div>
 
-            <div>
-              <h3>La decisión</h3>
-              <p>
-                Si encuentra esta información organizada al instante, hace clic en tu WhatsApp o se dirige a tu negocio. Si no, contacta inmediatamente a la competencia.
-              </p>
-            </div>
+          <div>
+            <h3>Cuando la información está dispersa</h3>
+            <p>
+              El cliente tiene que enviar mensajes por inbox, esperar horas por una respuesta o adivinar si el negocio sigue abierto.
+            </p>
+          </div>
 
-            <div>
-              <h3>Cuando la información está dispersa</h3>
-              <p>
-                El cliente tiene que enviar mensajes por inbox, esperar horas por una respuesta o adivinar si el negocio sigue abierto.
-              </p>
-            </div>
+          <div>
+            <h3>Cuando la información está organizada</h3>
+            <p>
+              Encuentra en tu propia web especializada todo tu catálogo, servicios, tarifas referenciales, tu ubicación en el mapa y un botón directo a tu WhatsApp.
+            </p>
+          </div>
+        </Card3D>
+      </section>
 
-            <div>
-              <h3>Cuando la información está organizada</h3>
-              <p>
-                Encuentra en tu propia web especializada todo tu catálogo, servicios, tarifas referenciales, tu ubicación en el mapa y un botón directo a tu WhatsApp.
-              </p>
-            </div>
-          </Card3D>
-        </section>
-
-        {/* OPORTUNIDAD */}
-        <section className="la-paz-oportunidad">
-          <Card3D className="proceso-conteiner">
-            <header>
-              <h2>Dale a tu empresa en La Paz un espacio propio, formal y claro.</h2>
+      {/* OPORTUNIDAD */}
+      <section className="la-paz-oportunidad">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Dale a tu empresa en La Paz un espacio propio, formal y claro.</h2>
             <p>
               Una web especializada transmite formalidad y confianza, factores clave para el consumidor paceño y las empresas locales.
             </p>
-            </header>
+          </header>
 
-
-            <div>
-              <article>
-                <h3>Ser encontrado</h3>
-                <p>
-                  Tu negocio cuenta con una dirección web propia (URL) disponible 24/7 en internet.
-                </p>
-              </article>
-
-              <article>
-                <h3>Ser entendido</h3>
-                <p>
-                  La información se estructura para que el visitante comprenda de inmediato tus servicios, trayectoria y propuesta de valor.
-                </p>
-              </article>
-
-              <article>
-                <h3>Facilitar el contacto</h3>
-                <p>
-                  Integramos formularios de cotización, correos formales y enlaces directos a tu WhatsApp empresarial.
-                </p>
-              </article>
-
-              <article>
-                <h3>Facilitar la visita</h3>
-                <p>
-                  Integramos tu ubicación con mapas para que los clientes lleguen sin perderse entre las calles y avenidas de la ciudad.
-                </p>
-              </article>
-            </div>
-
-            <p>
-              Además, estructuramos tu web especializada siguiendo buenas prácticas de SEO y AEO para que los buscadores y la Inteligencia Artificial recomienden tu negocio.
-            </p>
-          </Card3D>
-        </section>
-
-        {/* SOLUCIÓN */}
-        <section className="la-paz-solucion">
-          <Card3D className="proceso-conteiner">
-            <header>
-              <h2>Una web especializada pensada para el mercado de La Paz.</h2>
-            </header>
-
-            <p>
-              No hacemos páginas genéricas. Construimos tu plataforma para que la información pueda ser encontrada y utilizada por los clientes locales que necesitan soluciones.
-            </p>
-
-            <div>
-              <article>
-                <h3>Tu empresa o consultorio</h3>
-                <p>
-                  Presentamos de manera profesional tu experiencia, tu equipo de trabajo y las garantías que ofreces.
-                </p>
-              </article>
-
-              <article>
-                <h3>Tus productos o servicios</h3>
-                <p>
-                  Organizamos la información visualmente para facilitar compras rápidas o contrataciones de servicios especializados.
-                </p>
-              </article>
-
-              <article>
-                <h3>Tu ubicación y contacto</h3>
-                <p>
-                  Facilitamos el siguiente paso para quien quiera cotizar, comprar o agendar una cita al instante.
-                </p>
-              </article>
-            </div>
-
-    <div className="card-button">
-            <a href="/web-especializada">Conocer la web especializada</a>
-            </div>
-          </Card3D>
-        </section>
-
-        {/* CÓMO FUNCIONA LIRIUN */}
-        <section className="la-paz-como-funciona">
-          <Card3D className="proceso-conteiner">
-            <header>
-              <h2>Tú nos cuentas sobre tu negocio. Nosotros construimos la web especializada.</h2>
+          <div>
+            <article>
+              <h3>Ser encontrado</h3>
               <p>
-                LIRIUN-UX se encarga de todo el aspecto técnico. Tú solo te dedicas a seguir atendiendo tu negocio.
+                Tu negocio cuenta con una dirección web propia (URL) disponible 24/7 en internet.
               </p>
-            </header>
+            </article>
 
-            <ol>
-              <li>
-                <h3>Conocemos tu negocio</h3>
-                <p>Comprendemos tu mercado en La Paz y lo que buscan tus clientes.</p>
-              </li>
-              <li>
-                <h3>Organizamos la información</h3>
-                <p>Seleccionamos qué datos, textos y fotografías deben priorizarse.</p>
-              </li>
-              <li>
-                <h3>Estructuramos la web especializada</h3>
-                <p>Definimos la navegación para una experiencia fluida e intuitiva.</p>
-              </li>
-              <li>
-                <h3>Diseñamos</h3>
-                <p>Creamos una presentación visual profesional que eleva la percepción de tu marca.</p>
-              </li>
-              <li>
-                <h3>Desarrollamos</h3>
-                <p>Programamos el sitio para que cargue rápido en computadoras de oficina y redes móviles.</p>
-              </li>
-              <li>
-                <h3>Revisamos</h3>
-                <p>Recibes la web especializada para revisarla y solicitar los ajustes necesarios.</p>
-              </li>
-              <li>
-                <h3>Publicamos</h3>
-                <p>Con tu aprobación, la página queda en línea bajo tu propio dominio.</p>
-              </li>
-              <li>
-                <h3>Entregamos</h3>
-                <p>Recibes los accesos y un panel fácil para gestionar tus catálogos o información.</p>
-              </li>
-            </ol>
+            <article>
+              <h3>Ser entendido</h3>
+              <p>
+                La información se estructura para que el visitante comprenda de inmediato tus servicios, trayectoria y propuesta de valor.
+              </p>
+            </article>
 
-    <div className="card-button">
+            <article>
+              <h3>Facilitar el contacto</h3>
+              <p>
+                Integramos formularios de cotización, correos formales y enlaces directos a tu WhatsApp empresarial.
+              </p>
+            </article>
+
+            <article>
+              <h3>Facilitar la visita</h3>
+              <p>
+                Integramos tu ubicación con mapas para que los clientes lleguen sin perderse entre las calles y avenidas de la ciudad.
+              </p>
+            </article>
+          </div>
+
+          <p>
+            Además, estructuramos tu web especializada siguiendo buenas prácticas de SEO y AEO para que los buscadores y la Inteligencia Artificial recomienden tu negocio.
+          </p>
+        </Card3D>
+      </section>
+
+      {/* SOLUCIÓN */}
+      <section className="la-paz-solucion">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Una web especializada pensada para el mercado de La Paz.</h2>
+          </header>
+
+          <p>
+            No hacemos páginas genéricas. Construimos tu plataforma para que la información pueda ser encontrada y utilizada por los clientes locales que necesitan soluciones.
+          </p>
+
+          <div>
+            <article>
+              <h3>Tu empresa o consultorio</h3>
+              <p>
+                Presentamos de manera profesional tu experiencia, tu equipo de trabajo y las garantías que ofreces.
+              </p>
+            </article>
+
+            <article>
+              <h3>Tus productos o servicios</h3>
+              <p>
+                Organizamos la información visualmente para facilitar compras rápidas o contrataciones de servicios especializados.
+              </p>
+            </article>
+
+            <article>
+              <h3>Tu ubicación y contacto</h3>
+              <p>
+                Facilitamos el siguiente paso para quien quiera cotizar, comprar o agendar una cita al instante.
+              </p>
+            </article>
+          </div>
+
+          <div className="card-button">
+            <a href="/web-especializada">Conocer la web especializada</a>
+          </div>
+        </Card3D>
+      </section>
+
+      {/* CÓMO FUNCIONA LIRIUN */}
+      <section className="la-paz-como-funciona">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Tú nos cuentas sobre tu negocio. Nosotros construimos la web especializada.</h2>
+            <p>
+              LIRIUN-UX se encarga de todo el aspecto técnico. Tú solo te dedicas a seguir atendiendo tu negocio.
+            </p>
+          </header>
+
+          <ol>
+            <li>
+              <h3>Conocemos tu negocio</h3>
+              <p>Comprendemos tu mercado en La Paz y lo que buscan tus clientes.</p>
+            </li>
+            <li>
+              <h3>Organizamos la información</h3>
+              <p>Seleccionamos qué datos, textos y fotografías deben priorizarse.</p>
+            </li>
+            <li>
+              <h3>Estructuramos la web especializada</h3>
+              <p>Definimos la navegación para una experiencia fluida e intuitiva.</p>
+            </li>
+            <li>
+              <h3>Diseñamos</h3>
+              <p>Creamos una presentación visual profesional que eleva la percepción de tu marca.</p>
+            </li>
+            <li>
+              <h3>Desarrollamos</h3>
+              <p>Programamos el sitio para que cargue rápido en computadoras de oficina y redes móviles.</p>
+            </li>
+            <li>
+              <h3>Revisamos</h3>
+              <p>Recibes la web especializada para revisarla y solicitar los ajustes necesarios.</p>
+            </li>
+            <li>
+              <h3>Publicamos</h3>
+              <p>Con tu aprobación, la página queda en línea bajo tu propio dominio.</p>
+            </li>
+            <li>
+              <h3>Entregamos</h3>
+              <p>Recibes los accesos y un panel fácil para gestionar tus catálogos o información.</p>
+            </li>
+          </ol>
+
+          <div className="card-button">
             <a href="/proceso">Ver el proceso completo</a>
-            </div>
-          </Card3D>
-        </section>
+          </div>
+        </Card3D>
+      </section>
 
-        {/* LIRIUN LA PAZ */}
-        <section className="la-paz-liriun">
-          <Card3D className="proceso-conteiner">
-            <header>
-              <h2>Expertos en desarrollo web especializado para La Paz</h2>
-            </header>
+      {/* LIRIUN LA PAZ */}
+      <section className="la-paz-liriun">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Expertos en desarrollo web especializado para La Paz</h2>
+          </header>
 
-            <p>
-              LIRIUN-UX es un servicio de creación de webs especializadas con sede local. Conocemos a fondo las dinámicas comerciales de La Paz y El Alto.
-            </p>
+          <p>
+            LIRIUN-UX es un servicio de creación de webs especializadas con sede local. Conocemos a fondo las dinámicas comerciales de La Paz y El Alto.
+          </p>
 
-            <div>
-              <article>
-                <h3>Tu presencia digital</h3>
-                <p>
-                  Creamos el espacio oficial de tu negocio, independiente de los caprichos y algoritmos de las redes sociales.
-                </p>
-              </article>
-              <article>
-                <h3>Información clara</h3>
-                <p>
-                  El cliente paceño valora la formalidad y la claridad. Organizamos el contenido para transmitir ambos valores.
-                </p>
-              </article>
-              <article>
-                <h3>Hecho para tu rubro</h3>
-                <p>
-                  Adaptamos la web especializada ya seas un estudio de abogados, una agencia de turismo, una clínica o un comercio minorista.
-                </p>
-              </article>
-            </div>
+          <div>
+            <article>
+              <h3>Tu presencia digital</h3>
+              <p>
+                Creamos el espacio oficial de tu negocio, independiente de los caprichos y algoritmos de las redes sociales.
+              </p>
+            </article>
+            <article>
+              <h3>Información clara</h3>
+              <p>
+                El cliente paceño valora la formalidad y la claridad. Organizamos el contenido para transmitir ambos valores.
+              </p>
+            </article>
+            <article>
+              <h3>Hecho para tu rubro</h3>
+              <p>
+                Adaptamos la web especializada ya seas un estudio de abogados, una agencia de turismo, una clínica o un comercio minorista.
+              </p>
+            </article>
+          </div>
 
-    <div className="card-button">
+          <div className="card-button">
             <a href="/sobre-liriun-ux">Conocer LIRIUN-UX</a>
-            </div>
-          </Card3D>
-        </section>
+          </div>
+        </Card3D>
+      </section>
 
-        {/* EJEMPLOS */}
-        <section className="la-paz-ejemplos">
-          <Card3D className="proceso-conteiner">
-            <header>
-              <h2>Ejemplos de cómo organizamos la información.</h2>
-              <p>
-                Cada rubro en La Paz tiene diferentes necesidades de comunicación.
-              </p>
-            </header>
-
-            <article>
-              <h3>Servicios Profesionales (Abogados, Consultoras)</h3>
-              <ul className='tree'>
-                <li>Inicio.</li>
-                <li>Áreas de práctica / Servicios.</li>
-                <li>Equipo de profesionales.</li>
-                <li>Casos de éxito / Trayectoria.</li>
-                <li>Reserva de cita (WhatsApp/Formulario).</li>
-                <li>Ubicación de la oficina.</li>
-              </ul>
-    <div className="card-button-e">
-              <a href="#">Ver ejemplo</a>
-              </div>
-            </article>
-
-            <article>
-              <h3>Salud (Clínicas, Consultorios)</h3>
-              <ul className='tree'>
-                <li>Inicio.</li>
-                <li>Especialidades médicas.</li>
-                <li>Staff médico.</li>
-                <li>Seguros médicos aceptados.</li>
-                <li>Agendar consulta rápida.</li>
-                <li>Ubicación y horarios.</li>
-              </ul>
-    <div className="card-button-e">
-              <a href="#">Ver ejemplo</a>
-              </div>
-            </article>
-
-            <article>
-              <h3>Tienda / Importadora</h3>
-              <ul className='tree'>
-                <li>Inicio.</li>
-                <li>Catálogo de productos clasificados.</li>
-                <li>Marcas exclusivas.</li>
-                <li>Políticas de envío (En La Paz y al interior).</li>
-                <li>Nosotros.</li>
-                <li>Contacto.</li>
-              </ul>
-    <div className="card-button-e">
-              <a href="#">Ver ejemplo</a>
-              </div>
-            </article>
-          </Card3D>
-        </section>
-
-        {/* ALTERNATIVAS */}
-        <section className="la-paz-alternativas">
-          <Card3D className="proceso-conteiner">
-            <header>
-              <h2>Otras formas de presentar tu negocio.</h2>
-              <p>
-                LIRIUN-UX está pensado para negocios que buscan resultados profesionales delegando todo el trabajo técnico.
-              </p>
-            </header>
-
-            <article>
-              <h3>Solo redes sociales</h3>
-              <p>
-                Excelentes para el marketing diario, pero muy limitadas para organizar un portafolio de servicios o dar formalidad corporativa.
-              </p>
-            </article>
-
-            <article>
-              <h3>Hacerlo por cuenta propia</h3>
-              <p>
-                Requiere de mucho tiempo libre para aprender a usar plataformas, además de lidiar con caídas del sistema o configuraciones complejas de dominio.
-              </p>
-            </article>
-
-            <article>
-              <h3>Una web especializada con LIRIUN-UX</h3>
-              <p>
-                Nosotros construimos la plataforma basándonos en tu negocio, optimizamos el SEO local y te entregamos un producto llave en mano listo en 5 días.
-              </p>
-            </article>
-          </Card3D>
-        </section>
-
-        {/* FAQ */}
-        <section className="la-paz-faq">
-          <Card3D className="proceso-conteiner">
-            <header>
-              <h2>Preguntas frecuentes sobre webs especializadas en La Paz</h2>
-            </header>
-
-            <details>
-              <summary>¿La web especializada sustituye a mi página de Facebook?</summary>
-              <p>
-                No, la complementa. Facebook te ayuda a ser descubierto por casualidad; la web especializada convierte en clientes a las personas que te están buscando activamente en Google.
-              </p>
-            </details>
-
-            <details>
-              <summary>¿Necesito conocimientos de informática?</summary>
-              <p>
-                En absoluto. Nosotros nos encargamos de todo el desarrollo, diseño y configuración de servidores.
-              </p>
-            </details>
-
-            <details>
-              <summary>¿Puedo actualizar mi catálogo yo mismo?</summary>
-              <p>
-                Sí, te entregamos un panel de administración muy amigable para que cambies fotos, precios y textos cuando lo requieras sin depender de nosotros.
-              </p>
-            </details>
-
-            <details>
-              <summary>¿Se verá bien desde celulares?</summary>
-              <p>
-                Sí, la web especializada es 100% responsiva y está optimizada para pantallas móviles, tablets y computadoras de escritorio.
-              </p>
-            </details>
-
-            <details>
-              <summary>¿Cuánto tiempo demora el desarrollo?</summary>
-              <p>
-                Nuestro plazo estándar de entrega es de 5 días hábiles a partir de la confirmación del proyecto y la entrega de tu información.
-              </p>
-            </details>
-
-            <details>
-              <summary>¿Cuánto cuesta una web especializada?</summary>
-              <p>
-                El precio regular de la web especializada es de 850 Bs. Actualmente contamos con una tarifa especial de 450 Bs (válida hasta el 10 de octubre).
-              </p>
-            </details>
-
-    <div className="card-button">
-            <a href="/web-especializada">Ver toda la información de la web especializada</a>
-            </div>
-          </Card3D>
-        </section>
-
-        {/* CTA */}
-        <section className="la-paz-cta">
-          <Card3D className="proceso-conteiner">
-            <header>
-              <h2>¿Listo para que tu negocio paceño tenga su propia web especializada?</h2>
-            </header>
-
+      {/* EJEMPLOS */}
+      <section className="la-paz-ejemplos">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Ejemplos de cómo organizamos la información.</h2>
             <p>
-              Escríbenos, cuéntanos a qué se dedica tu empresa y te propondremos la mejor estructura web para destacar en internet.
+              Cada rubro en La Paz tiene diferentes necesidades de comunicación.
             </p>
+          </header>
 
-            {/* Recuerda cambiar el href por tu enlace real de wa.me */}
+    <article>
+      <h3>Ejemplo: Academia / Cursos</h3>
+      <p>
+        Diseñado para resolver dudas frecuentes sobre métodos de enseñanza, horarios,
+        temarios de cursos y facilitar la inscripción inmediata.
+      </p>
 
-    <div className="card-button">
-    <a href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?">
-            Hablar por WhatsApp</a>
+      <ul className="tree">
+        <li>Inicio</li>
+        <li>
+          Cursos
+          <ul>
+            <li>Curso 1</li>
+            <li>Curso 2</li>
+            <li>...</li>
+          </ul>
+        </li>
+        <li>Metodología de trabajo</li>
+        <li>Nosotros</li>
+        <li>Preguntas frecuentes</li>
+        <li>Contacto / Inscripciones</li>
+      </ul>
+
+      <div className="card-button-e">
+        <a href="#">Ver ejemplo</a>
+      </div>
+    </article>
+
+          <article>
+            <h3>Salud (Clínicas, Consultorios)</h3>
+            <ul className='tree'>
+              <li>Inicio.</li>
+              <li>Especialidades médicas.</li>
+              <li>Staff médico.</li>
+              <li>Seguros médicos aceptados.</li>
+              <li>Agendar consulta rápida.</li>
+              <li>Ubicación y horarios.</li>
+            </ul>
+            <div className="card-button-e">
+              <a >En construcción</a>
             </div>
-    <div className="card-button">
+          </article>
+
+          <article>
+            <h3>Tienda / Importadora</h3>
+            <ul className='tree'>
+              <li>Inicio.</li>
+              <li>Catálogo de productos clasificados.</li>
+              <li>Marcas exclusivas.</li>
+              <li>Políticas de envío (En La Paz y al interior).</li>
+              <li>Nosotros.</li>
+              <li>Contacto.</li>
+            </ul>
+            <div className="card-button-e">
+              <a>En construcción</a>
+            </div>
+          </article>
+        </Card3D>
+      </section>
+
+      {/* ALTERNATIVAS */}
+      <section className="la-paz-alternativas">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Otras formas de presentar tu negocio.</h2>
+            <p>
+              LIRIUN-UX está pensado para negocios que buscan resultados profesionales delegando todo el trabajo técnico.
+            </p>
+          </header>
+
+          <article>
+            <h3>Solo redes sociales</h3>
+            <p>
+              Excelentes para el marketing diario, pero muy limitadas para organizar un portafolio de servicios o dar formalidad corporativa.
+            </p>
+          </article>
+
+          <article>
+            <h3>Hacerlo por cuenta propia</h3>
+            <p>
+              Requiere de mucho tiempo libre para aprender a usar plataformas, además de lidiar con caídas del sistema o configuraciones complejas de dominio.
+            </p>
+          </article>
+
+          <article>
+            <h3>Una web especializada con LIRIUN-UX</h3>
+            <p>
+              Nosotros construimos la plataforma basándonos en tu negocio, optimizamos el SEO local y te entregamos un producto llave en mano listo en 5 días.
+            </p>
+          </article>
+        </Card3D>
+      </section>
+
+      {/* FAQ */}
+      <section className="la-paz-faq">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>Preguntas frecuentes sobre webs especializadas en La Paz</h2>
+          </header>
+
+          <details>
+            <summary>¿La web especializada sustituye a mi página de Facebook?</summary>
+            <p>
+              No, la complementa. Facebook te ayuda a ser descubierto por casualidad; la web especializada convierte en clientes a las personas que te están buscando activamente en Google.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Necesito conocimientos de informática?</summary>
+            <p>
+              En absoluto. Nosotros nos encargamos de todo el desarrollo, diseño y configuración de servidores.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Puedo actualizar mi catálogo yo mismo?</summary>
+            <p>
+              Sí, te entregamos un panel de administración muy amigable para que cambies fotos, precios y textos cuando lo requieras sin depender de nosotros.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Se verá bien desde celulares?</summary>
+            <p>
+              Sí, la web especializada es 100% responsiva y está optimizada para pantallas móviles, tablets y computadoras de escritorio.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Cuánto tiempo demora el desarrollo?</summary>
+            <p>
+              Nuestro plazo estándar de entrega es de 5 días hábiles a partir de la confirmación del proyecto y la entrega de tu información.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Cuánto cuesta una web especializada?</summary>
+            <p>
+              El precio regular de la web especializada es de 850 Bs. Actualmente contamos con una tarifa especial de 450 Bs (válida hasta el 10 de octubre).
+            </p>
+          </details>
+
+          <div className="card-button">
+            <a href="/web-especializada">Ver toda la información de la web especializada</a>
+          </div>
+        </Card3D>
+      </section>
+
+      {/* CTA */}
+      <section className="la-paz-cta">
+        <Card3D className="proceso-conteiner">
+          <header>
+            <h2>¿Listo para que tu negocio paceño tenga su propia web especializada?</h2>
+          </header>
+
+          <p>
+            Escríbenos, cuéntanos a qué se dedica tu empresa y te propondremos la mejor estructura web para destacar en internet.
+          </p>
+
+          <div className="card-button">
+            <a href="https://wa.me/59176760684?text=Hola,%20%C2%BFC%C3%B3mo%20hago%20para%20que%20mi%20negocio%20aparezca%20en%20Google%3F">
+              Hablar por WhatsApp
+            </a>
+          </div>
+          <div className="card-button">
             <a href="/web-especializada">Conocer la web especializada</a>
-            </div>
-          </Card3D>
-        </section>
+          </div>
+        </Card3D>
+      </section>
 
       </main>
     </>

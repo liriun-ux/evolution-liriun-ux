@@ -328,7 +328,7 @@ Te entregamos una herramienta lista para cambiar precios y productos, fácil de 
     <article>
       <h3>Nosotros nos encargamos de todo el trabajo</h3>
       <p>
-        Tú solo cuentas tu negocio y productos en una reunion, envías tus fotos y datos por WhatsApp.<br/><br/> 
+        Tú solo nos cuentas tu negocio y productos en una reunion, envías tus fotos y datos por WhatsApp.<br/><br/> 
         Nosotros redactamos, diseñamos y dejamos tu sitio web funcionando en 1 semana.
       </p>
     </article>
@@ -353,7 +353,7 @@ Te entregamos una herramienta lista para cambiar precios y productos, fácil de 
     </div>
 
   <p>
-    Sin complicaciones pronto podras tener clientes a travez de google y agentes de ia.<br/>
+    Sin complicaciones pronto tendras clientes a travez de google y agentes de ia.<br/>
     <br/>
     su consulta no molesta.
   </p>
@@ -375,16 +375,16 @@ Te entregamos una herramienta lista para cambiar precios y productos, fácil de 
   <Card3D className="proceso-conteiner">
     <header>
       <h2>
-        Tú nos cuentas sobre tu negocio. Nosotros construimos la web especializada.
+            Proceso de construcción
       </h2>
 
       <p>
         LIRIUN-UX se encarga del proceso desde la comprensión del negocio
-        hasta la publicación y entrega de la plataforma.
+        hasta la publicación y entrega de tu sitio web.
       </p>
     </header>
 
-    <ol>
+    <ol className="gap-1 flex flex-col">
       <li>
         <h3>Conocemos tu negocio</h3>
         <p>
@@ -458,53 +458,47 @@ Te entregamos una herramienta lista para cambiar precios y productos, fácil de 
 
 <section className="inicio-liriun">
   <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        ¿Qué es LIRIUN-UX?
-      </h2>
-    </header>
-
+  <header>
+    <h2>
+¿Qué es <span className="text-nowrap">Liriun-UX</span>?
+    </h2>
     <p>
-      LIRIUN-UX crea webs especializadas para negocios que necesitan una presencia
-      digital clara, accesible y pensada para ser encontrada.
+Liriun-UX nace con una misión clara: poner a los pequeños negocios en internet de forma sencilla para que sean encontrados y entendidos por personas, buscadores como Google y nuevos agentes de Inteligencia Artificial.
     </p>
 
-    <div>
+  </header>
       <article>
-        <h3>Tu presencia digital</h3>
+        <h3>Visibilidad real para tu negocio</h3>
         <p>
-          Creamos un espacio propio para presentar tu negocio en internet.
+Nos aseguramos de que tu negocio no pierda clientes por no tener un espacio en internet. Te hacemos visible donde las personas realmente buscan hoy.
         </p>
       </article>
 
       <article>
-        <h3>Información clara</h3>
+        <h3>Fácil de entender para todos</h3>
         <p>
-          Organizamos el contenido para que las personas puedan encontrar
-          y comprender lo que ofreces.
+Organizamos tu información y catálogo para que tanto las personas como los agentes de Inteligencia Artificial y Google comprendan exactamente qué vendes y qué ofreces.
         </p>
       </article>
 
       <article>
-        <h3>Hecho para tu negocio</h3>
+        <h3>Sin complicaciones técnicas para ti</h3>
         <p>
-          Adaptamos la estructura y el contenido de la plataforma a las necesidades
-          de cada negocio.
+Tú no tienes que preocuparte por el diseño, la programación ni la redacción. Nos encargamos de todo el proceso para que tengas tu sitio web listo sin enredos.
         </p>
       </article>
 
       <article>
-        <h3>Creación de webs especializadas para El Alto y La Paz</h3>
+        <h3>Conexión directa con clientes</h3>
 
         <p>
-          LIRIUN-UX es un servicio de creación de webs especializadas con base en La Paz,
-          Bolivia. Brindamos atención especializada a negocios de La Paz y El Alto,
-          conociendo de cerca sus necesidades y la forma en que presentan sus
-          productos o servicios. También trabajamos con negocios de toda Bolivia.
+Creamos el camino más rápido para que las personas interesadas se comuniquen directamente a tu WhatsApp o lleguen a la ubicación de tu local.
         </p>
       </article>
-    </div>
 
+      <p>
+Para nosotros, un sitio web debe servir para que no pierdas ventas.
+      </p>
     <div className="card-button">
     <a href="/sobre-liriun-ux">
       Conocer LIRIUN-UX
@@ -516,98 +510,107 @@ Te entregamos una herramienta lista para cambiar precios y productos, fácil de 
 
 <section className="inicio-ejemplos">
   <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Cada negocio necesita una forma diferente de presentarse.
-      </h2>
+<header>
+    <h2>
+      Cada negocio necesita una forma diferente de presentarse.
 
-      <p>
-        La estructura de la web especializada se adapta al negocio, sus productos o
-        servicios y a lo que sus posibles clientes necesitan saber.
-      </p>
-    </header>
+    </h2>
+    <p>
+      No usamos plantillas genéricas. Analizamos qué vende tu negocio y qué
+      información necesita ver tu cliente antes de comprar (precios, menú, horarios
+      o tipos de servicio). A partir de eso, organizamos tu sitio web para que la
+      navegación sea fácil, clara y directa.
+    </p>
+  </header>
 
     <article>
-      <h3>Ejemplo: Pizzería</h3>
+      <h3>Ejemplo: Pizzería / Restaurante</h3>
+      <p>
+        Enfocado en lo que un cliente con hambre busca de inmediato: ver el menú
+        actualizado, consultar promociones del día y pedir directamente por WhatsApp.
+      </p>
 
       <ul className="tree">
-        <li>Inicio.</li>
-        <li>Menú.
-            <ul>
-            <li>Plato 1</li>
-            <li>Plato 2</li>
+        <li>Inicio</li>
+        <li>
+          Menú
+          <ul>
+            <li>Plato / Pizza 1</li>
+            <li>Plato / Pizza 2</li>
             <li>...</li>
-        </ul>
+          </ul>
         </li>
-        <li>Promociones.</li>
-        <li>Nosotros.</li>
-        <li>Ubicación.</li>
-        <li>WhatsApp.</li>
+        <li>Promociones</li>
+        <li>Nosotros</li>
+        <li>Ubicación y Horarios</li>
+        <li>Pedido por WhatsApp</li>
       </ul>
 
-    <div className="card-button-e">
-      <a href="#">
-        Ver ejemplo
-      </a>
+      <div className="card-button-e">
+        <a>En construcción</a>
       </div>
     </article>
 
     <article>
-      <h3>Ejemplo: Academia</h3>
-
+      <h3>Ejemplo: Academia / Cursos</h3>
+      <p>
+        Diseñado para resolver dudas frecuentes sobre métodos de enseñanza, horarios,
+        temarios de cursos y facilitar la inscripción inmediata.
+      </p>
 
       <ul className="tree">
-        <li>Inicio.</li>
-        <li>Cursos.
-
-            <ul>
+        <li>Inicio</li>
+        <li>
+          Cursos
+          <ul>
             <li>Curso 1</li>
             <li>Curso 2</li>
             <li>...</li>
-        </ul>
-            </li>
-        <li>Metodología.</li>
-        <li>Nosotros.</li>
-        <li>Preguntas frecuentes.</li>
-        <li>Contacto.</li>
+          </ul>
+        </li>
+        <li>Metodología de trabajo</li>
+        <li>Nosotros</li>
+        <li>Preguntas frecuentes</li>
+        <li>Contacto / Inscripciones</li>
       </ul>
 
-    <div className="card-button-e">
-      <a href="#">
-        Ver ejemplo
-      </a>
+      <div className="card-button-e">
+        <a href="#">Ver ejemplo</a>
       </div>
     </article>
 
     <article>
-      <h3>Ejemplo: Tienda</h3>
+      <h3>Ejemplo: Tienda / Catálogo de Productos</h3>
+      <p>
+        Pensado para organizar variedad de inventario por categorías claras,
+        destacar ofertas y facilitar la consulta de precios o stock.
+      </p>
 
       <ul className="tree">
-        <li>Inicio.</li>
-        <li>Productos.
-
-            <ul>
+        <li>Inicio</li>
+        <li>
+          Productos
+          <ul>
             <li>Producto 1</li>
             <li>Producto 2</li>
             <li>...</li>
-        </ul>
-            </li>
-        <li>Categorías.
-            <ul>
-            <li>Categoria 1</li>
-            <li>Categoria 2</li>
+          </ul>
+        </li>
+        <li>
+          Categorías
+          <ul>
+            <li>Categoría 1</li>
+            <li>Categoría 2</li>
             <li>...</li>
-        </ul>
-            </li>
-        <li>Promociones.</li>
-        <li>Nosotros.</li>
-        <li>Contacto.</li>
+          </ul>
+        </li>
+        <li>Promociones</li>
+        <li>Nosotros</li>
+        <li>Contacto / Ubicación</li>
       </ul>
 
-    <div className="card-button-e">
-      <a href="#">
-        Ver ejemplo
-      </a>
+      <div className="card-button-e">
+        <a>En construcción</a>
       </div>
     </article>
   </Card3D>
@@ -616,53 +619,58 @@ Te entregamos una herramienta lista para cambiar precios y productos, fácil de 
 
 <section className="inicio-alternativas">
   <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        También existen otras formas de presentar tu negocio.
-      </h2>
+<header>
+    <h2>
+      ¿Por qué LIRIUN-UX es la mejor opción para tu negocio?
+    </h2>
+    <p>
+      Antes de crear un sitio web, es normal comparar opciones. Aquí te mostramos
+      por qué Liriun-UX te ahorra tiempo, dinero y dolores de cabeza frente a
+      otras alternativas del mercado.
+    </p>
+  </header>
 
-      <p>
-        Cada opción tiene sus propias características. LIRIUN-UX está
-        pensado para negocios pequeños que quieren delegar la creación
-        de su web especializada.
-      </p>
-    </header>
-
-    <article>
-      <h3>Solo redes sociales</h3>
-
-      <p>
-        Permiten comunicarte y mostrar tu negocio dentro de las plataformas,
-        pero la información puede quedar distribuida entre perfiles y
-        publicaciones.
-      </p>
+    <article className="card-alternative">
+      <h3>Opción 1: Solo Redes Sociales</h3>
+      <ul>
+        <li>Quedas fuera de Google y de las búsquedas por Inteligencia Artificial.</li>
+        <li>La información de tus productos se pierde entre tantas publicaciones.</li>
+        <li>Los clientes no encuentran tus precios o catálogo rápido y se van.</li>
+      </ul>
     </article>
 
-    <article>
-      <h3>Hacerlo por cuenta propia</h3>
-
-      <p>
-        Permite mayor autonomía, pero requiere tiempo para aprender,
-        configurar y mantener la plataforma.
-      </p>
+    <article className="card-alternative">
+      <h3>Opción 2: Creadores Automáticos (Wix, etc.)</h3>
+      <ul>
+        <li>Requiere que aprendas a diseñar y programar por tu cuenta.</li>
+        <li>Te consume horas y días de trabajo que podrías dedicar a tu negocio.</li>
+        <li>Suele quedar incompleto o con un diseño poco profesional.</li>
+      </ul>
     </article>
 
-    <article>
-      <h3>Un creador de sitios</h3>
-
-      <p>
-        Proporciona herramientas para construir una página por cuenta propia,
-        pero requiere que el usuario realice parte de la configuración y
-        mantenimiento.
-      </p>
+    <article className="card-alternative">
+      <h3>Opción 3: Otras Agencias Web</h3>
+      <ul>
+        <li>Precios elevados (arriba de $us 120) por solo 1 o 2 páginas limitadas.</li>
+        <li>Dependes de un técnico pagado cada vez que quieras cambiar un precio.</li>
+        <li>Suscripciones o contratos de mantenimiento obligatorios mes a mes.</li>
+      </ul>
     </article>
 
-    <article>
-      <h3>Una web especializada desarrollada para el negocio</h3>
-
-      <p>
-        LIRIUN-UX se encarga de construir la web especializada tomando en cuenta el
-        negocio y las necesidades de sus posibles clientes.
+    <article className="card-liriun highlight">
+      <h3>LIRIUN-UX</h3>
+      <ul className="gap-1 flex flex-col">
+        <li><strong>Nosotros hacemos todo el trabajo:</strong> Solo nos cuentas de tu negocio y nos das tus datos por WhatsApp; nosotros nos encargamos del resto.</li>
+        <li><strong>Páginas centrales para tu negocio:</strong> De 4 a 6 páginas estructuradas a la medida de lo que vendes.</li>
+        <li><strong>Páginas para cada producto:</strong> hasta 1000 paginas de  productos</li>
+        <li><strong>Comunicación clara:</strong> Redactamos y organizamos tus productos para que sean fáciles de entender por personas, Google e IA.</li>
+        <li><strong>Entrega en 1 semana y listo para usar:</strong> Incluye gestor para que tú mismo cambies precios cuando quieras sin pagar extra.</li>
+        <li><strong>3 meses de soporte y acompañamiento gratis:</strong> Supervisamos que tu sitio funcione, realizamos los ajustes o pequeños cambios que necesites.</li>
+        <li><strong>Autónomo y sin costos mensuales:</strong> Tu sitio web se entrega listo para funcionar de forma continua por tiempo indefinido, sin obligarte a pagar mantenimientos técnicos mes a mes.</li>
+      </ul>
+      
+      <p className="offer-tag">
+        <strong>Precio de Oferta: 450 Bs.</strong> (Válido hasta el 10 de octubre)
       </p>
     </article>
   </Card3D>
@@ -671,121 +679,85 @@ Te entregamos una herramienta lista para cambiar precios y productos, fácil de 
 
 <section className="inicio-faq">
   <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        Preguntas frecuentes
-      </h2>
-    </header>
+<header>
+    <h2>Preguntas frecuentes</h2>
+    <p>
+      Resolvemos tus dudas principales para que des el paso con total seguridad.
+    </p>
+  </header>
 
-    <details>
-      <summary>
-        ¿Necesito dejar de usar Instagram o Facebook?
-      </summary>
+  <details>
+    <summary>¿Necesito dejar de usar Facebook, TikTok o Instagram?</summary>
+    <p>
+      No, para nada. Tu sitio web complementa tus redes sociales: en redes
+      publicas contenido diario y en tu web centralizas la información, precios y
+      catálogo completo para cerrar las ventas sin que los clientes se pierdan.
+    </p>
+  </details>
 
-      <p>
-        No. La web especializada complementa las redes sociales y proporciona un
-        espacio propio para organizar la información del negocio.
-      </p>
-    </details>
+  <details>
+    <summary>¿Necesito saber de diseño o tecnología para tener mi sitio?</summary>
+    <p>
+      No necesitas saber nada de código ni diseño. En LIRIUN-UX nos encargamos de
+      todo el proceso: redactamos, diseñamos y dejamos tu sitio 100% funcionando.
+    </p>
+  </details>
 
-    <details>
-      <summary>
-        ¿Necesito saber programación?
-      </summary>
+  <details>
+    <summary>¿Podré cambiar o agregar nuevos productos y precios yo mismo?</summary>
+    <p>
+      Sí. Te entregamos un panel muy fácil de usar desde tu celular o computadora
+      donde podrás agregar nuevos productos, cambiar fotos, actualizar precios o
+      eliminar lo que ya no vendas en segundos.
+    </p>
+  </details>
 
-      <p>
-        No. LIRIUN-UX se encarga de la creación y desarrollo de la web especializada.
-      </p>
-    </details>
+  <details>
+    <summary>¿El sitio web se ve bien desde celulares?</summary>
+    <p>
+      Sí, totalmente. Diseñamos el sitio pensando primero en teléfonos móviles,
+      asegurando que cargue rápido y se adapte perfectamente a celulares, tablets
+      y computadoras.
+    </p>
+  </details>
 
-    <details>
-      <summary>
-        ¿Puedo cambiar mis productos y precios?
-      </summary>
+  <details>
+    <summary>¿En cuánto tiempo entregan el sitio web listo?</summary>
+    <p>
+      El tiempo de entrega es de solo 1 semana a partir del pago inicial de
+      200 Bs y la entrega de tus fotos o datos básicos.
+    </p>
+  </details>
 
-      <p>
-        Sí. La web especializada incluye una interfaz para gestionar la información
-        de productos y categorías.
-      </p>
-    </details>
+  <details>
+    <summary>¿Cuánto cuesta el servicio y qué modalidades de pago hay?</summary>
+    <p>
+      El precio normal es de 850 Bs, pero contamos con una oferta especial de
+      <strong> 450 Bs</strong> (válida hasta el 10 de octubre). Inicias el proyecto
+      con un adelanto de 200 Bs y cancelas el saldo al ver tu sitio terminado.
+    </p>
+  </details>
 
-    <details>
-      <summary>
-        ¿La web especializada funciona en celular?
-      </summary>
+  <details>
+    <summary>¿Garantizan que saldré en el primer lugar de Google o IA?</summary>
+    <p>
+      Ninguna agencia seria puede garantizar el primer lugar en Google.<br/><br/>
+      Lo que sí garantizamos es aplicar todo el procedimiento y presentar tu información de
+    forma impecable a Google.<br/><br/>
 
-      <p>
-        Sí. Se adapta para móvil, tablet y computadora.
-      </p>
-    </details>
-
-    <details>
-      <summary>
-        ¿Cuánto tarda?
-      </summary>
-
-      <p>
-        El plazo estándar es de 5 días desde el pago inicial.
-      </p>
-    </details>
-
-    <details>
-      <summary>
-        ¿Cuánto cuesta?
-      </summary>
-
-      <p>
-        El precio normal de la web especializada estándar es de 850 Bs.
-        Actualmente existe una oferta de 450 Bs hasta el 10 de octubre.
-      </p>
-    </details>
-
-    <details>
-      <summary>
-        ¿La web especializada garantiza aparecer en Google o en sistemas de IA?
-      </summary>
-
-      <p>
-        No se garantiza una posición concreta ni una aparición determinada.
-        La plataforma se estructura siguiendo buenas prácticas para facilitar su
-        descubrimiento y comprensión.
-      </p>
-    </details>
+    Google decidira en que puesto vas.
+    </p>
+  </details>
     
     <div className="card-button">
-    <a href="/web-especializada">
-      Ver toda la información de la web especializada
+    <a href="https://wa.me/59176760684?text=Hola, ¿Quisiera saber mas del sitio web?">
+      ¿Tienes mas dudas? contactanos por WhatsApp
     </a>
     </div>
   </Card3D>
 </section>
 
 
-<section className="inicio-cta">
-  <Card3D className="proceso-conteiner">
-    <header>
-      <h2>
-        ¿Tu negocio necesita una web especializada?
-      </h2>
-    </header>
-
-    <p>
-      Cuéntanos qué hace tu negocio y qué quieres mostrar.
-      Te explicaremos cómo podría estructurarse su web especializada.
-    </p>
-
-    <div className="card-button">
-    <a href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?">
-      Hablar por WhatsApp
-    </a>
-    </div>
-    <div className="card-button">
-    <a href="/web-especializada">
-      Conocer la web especializada estándar
-    </a>
-    </div>
-  </Card3D>
-</section>
 
       </main>
     </>

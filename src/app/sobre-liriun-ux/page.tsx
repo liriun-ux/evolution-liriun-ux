@@ -143,7 +143,7 @@ export default function SobreLiriunUx() {
 <section className="sobre-liriun-que-es">
   <Card3D className="proceso-conteiner">
     <header>
-      <h2>¿Qué es LIRIUN-UX?</h2>
+      <h2>¿Qué es <span className="text-nowrap">LIRIUN-UX?</span></h2>
     </header>
 
     <p>
@@ -193,11 +193,11 @@ export default function SobreLiriunUx() {
       <h2>Nuestro enfoque</h2>
 
       <p>
-        Diseñamos desde el punto de vista de quien busca.
+        Diseñamos desde el punto de vista del posible cliente. <br/>Que busca y como busca.
+
       </p>
     </header>
 
-    <div>
       <article>
         <h3>¿Qué busca?</h3>
         <p>
@@ -237,7 +237,6 @@ export default function SobreLiriunUx() {
           o conocer la ubicación del negocio.
         </p>
       </article>
-    </div>
 
     <p>
       A partir de esto definimos la información, la estructura, las páginas
@@ -269,7 +268,6 @@ export default function SobreLiriunUx() {
       confusión.
     </p>
 
-    <div>
       <article>
         <h3>Claridad</h3>
         <p>
@@ -297,7 +295,6 @@ export default function SobreLiriunUx() {
           El siguiente paso debe estar claro.
         </p>
       </article>
-    </div>
   </Card3D>
 </section>
 
@@ -313,36 +310,26 @@ export default function SobreLiriunUx() {
     </header>
 
 
-    <div>
-      <article>
         <h3>Comprensible</h3>
         <p>
           La persona entiende qué es el negocio y qué ofrece.
         </p>
-      </article>
 
-      <article>
         <h3>Fácil de navegar</h3>
         <p>
           La información puede encontrarse sin confusión.
         </p>
-      </article>
 
-      <article>
         <h3>Útil</h3>
         <p>
           La información responde a las necesidades reales del posible cliente.
         </p>
-      </article>
 
-      <article>
         <h3>Accionable</h3>
         <p>
           Después de comprender el negocio, la persona sabe cómo contactar,
           comprar, visitar o consultar.
         </p>
-      </article>
-    </div>
 
     <p>
       El diseño debe ayudar a comunicar el negocio y no distraer de él.
@@ -354,7 +341,7 @@ export default function SobreLiriunUx() {
 <section className="sobre-liriun-nombre">
   <Card3D className="proceso-conteiner">
     <header>
-      <h2>¿Por qué LIRIUN-UX?</h2>
+      <h2>¿Por qué <span className="text-nowrap">LIRIUN-UX?</span></h2>
     <p>
       El nombre combina dos ideas que representan nuestra forma de construir:
       Linux y UX.
@@ -428,35 +415,25 @@ export default function SobreLiriunUx() {
 
 <section className="sobre-liriun-futuro">
   <Card3D className="proceso-conteiner">
-    <header>
-      <h2>Hacia dónde vamos</h2>
-    </header>
+<header>
+    <h2>Atención cercana y compromiso con tu negocio</h2>
+  </header>
 
-    <p>
-      Queremos construir LIRIUN-UX a través de proyectos reales,
-      negocios satisfechos y sitios que cumplan su propósito.
-    </p>
+  <p>
+    En LIRIUN-UX respondemos cada una de tus dudas con paciencia y claridad
+    desde el primer momento. Nos tomamos el tiempo de entender tu negocio para
+    asegurarnos de que recibas la mejor solución adaptada a tus necesidades
+    reales, sin rodeos ni complicaciones.
+  </p>
 
-    <p>
-      Nuestro objetivo es crecer manteniendo lo que define nuestro trabajo:
-      sitios claros, útiles, accesibles y enfocados en el negocio.
-    </p>
+  <p>
+    Trabajamos paso a paso junto a ti para construir un sitio web útil y
+    profesional del que te sientas orgulloso, manteniendo siempre como prioridad
+    que tus clientes te encuentren, te entiendan y tu negocio siga creciendo.
+  </p>
   </Card3D>
 </section>
 
-
-<section className="sobre-liriun-cierre">
-  <Card3D className="proceso-conteiner">
-    <h2>
-      Sitios web pensados para que tu negocio sea entendido.
-    </h2>
-
-    <p>
-      LIRIUN-UX está enfocado en pequeñas PYMEs que necesitan una presencia
-      digital propia, clara y funcional.
-    </p>
-  </Card3D>
-</section>
 
 </main>
 </>
