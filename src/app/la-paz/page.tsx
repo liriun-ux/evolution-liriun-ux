@@ -141,7 +141,7 @@ export default function LaPazPage() {
 
           <div>
             <h3>Tu negocio puede tener</h3>
-            <ul>
+            <ul className='list'>
               <li>Página en Facebook o Instagram.</li>
               <li>Cuenta de TikTok.</li>
               <li>Número de WhatsApp.</li>
@@ -212,11 +212,10 @@ export default function LaPazPage() {
             </p>
           </header>
 
-          <div>
             <article>
               <h3>Ser encontrado</h3>
               <p>
-                Tu negocio cuenta con una dirección web propia (URL) disponible 24/7 en internet.
+                Tu negocio cuenta con una dirección web propia disponible 24/7 en internet.
               </p>
             </article>
 
@@ -240,7 +239,6 @@ export default function LaPazPage() {
                 Integramos tu ubicación con mapas para que los clientes lleguen sin perderse entre las calles y avenidas de la ciudad.
               </p>
             </article>
-          </div>
 
           <p>
             Además, estructuramos tu web especializada siguiendo buenas prácticas de SEO y AEO para que los buscadores y la Inteligencia Artificial recomienden tu negocio.
@@ -253,13 +251,12 @@ export default function LaPazPage() {
         <Card3D className="proceso-conteiner">
           <header>
             <h2>Una web especializada pensada para el mercado de La Paz.</h2>
-          </header>
-
           <p>
             No hacemos páginas genéricas. Construimos tu plataforma para que la información pueda ser encontrada y utilizada por los clientes locales que necesitan soluciones.
           </p>
+          </header>
 
-          <div>
+
             <article>
               <h3>Tu empresa o consultorio</h3>
               <p>
@@ -280,7 +277,6 @@ export default function LaPazPage() {
                 Facilitamos el siguiente paso para quien quiera cotizar, comprar o agendar una cita al instante.
               </p>
             </article>
-          </div>
 
           <div className="card-button">
             <a href="/web-especializada">Conocer la web especializada</a>
@@ -298,7 +294,7 @@ export default function LaPazPage() {
             </p>
           </header>
 
-          <ol>
+          <ol className='gap-1 flex flex-col'>
             <li>
               <h3>Conocemos tu negocio</h3>
               <p>Comprendemos tu mercado en La Paz y lo que buscan tus clientes.</p>
@@ -344,11 +340,11 @@ export default function LaPazPage() {
         <Card3D className="proceso-conteiner">
           <header>
             <h2>Expertos en desarrollo web especializado para La Paz</h2>
-          </header>
-
           <p>
             LIRIUN-UX es un servicio de creación de webs especializadas con sede local. Conocemos a fondo las dinámicas comerciales de La Paz y El Alto.
           </p>
+          </header>
+
 
           <div>
             <article>
@@ -474,7 +470,7 @@ export default function LaPazPage() {
           <article>
             <h3>Una web especializada con LIRIUN-UX</h3>
             <p>
-              Nosotros construimos la plataforma basándonos en tu negocio, optimizamos el SEO local y te entregamos un producto llave en mano listo en 5 días.
+              Nosotros construimos la plataforma basándonos en tu negocio, optimizamos el SEO local y te entregamos un producto llave en mano listo en 1 semana.
             </p>
           </article>
         </Card3D>
@@ -502,10 +498,11 @@ export default function LaPazPage() {
           </details>
 
           <details>
-            <summary>¿Puedo actualizar mi catálogo yo mismo?</summary>
-            <p>
-              Sí, te entregamos un panel de administración muy amigable para que cambies fotos, precios y textos cuando lo requieras sin depender de nosotros.
-            </p>
+<summary>¿Podré cambiar o agregar nuevos productos y precios?</summary>
+<p>
+  Sí. Solo necesitas enviarnos la información de tus productos por WhatsApp y nosotros 
+  nos encargamos de actualizarlos o agregarlos de forma rápida, sencilla y sin ningún costo adicional.
+</p>
           </details>
 
           <details>

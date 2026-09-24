@@ -504,49 +504,44 @@ export default function WebEspecializada() {
 
 <section className="web-especializada-gestion">
   <Card3D className="proceso-conteiner">
-    <header>
-      <h2>Gestiona tus productos</h2>
+<header>
+  <h2>Actualiza tus productos por WhatsApp</h2>
 
-      <p>
-        El sitio incluye una interfaz para administrar la información de
-        productos y categorías.
-      </p>
-    </header>
+  <p>
+    Nosotros nos encargamos de mantener el catálogo de tu negocio al día sin costo adicional.
+  </p>
+</header>
 
-    <div>
-      <article>
-        <h3>Crear</h3>
-        <p>
-          Agrega nuevos productos cuando los necesites.
-        </p>
-      </article>
-
-      <article>
-        <h3>Editar</h3>
-        <p>
-          Modifica nombres, precios, descripciones e imágenes.
-        </p>
-      </article>
-
-      <article>
-        <h3>Eliminar</h3>
-        <p>
-          Retira productos que ya no ofrezcas.
-        </p>
-      </article>
-
-      <article>
-        <h3>Categorizar</h3>
-        <p>
-          Organiza tus productos mediante categorías.
-        </p>
-      </article>
-    </div>
-
+  <article>
+    <h3>Crear</h3>
     <p>
-      La cantidad de productos se adapta al negocio y está limitada por la
-      infraestructura utilizada para almacenar la información.
+      Envíanos los datos de tus nuevos productos para agregarlos.
     </p>
+  </article>
+
+  <article>
+    <h3>Editar</h3>
+    <p>
+      Indícanos los cambios en nombres, precios, fotos o descripciones.
+    </p>
+  </article>
+
+  <article>
+    <h3>Eliminar</h3>
+    <p>
+      Avisanos qué productos retirar cuando dejes de ofrecerlos.
+    </p>
+  </article>
+
+  <article>
+    <h3>Categorizar</h3>
+    <p>
+      Dinos cómo deseas organizar tu catálogo por categorías.
+    </p>
+  </article>
+<p>
+  Solo envíanos la información por WhatsApp y realizaremos la actualización de forma rápida y sencilla.
+</p>
   </Card3D>
 </section>
 

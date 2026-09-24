@@ -318,11 +318,11 @@ export default function Home() {
       </p>
     </article>
     <article>
-      <h3>podras cambiar de precios y productos sin más costo</h3>
-      <p>
-Te entregamos una herramienta lista para cambiar precios y productos, fácil de actualizar y pensada
-    para que vendas más sin complicaciones.
-      </p>
+<h3>Actualiza tus productos y precios fácil y sin costo por WhatsApp</h3>
+<p>
+  Solo envíanos tus productos por WhatsApp y nosotros nos encargamos del resto.
+  Sin costos adicionales ni complicaciones para que sigas vendiendo.
+</p>
     </article>
 
     <article>
@@ -704,12 +704,11 @@ Para nosotros, un sitio web debe servir para que no pierdas ventas.
   </details>
 
   <details>
-    <summary>¿Podré cambiar o agregar nuevos productos y precios yo mismo?</summary>
-    <p>
-      Sí. Te entregamos un panel muy fácil de usar desde tu celular o computadora
-      donde podrás agregar nuevos productos, cambiar fotos, actualizar precios o
-      eliminar lo que ya no vendas en segundos.
-    </p>
+<summary>¿Podré cambiar o agregar nuevos productos y precios?</summary>
+<p>
+  Sí. Solo necesitas enviarnos la información de tus productos por WhatsApp y nosotros 
+  nos encargamos de actualizarlos o agregarlos de forma rápida, sencilla y sin ningún costo adicional.
+</p>
   </details>
 
   <details>

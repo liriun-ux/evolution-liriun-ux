@@ -612,15 +612,15 @@ export default function Proceso() {
       <h3>Explicamos el funcionamiento</h3>
 
       <p>
-        Durante la revisión se explica el funcionamiento del sitio y de la
-        interfaz para gestionar los productos y su información.
+        Durante la revisión se explica el funcionamiento del sitio
+        y su información.
       </p>
 
       <h3>Documentación</h3>
 
       <p>
         Se entrega un documento para el cliente con información sobre el uso
-        de la interfaz, el dominio y los aspectos necesarios para gestionar
+        del sitio, el dominio y los aspectos necesarios para gestionar
         el sitio.
       </p>
 
