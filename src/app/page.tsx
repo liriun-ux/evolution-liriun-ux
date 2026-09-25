@@ -575,7 +575,7 @@ Para nosotros, un sitio web debe servir para que no pierdas ventas.
       </ul>
 
       <div className="card-button-e">
-        <a href="#">Ver ejemplo</a>
+        <a href="https://academia-omega-nine.vercel.app/">Ver ejemplo</a>
       </div>
     </article>
 
