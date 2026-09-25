@@ -115,8 +115,8 @@ description:
     images: [
       {
         url: "/img/og-liriun-ux.png",
-        width: 593,
-        height: 137,
+        width: 592,
+        height: 592,
         alt: "LIRIUN-UX — Diseño y creación de sitios web",
       },
     ],
