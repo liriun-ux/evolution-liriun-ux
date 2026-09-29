@@ -2,6 +2,7 @@ import { Card3D } from "@/animation/card3d";
 import ProcesoCanvas from "@/animation/ensamble";
 import { CenteredLink } from "@/components/CentradeLink";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -300,6 +301,14 @@ export default function Home() {
         Ponemos tu negocio en internet para que las personas que buscan tus
         productos en Google y buscadores modernos te vean.
       </p>
+        <div className="article-image">
+          <Image
+    src="/img/example346.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
     </article>
 
     <article>
@@ -317,14 +326,36 @@ export default function Home() {
         o ver la ubicación exacta de tu local para ir a visitarte.
       </p>
     </article>
+<article>
+  <h3>Tus enlaces se verán profesionales al compartirlos</h3>
+  <p>
+    Así, tus clientes podrán reconocer fácilmente tu negocio, página,
+    producto o servicio antes de entrar.
+  </p>
+
+
+        <div className="article-image-two">
+          <Image
+    src="/img/mss1b.png"
+    alt="enlace en WhatsApp"
+    width={600}
+    height={400}
+  />
+          <Image
+    src="/img/mss2b.png"
+    alt="enlace en facebook"
+    width={600}
+    height={400}
+  />
+  </div>
+</article>
     <article>
-<h3>Actualiza tus productos y precios fácil y sin costo por WhatsApp</h3>
+<h3>Actualiza tus productos y precios fácil por WhatsApp</h3>
 <p>
   Solo envíanos tus productos por WhatsApp y nosotros nos encargamos del resto.
   Sin costos adicionales ni complicaciones para que sigas vendiendo.
 </p>
     </article>
-
     <article>
       <h3>Nosotros nos encargamos de todo el trabajo</h3>
       <p>
