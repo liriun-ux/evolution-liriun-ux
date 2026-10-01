@@ -366,7 +366,7 @@ export default function Home() {
       <h3>Precio normal</h3>
 
       <p className="precio-normal" >
-        1050 Bs.
+        850 Bs.
       </p>
     </div>
 

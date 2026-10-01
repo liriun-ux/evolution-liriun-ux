@@ -283,7 +283,7 @@ export default function ElAlto() {
 
           <div>
             <h3>Precio normal</h3>
-            <p className="precio-normal">1050 Bs.</p>
+            <p className="precio-normal">850 Bs.</p>
           </div>
 
           <div>
@@ -616,7 +616,7 @@ export default function ElAlto() {
           <details>
             <summary>¿Cuánto cuesta el servicio y qué modalidades de pago hay?</summary>
             <p>
-              El precio normal es de 1050 Bs, pero contamos con una oferta especial de <strong>450 Bs</strong> (válida hasta el 10 de octubre). Inicias el proyecto con un adelanto de 200 Bs y cancelas el saldo al ver tu sitio terminado.
+              El precio normal es de 850 Bs, pero contamos con una oferta especial de <strong>450 Bs</strong> (válida hasta el 10 de octubre). Inicias el proyecto con un adelanto de 200 Bs y cancelas el saldo al ver tu sitio terminado.
             </p>
           </details>
 
