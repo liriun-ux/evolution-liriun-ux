@@ -209,24 +209,6 @@ export default function Header2() {
             >
             <FacebookIcon/>
             </a>
-            <a
-              href="https://www.tiktok.com/@liriunux"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Tiktok"
-              className="footer-social-icon"
-            >
-            <TikTokAltIcon/>
-            </a>
-            <a
-              href="https://www.instagram.com/liriun.ux/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="footer-social-icon"
-            >
-            <InstagramIcon/>
-            </a>
           </div>
 
           {/* Span Derecho */}
