@@ -352,15 +352,14 @@ export default function Home() {
     <article>
 <h3>Actualiza tus productos y precios fácil por WhatsApp</h3>
 <p>
-  Solo envíanos tus productos por WhatsApp y nosotros nos encargamos del resto.
-  Sin costos adicionales ni complicaciones para que sigas vendiendo.
+  Solo envíanos tus productos y precios por WhatsApp y nosotros nos encargamos del resto.
 </p>
     </article>
     <article>
       <h3>Nosotros nos encargamos de todo el trabajo</h3>
       <p>
         Tú solo nos cuentas tu negocio y productos en una reunion, envías tus fotos y datos por WhatsApp.<br/><br/> 
-        Nosotros redactamos, diseñamos y dejamos tu sitio web funcionando en 1 semana.
+        Nosotros redactamos, diseñamos y dejamos tu sitio web funcionando en una semana.
       </p>
     </article>
     <div>

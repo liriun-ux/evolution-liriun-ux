@@ -270,8 +270,7 @@ export default function ElAlto() {
           <article>
 <h3>Actualiza tus productos y precios fácil y sin costo por WhatsApp</h3>
 <p>
-  Solo envíanos tus productos por WhatsApp y nosotros nos encargamos del resto.
-  Sin costos adicionales ni complicaciones para que sigas vendiendo.
+  Solo envíanos tus productos y precios por WhatsApp y nosotros nos encargamos del resto.
 </p>
           </article>
 
