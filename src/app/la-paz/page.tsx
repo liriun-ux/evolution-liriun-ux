@@ -1,6 +1,8 @@
 import { Card3D } from '@/animation/card3d';
 import ProcesoCanvas from '@/animation/ensamble';
 import type { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Creación de sitios web en La Paz para negocios | LIRIUN-UX',
@@ -374,74 +376,123 @@ export default function LaPazPage() {
       </section>
 
       {/* EJEMPLOS */}
-      <section className="la-paz-ejemplos">
-        <Card3D className="proceso-conteiner">
-          <header>
-            <h2>Ejemplos de cómo organizamos la información.</h2>
-            <p>
-              Cada rubro en La Paz tiene diferentes necesidades de comunicación.
-            </p>
-          </header>
+<section className="inicio-ejemplos">
+  <Card3D className="proceso-conteiner">
+<header>
+    <h2>
+      Cada negocio necesita una forma diferente de presentarse.
+
+    </h2>
+    <p>
+      No usamos plantillas genéricas. 
+          <br/>
+          <br/>
+      <span className="bg-white text-black p-1 rounded-[4px] shadow shadow-teal-800 whitespace-nowrap">Cada negocio tiene su propio diseño.</span>
+    </p>
+  </header>
+
 
     <article>
-      <h3>Ejemplo: Academia / Cursos</h3>
-      <p>
-        Diseñado para resolver dudas frecuentes sobre métodos de enseñanza, horarios,
-        temarios de cursos y facilitar la inscripción inmediata.
-      </p>
-
-      <ul className="tree">
-        <li>Inicio</li>
-        <li>
-          Cursos
-          <ul>
-            <li>Curso 1</li>
-            <li>Curso 2</li>
-            <li>...</li>
-          </ul>
-        </li>
-        <li>Metodología de trabajo</li>
-        <li>Nosotros</li>
-        <li>Preguntas frecuentes</li>
-        <li>Contacto / Inscripciones</li>
-      </ul>
-
+        <div className="article-image">
+          <Image
+    src="/img/parrilla.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
       <div className="card-button-e">
-        <a href="https://academia-omega-nine.vercel.app/">Ver ejemplo</a>
+        <a href="https://parr-nine.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/pizza.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://pazz-ten.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/gim.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://gim-rho.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/satre.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://tex-roan.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/academi.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://academia-omega-nine.vercel.app/">Visitar sitio web</a>
       </div>
     </article>
 
-          <article>
-            <h3>Salud (Clínicas, Consultorios)</h3>
-            <ul className='tree'>
-              <li>Inicio.</li>
-              <li>Especialidades médicas.</li>
-              <li>Staff médico.</li>
-              <li>Seguros médicos aceptados.</li>
-              <li>Agendar consulta rápida.</li>
-              <li>Ubicación y horarios.</li>
-            </ul>
-            <div className="card-button-e">
-              <a >En construcción</a>
-            </div>
-          </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/arq.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://example-arq.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
 
-          <article>
-            <h3>Tienda / Importadora</h3>
-            <ul className='tree'>
-              <li>Inicio.</li>
-              <li>Catálogo de productos clasificados.</li>
-              <li>Marcas exclusivas.</li>
-              <li>Políticas de envío (En La Paz y al interior).</li>
-              <li>Nosotros.</li>
-              <li>Contacto.</li>
-            </ul>
-            <div className="card-button-e">
-              <a>En construcción</a>
-            </div>
-          </article>
-        </Card3D>
-      </section>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/consul.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://consul-sand.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+
+    <div className="card-button">
+    <Link href="/web-especializada">
+      Conocer los detalles del espacio digital.
+    </Link>
+    </div>
+  </Card3D>
+</section>
 
       {/* ALTERNATIVAS */}
       <section className="la-paz-alternativas">

@@ -55,20 +55,25 @@ export const Card3D: React.FC<Card3DProps> = ({ children, className = '' }) => {
   };
 
   return (
-    <div
-      ref={cardRef}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      onTouchMove={handleTouchMove}
-      onTouchStart={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-      className={`transition-transform duration-300 ease-out  ${className}`}
-      style={{
-        transformStyle: 'preserve-3d',
-        willChange: 'transform',
-      }}
-    >
+    <div className={`${className}`}>
       {children}
     </div>
   );
 };
+
+
+    // <div
+    //   ref={cardRef}
+    //   onMouseMove={handleMouseMove}
+    //   onMouseLeave={handleMouseLeave}
+    //   onTouchMove={handleTouchMove}
+    //   onTouchStart={handleTouchMove}
+    //   onTouchEnd={handleTouchEnd}
+    //   className={`transition-transform duration-300 ease-out  ${className}`}
+    //   style={{
+    //     transformStyle: 'preserve-3d',
+    //     willChange: 'transform',
+    //   }}
+    // >
+    //   {children}
+    // </div>

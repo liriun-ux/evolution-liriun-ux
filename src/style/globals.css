@@ -820,9 +820,14 @@ figure figcaption {
 	text-transform: uppercase !important;
 	/* margin-top: 0; */
 	/* display: block; */
+  transition: transform 0.3s ease !important;
 }
 
 
+
+.hero-content:hover{
+  transform: scale(1.02);
+}
 
 
 

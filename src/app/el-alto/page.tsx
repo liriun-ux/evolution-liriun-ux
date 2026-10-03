@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Card3D } from '@/animation/card3d';
 import ProcesoCanvas from '@/animation/ensamble';
 import type { Metadata } from 'next';
@@ -410,164 +411,123 @@ export default function ElAlto() {
       </section>
 
       {/* EJEMPLOS LOCALES */}
-      <section className="el-alto-ejemplos">
-        <Card3D className="proceso-conteiner">
-          <header>
-            <h2>Cada negocio necesita una forma diferente de presentarse</h2>
-            <p>
-              No usamos plantillas genéricas. Analizamos qué vende tu negocio en El Alto y qué información necesita ver tu cliente antes de comprar (precios, menú, horarios o tipos de servicio).
-            </p>
-          </header>
+<section className="inicio-ejemplos">
+  <Card3D className="proceso-conteiner">
+<header>
+    <h2>
+      Cada negocio necesita una forma diferente de presentarse.
+
+    </h2>
+    <p>
+      No usamos plantillas genéricas. 
+          <br/>
+          <br/>
+      <span className="bg-white text-black p-1 rounded-[4px] shadow shadow-teal-800 whitespace-nowrap">Cada negocio tiene su propio diseño.</span>
+    </p>
+  </header>
+
 
     <article>
-      <h3>Ejemplo: Academia / Cursos</h3>
-      <p>
-        Diseñado para resolver dudas frecuentes sobre métodos de enseñanza, horarios,
-        temarios de cursos y facilitar la inscripción inmediata.
-      </p>
-
-      <ul className="tree">
-        <li>Inicio</li>
-        <li>
-          Cursos
-          <ul>
-            <li>Curso 1</li>
-            <li>Curso 2</li>
-            <li>...</li>
-          </ul>
-        </li>
-        <li>Metodología de trabajo</li>
-        <li>Nosotros</li>
-        <li>Preguntas frecuentes</li>
-        <li>Contacto / Inscripciones</li>
-      </ul>
-
+        <div className="article-image">
+          <Image
+    src="/img/parrilla.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
       <div className="card-button-e">
-        <a href="https://academia-omega-nine.vercel.app/">Ver ejemplo</a>
+        <a href="https://parr-nine.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/pizza.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://pazz-ten.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/gim.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://gim-rho.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/satre.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://tex-roan.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/academi.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://academia-omega-nine.vercel.app/">Visitar sitio web</a>
       </div>
     </article>
 
-          <article>
-            <h3>Ejemplo: Servicios Técnicos o Talleres</h3>
-            <p>Diseñado para mostrar tus trabajos realizados, ubicación en mapa, tipos de reparaciones y facilitar la cotización inmediata.</p>
-            <ul className="tree">
-              <li>Inicio</li>
-              <li>
-                Servicios e instalaciones
-                <ul>
-                  <li>Servicio 1</li>
-                  <li>Servicio 2</li>
-                  <li>...</li>
-                </ul>
-              </li>
-              <li>Trabajos realizados y Garantía</li>
-              <li>Ubicación del taller en El Alto</li>
-              <li>Cotización rápida por WhatsApp</li>
-            </ul>
-            <div className="card-button-e">
-              <a >En construcción</a>
-            </div>
-          </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/arq.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://example-arq.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
 
-          <article>
-            <h3>Ejemplo: Comercializadora o Venta de Productos</h3>
-            <p>Pensado para organizar tu inventario por categorías claras, mostrar precios y coordinar envíos o entregas locales.</p>
-            <ul className="tree">
-              <li>Inicio</li>
-              <li>
-                Catálogo de productos
-                <ul>
-                  <li>Producto 1</li>
-                  <li>Producto 2</li>
-                  <li>...</li>
-                </ul>
-              </li>
-              <li>Precios y Ofertas</li>
-              <li>
-                Envíos y Puntos de Entrega
-                <ul>
-                  <li>El Alto</li>
-                  <li>La Paz</li>
-                </ul>
-              </li>
-              <li>Contacto directo por WhatsApp</li>
-            </ul>
-            <div className="card-button-e">
-              <a >En construcción</a>
-            </div>
-          </article>
-        </Card3D>
-      </section>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/consul.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://consul-sand.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
 
-      {/* ALTERNATIVAS COMPLETA */}
-      <section className="el-alto-alternativas">
-        <Card3D className="proceso-conteiner">
-          <header>
-            <h2>¿Por qué LIRIUN-UX es la mejor opción para tu negocio en El Alto?</h2>
-            <p>
-              Antes de crear un sitio web, es normal comparar opciones. Aquí te mostramos por qué Liriun-UX te ahorra tiempo, dinero y dolores de cabeza frente a otras alternativas del mercado.
-            </p>
-          </header>
-
-          <article className="card-alternative">
-            <h3>Opción 1: Solo Redes Sociales (Facebook/TikTok)</h3>
-            <ul>
-              <li>Quedas fuera de Google y de las búsquedas por Inteligencia Artificial.</li>
-              <li>La información de tus productos se pierde entre tantas publicaciones pasadas.</li>
-              <li>Los clientes no encuentran tus precios o catálogo rápido y se van a otro lado.</li>
-            </ul>
-          </article>
-
-          <article className="card-alternative">
-            <h3>Opción 2: Creadores Automáticos (Wix, Shopify, etc.)</h3>
-            <ul>
-              <li>Requiere que aprendas a diseñar y programar por tu cuenta.</li>
-              <li>Te consume horas y días de trabajo que podrías dedicar a tu negocio.</li>
-              <li>Suele quedar incompleto o con un diseño lento en conexiones de celular.</li>
-            </ul>
-          </article>
-
-          <article className="card-alternative">
-            <h3>Opción 3: Otras Agencias Web</h3>
-            <ul>
-              <li>Precios elevados (arriba de $us 120) por solo 1 o 2 páginas limitadas.</li>
-              <li>Dependes de un técnico pagado cada vez que quieras cambiar un precio o foto.</li>
-              <li>Suscripciones o contratos de mantenimiento obligatorios mes a mes.</li>
-            </ul>
-          </article>
-
-          <article className="card-liriun highlight">
-            <h3>LIRIUN-UX El Alto</h3>
-            <ul className="gap-1 flex flex-col">
-              <li>
-                <strong>Nosotros hacemos todo el trabajo:</strong> Solo nos cuentas de tu negocio y nos das tus datos por WhatsApp; nosotros nos encargamos del resto.
-              </li>
-              <li>
-                <strong>Páginas centrales para tu negocio:</strong> De 4 a 6 páginas estructuradas a la medida de lo que vendes.
-              </li>
-              <li>
-                <strong>Páginas para cada producto:</strong> Hasta 1000 páginas de productos individuales para posicionar en Google.
-              </li>
-              <li>
-                <strong>Comunicación clara:</strong> Redactamos y organizamos tus productos para que sean fáciles de entender por personas, Google e IA.
-              </li>
-              <li>
-                <strong>Entrega en 1 semana y listo para usar:</strong> Incluye gestor para que tú mismo cambies precios cuando quieras sin pagar extra.
-              </li>
-              <li>
-                <strong>3 meses de soporte y acompañamiento gratis:</strong> Supervisamos que tu sitio funcione y realizamos los pequeños ajustes que necesites.
-              </li>
-              <li>
-                <strong>Autónomo y sin costos mensuales:</strong> Tu sitio web se entrega listo para funcionar de forma continua sin obligarte a pagar mantenimientos mes a mes.
-              </li>
-            </ul>
-
-            <p className="offer-tag">
-              <strong>Precio de Oferta El Alto: 450 Bs.</strong> (Válido hasta el 10 de octubre)
-            </p>
-          </article>
-        </Card3D>
-      </section>
+    <div className="card-button">
+    <Link href="/web-especializada">
+      Conocer los detalles del espacio digital.
+    </Link>
+    </div>
+  </Card3D>
+</section>
 
       {/* FAQ COMPLETA */}
       <section className="el-alto-faq">

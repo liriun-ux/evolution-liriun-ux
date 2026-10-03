@@ -135,8 +135,7 @@ export default function Home() {
 
     <Card3D className="hero-content">
           <h1>
-            Cada día miles de personas buscan lo que vendes. <br/>
-               <strong> ¿Tus productos ya están en internet?</strong>
+            Cada día muchos buscan lo que vendes. <br/>
           </h1>
 
           <p>
@@ -146,11 +145,6 @@ export default function Home() {
     <div className="card-button">
           <a href="#problema">
             Ver cómo funciona
-          </a>
-    </div>
-    <div className="card-button">
-          <a href="/web-especializada">
-            Conocer la web especializada
           </a>
     </div>
         </Card3D>
@@ -165,7 +159,7 @@ export default function Home() {
     </h2>
     <p>
       Cuando un cliente necesita un producto o servicio, lo primero que hace es
-      buscarlo en internet.<br/> Si tu negocio no aparece de forma clara, esa oportunidad
+      buscarlo en internet.<br/> <br/> Si tu negocio no aparece, esa oportunidad
       se pierde en cuestión de segundos.
     </p>
   </header>
@@ -182,12 +176,6 @@ export default function Home() {
     </ul>
   </div>
 
-  <p>
-    ¿Cuántos clientes crees que tiene tu competencia  solo porque
-    están en internet?<br/><br/>
-    ¿Cuántos clientes crees que estás perdiendo hoy, solo
-    porque no estás en internet?
-  </p>
   </Card3D>
 </section>
 
@@ -196,11 +184,10 @@ export default function Home() {
   <Card3D className="proceso-conteiner" >
 <header>
     <h2>
-      Publicar en redes o responder WhatsApp no siempre es suficiente.
+          Usar redes no siempre es suficiente. 
     </h2>
     <p>
-      Tal vez ya subes fotos o contestes mensajes, pero las redes cambian
-      rápido y la información se pierde. Cuando un cliente realmente quiere
+      Cuando un cliente realmente quiere
       comprar, no quiere navegar por decenas de publicaciones para saber tus
       precios, horarios o catálogo.
     </p>
@@ -229,11 +216,10 @@ export default function Home() {
   <Card3D className="proceso-conteiner">
 <header>
     <h2>
-      Un sitio web es tu propio espacio digital abierto las 24 horas.
+      Tu espacio digital abierto las 24 horas.
     </h2>
     <p>
-      Es la herramienta central que reúne, organiza y presenta toda la
-      información de tu negocio en un solo lugar.<br/> Sirve para que cualquier
+       Sirve para que cualquier
       persona que busque lo que vendes pueda encontrarlo, entenderlo y comprarte
       de forma rápida y sencilla.
     </p>
@@ -273,8 +259,8 @@ export default function Home() {
     </article>
 
   <p>
-    Tener un sitio web convierte las búsquedas de internet en oportunidades
-    reales de ventas para tu negocio.
+    Tener un espacio digital convierte las búsquedas de internet en <strong>oportunidades
+    reales de ventas.</strong>
   </p>
   </Card3D>
 </section>
@@ -290,7 +276,6 @@ export default function Home() {
       Solucionamos la falta de clientes haciéndote visible donde todos buscan hoy.<br/>
       Nos encargamos de crear el sitio web de tu negocio para que no vuelvas a
       perder una venta por no estar en internet.<br/>
-      Lo que hacemos por tu negocio:
     </p>
   </header>
 
@@ -298,8 +283,7 @@ export default function Home() {
     <article>
       <h3>Hacemos que te encuentren</h3>
       <p>
-        Ponemos tu negocio en internet para que las personas que buscan tus
-        productos en Google y buscadores modernos te vean.
+        Ponemos tu negocio en <strong>Google.</strong>
       </p>
         <div className="article-image">
           <Image
@@ -392,14 +376,126 @@ export default function Home() {
       Consultar por WhatsApp
     </a>
     </div>
+  </Card3D>
+</section>
+
+<section className="inicio-ejemplos">
+  <Card3D className="proceso-conteiner">
+<header>
+    <h2>
+      Cada negocio necesita una forma diferente de presentarse.
+
+    </h2>
+    <p>
+      No usamos plantillas genéricas. 
+          <br/>
+          <br/>
+      <span className="bg-white text-black p-1 rounded-[4px] shadow shadow-teal-800 whitespace-nowrap">Cada negocio tiene su propio diseño.</span>
+    </p>
+  </header>
+
+
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/parrilla.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://parr-nine.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/pizza.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://pazz-ten.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/gim.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://gim-rho.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/satre.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://tex-roan.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/academi.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://academia-omega-nine.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/arq.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://example-arq.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+
+    <article>
+        <div className="article-image">
+          <Image
+    src="/img/consul.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  />
+  </div>
+      <div className="card-button-e">
+        <a href="https://consul-sand.vercel.app/">Visitar sitio web</a>
+      </div>
+    </article>
+
     <div className="card-button">
     <Link href="/web-especializada">
-      Conocer la web especializada estándar
+      Conocer los detalles del espacio digital.
     </Link>
     </div>
   </Card3D>
 </section>
-
 
 <section className="inicio-como-funciona">
   <Card3D className="proceso-conteiner">
@@ -486,225 +582,6 @@ export default function Home() {
 </section>
 
 
-<section className="inicio-liriun">
-  <Card3D className="proceso-conteiner">
-  <header>
-    <h2>
-¿Qué es <span className="text-nowrap">Liriun-UX</span>?
-    </h2>
-    <p>
-Liriun-UX nace con una misión clara: poner a los pequeños negocios en internet de forma sencilla para que sean encontrados y entendidos por personas, buscadores como Google y nuevos agentes de Inteligencia Artificial.
-    </p>
-
-  </header>
-      <article>
-        <h3>Visibilidad real para tu negocio</h3>
-        <p>
-Nos aseguramos de que tu negocio no pierda clientes por no tener un espacio en internet. Te hacemos visible donde las personas realmente buscan hoy.
-        </p>
-      </article>
-
-      <article>
-        <h3>Fácil de entender para todos</h3>
-        <p>
-Organizamos tu información y catálogo para que tanto las personas como los agentes de Inteligencia Artificial y Google comprendan exactamente qué vendes y qué ofreces.
-        </p>
-      </article>
-
-      <article>
-        <h3>Sin complicaciones técnicas para ti</h3>
-        <p>
-Tú no tienes que preocuparte por el diseño, la programación ni la redacción. Nos encargamos de todo el proceso para que tengas tu sitio web listo sin enredos.
-        </p>
-      </article>
-
-      <article>
-        <h3>Conexión directa con clientes</h3>
-
-        <p>
-Creamos el camino más rápido para que las personas interesadas se comuniquen directamente a tu WhatsApp o lleguen a la ubicación de tu local.
-        </p>
-      </article>
-
-      <p>
-Para nosotros, un sitio web debe servir para que no pierdas ventas.
-      </p>
-    <div className="card-button">
-    <a href="/sobre-liriun-ux">
-      Conocer LIRIUN-UX
-    </a>
-    </div>
-  </Card3D>
-</section>
-
-
-<section className="inicio-ejemplos">
-  <Card3D className="proceso-conteiner">
-<header>
-    <h2>
-      Cada negocio necesita una forma diferente de presentarse.
-
-    </h2>
-    <p>
-      No usamos plantillas genéricas. Analizamos qué vende tu negocio y qué
-      información necesita ver tu cliente antes de comprar (precios, menú, horarios
-      o tipos de servicio). A partir de eso, organizamos tu sitio web para que la
-      navegación sea fácil, clara y directa.
-    </p>
-  </header>
-
-    <article>
-      <h3>Ejemplo: Pizzería / Restaurante</h3>
-      <p>
-        Enfocado en lo que un cliente con hambre busca de inmediato: ver el menú
-        actualizado, consultar promociones del día y pedir directamente por WhatsApp.
-      </p>
-
-      <ul className="tree">
-        <li>Inicio</li>
-        <li>
-          Menú
-          <ul>
-            <li>Plato / Pizza 1</li>
-            <li>Plato / Pizza 2</li>
-            <li>...</li>
-          </ul>
-        </li>
-        <li>Promociones</li>
-        <li>Nosotros</li>
-        <li>Ubicación y Horarios</li>
-        <li>Pedido por WhatsApp</li>
-      </ul>
-
-      <div className="card-button-e">
-        <a>En construcción</a>
-      </div>
-    </article>
-
-    <article>
-      <h3>Ejemplo: Academia / Cursos</h3>
-      <p>
-        Diseñado para resolver dudas frecuentes sobre métodos de enseñanza, horarios,
-        temarios de cursos y facilitar la inscripción inmediata.
-      </p>
-
-      <ul className="tree">
-        <li>Inicio</li>
-        <li>
-          Cursos
-          <ul>
-            <li>Curso 1</li>
-            <li>Curso 2</li>
-            <li>...</li>
-          </ul>
-        </li>
-        <li>Metodología de trabajo</li>
-        <li>Nosotros</li>
-        <li>Preguntas frecuentes</li>
-        <li>Contacto / Inscripciones</li>
-      </ul>
-
-      <div className="card-button-e">
-        <a href="https://academia-omega-nine.vercel.app/">Ver ejemplo</a>
-      </div>
-    </article>
-
-    <article>
-      <h3>Ejemplo: Tienda / Catálogo de Productos</h3>
-      <p>
-        Pensado para organizar variedad de inventario por categorías claras,
-        destacar ofertas y facilitar la consulta de precios o stock.
-      </p>
-
-      <ul className="tree">
-        <li>Inicio</li>
-        <li>
-          Productos
-          <ul>
-            <li>Producto 1</li>
-            <li>Producto 2</li>
-            <li>...</li>
-          </ul>
-        </li>
-        <li>
-          Categorías
-          <ul>
-            <li>Categoría 1</li>
-            <li>Categoría 2</li>
-            <li>...</li>
-          </ul>
-        </li>
-        <li>Promociones</li>
-        <li>Nosotros</li>
-        <li>Contacto / Ubicación</li>
-      </ul>
-
-      <div className="card-button-e">
-        <a>En construcción</a>
-      </div>
-    </article>
-  </Card3D>
-</section>
-
-
-<section className="inicio-alternativas">
-  <Card3D className="proceso-conteiner">
-<header>
-    <h2>
-      ¿Por qué LIRIUN-UX es la mejor opción para tu negocio?
-    </h2>
-    <p>
-      Antes de crear un sitio web, es normal comparar opciones. Aquí te mostramos
-      por qué Liriun-UX te ahorra tiempo, dinero y dolores de cabeza frente a
-      otras alternativas del mercado.
-    </p>
-  </header>
-
-    <article className="card-alternative">
-      <h3>Opción 1: Solo Redes Sociales</h3>
-      <ul>
-        <li>Quedas fuera de Google y de las búsquedas por Inteligencia Artificial.</li>
-        <li>La información de tus productos se pierde entre tantas publicaciones.</li>
-        <li>Los clientes no encuentran tus precios o catálogo rápido y se van.</li>
-      </ul>
-    </article>
-
-    <article className="card-alternative">
-      <h3>Opción 2: Creadores Automáticos (Wix, etc.)</h3>
-      <ul>
-        <li>Requiere que aprendas a diseñar y programar por tu cuenta.</li>
-        <li>Te consume horas y días de trabajo que podrías dedicar a tu negocio.</li>
-        <li>Suele quedar incompleto o con un diseño poco profesional.</li>
-      </ul>
-    </article>
-
-    <article className="card-alternative">
-      <h3>Opción 3: Otras Agencias Web</h3>
-      <ul>
-        <li>Precios elevados (arriba de $us 120) por solo 1 o 2 páginas limitadas.</li>
-        <li>Dependes de un técnico pagado cada vez que quieras cambiar un precio.</li>
-        <li>Suscripciones o contratos de mantenimiento obligatorios mes a mes.</li>
-      </ul>
-    </article>
-
-    <article className="card-liriun highlight">
-      <h3>LIRIUN-UX</h3>
-      <ul className="gap-1 flex flex-col">
-        <li><strong>Nosotros hacemos todo el trabajo:</strong> Solo nos cuentas de tu negocio y nos das tus datos por WhatsApp; nosotros nos encargamos del resto.</li>
-        <li><strong>Páginas centrales para tu negocio:</strong> De 4 a 6 páginas estructuradas a la medida de lo que vendes.</li>
-        <li><strong>Páginas para cada producto:</strong> hasta 1000 paginas de  productos</li>
-        <li><strong>Comunicación clara:</strong> Redactamos y organizamos tus productos para que sean fáciles de entender por personas, Google e IA.</li>
-        <li><strong>Entrega en 1 semana y listo para usar:</strong> Incluye gestor para que tú mismo cambies precios cuando quieras sin pagar extra.</li>
-        <li><strong>3 meses de soporte y acompañamiento gratis:</strong> Supervisamos que tu sitio funcione, realizamos los ajustes o pequeños cambios que necesites.</li>
-        <li><strong>Autónomo y sin costos mensuales:</strong> Tu sitio web se entrega listo para funcionar de forma continua por tiempo indefinido, sin obligarte a pagar mantenimientos técnicos mes a mes.</li>
-      </ul>
-      
-      <p className="offer-tag">
-        <strong>Precio de Oferta: 450 Bs.</strong> (Válido hasta el 10 de octubre)
-      </p>
-    </article>
-  </Card3D>
-</section>
 
 
 <section className="inicio-faq">
