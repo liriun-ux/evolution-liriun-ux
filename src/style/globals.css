@@ -76,9 +76,19 @@
     --color-tree: #0f172a;
     --color-tree-bg: var(--color-bg);
     --color-tree-shadow: var(--color-card-step);
+
+  --star-core: 30, 41, 59;
+  --star-glow-primary: 37, 99, 235;
+  --star-glow-accent: 13, 148, 136;
+  --line-color: 024, 58, 037;
 }
 
 html.dark {
+--star-core: 255, 255, 255;
+  --star-glow-primary: 81, 126, 245;
+  --star-glow-accent: 9, 255, 207;
+  --line-color: 150, 70, 250;
+
 
   --color-tree-line: #5da;
     --color-tree-bg: #2f2f4a;

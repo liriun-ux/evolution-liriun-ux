@@ -2,21 +2,36 @@
 
 import React, { useEffect, useRef } from 'react';
 
-// Centralización de paleta y configuración
-const COLOR_CONFIG = {
-  bg: '#ebe9e4',
-  starCore: 'rgba(255, 255, 255, 0.95)',   // núcleo de la estrella (blanco)
-  starGlowPrimary: 'rgba(81, 126, 245, 0.9)',  // brillo azul (la mayoría de las estrellas)
-  starGlowAccent: 'rgba(9, 255, 207, 0.95)',   // brillo cian/turquesa (estrellas destacadas cada 10)
-  line: 'rgba(150, 70, 250, 1)',            // color base de las líneas entre estrellas (vertices)
+// Colores de respaldo (modo claro) por si las variables CSS no están definidas.
+// Formato "r, g, b" para poder usarlos con rgba() y variar el alpha.
+const FALLBACK_COLORS = {
+  starCore: '30, 41, 59',
+  starGlowPrimary: '37, 99, 235',
+  starGlowAccent: '13, 148, 136',
+  line: '124, 58, 237',
 };
 
-const PARTICLE_COUNT = 40;
+// Lee las variables CSS (formato "r, g, b") del :root / .dark
+function readCssColors() {
+  const styles = getComputedStyle(document.documentElement);
+  const get = (name: string, fallback: string) =>
+    styles.getPropertyValue(name).trim() || fallback;
+
+  return {
+    starCore: get('--star-core', FALLBACK_COLORS.starCore),
+    starGlowPrimary: get('--star-glow-primary', FALLBACK_COLORS.starGlowPrimary),
+    starGlowAccent: get('--star-glow-accent', FALLBACK_COLORS.starGlowAccent),
+    line: get('--line-color', FALLBACK_COLORS.line),
+  };
+}
+
+const rgba = (rgb: string, alpha: number | string) => `rgba(${rgb}, ${alpha})`;
+
+const PARTICLE_COUNT = 80;
 // Distancia MÁXIMA en espacio 3D (no en pantalla) para trazar una línea entre dos estrellas.
 const CONNECTION_DISTANCE = 55;
 const LERP_SPEED = 0.03;
 // Escala general de la animación principal (el cúmulo que forma las figuras).
-// 1.3 = 30% más grande que el tamaño original.
 const SHAPE_SCALE = 1.5;
 // Cuánto se dispersa cada estrella respecto al punto "ideal" de la figura.
 // Con esto las formas dejan de verse como wireframes nítidos y pasan a verse
@@ -25,8 +40,7 @@ const JITTER_AMOUNT = 55;
 // Amplitud de la deriva lenta y orgánica (además del jitter fijo).
 const DRIFT_AMOUNT = 8;
 // Estrellas de fondo, fijas en pantalla (no forman parte de ninguna figura),
-// para que TODA la pantalla se sienta como una nube de estrellas / galaxia,
-// no solo el cúmulo animado del centro.
+// para que TODA la pantalla se sienta como una nube de estrellas / galaxia.
 const BACKGROUND_STAR_COUNT = 260;
 
 interface Point3D {
@@ -69,6 +83,17 @@ export default function ProcesoCanvas() {
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
+
+    // Colores actuales según el tema. Se vuelven a leer cuando cambia
+    // la clase "dark" (o data-theme) en <html>.
+    let colors = readCssColors();
+    const themeObserver = new MutationObserver(() => {
+      colors = readCssColors();
+    });
+    themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class', 'data-theme'],
+    });
 
     let animationFrameId: number;
     let width = (canvas.width = window.innerWidth);
@@ -367,8 +392,8 @@ export default function ProcesoCanvas() {
         const y = s.yFrac * height;
         ctx.beginPath();
         ctx.fillStyle = s.isAccent
-          ? COLOR_CONFIG.starGlowAccent.replace(/[\d.]+\)$/, `${alpha.toFixed(3)})`)
-          : `rgba(255, 255, 255, ${alpha.toFixed(3)})`;
+          ? rgba(colors.starGlowAccent, alpha.toFixed(3))
+          : rgba(colors.starCore, alpha.toFixed(3));
         ctx.arc(x, y, s.radius, 0, Math.PI * 2);
         ctx.fill();
       });
@@ -424,10 +449,7 @@ export default function ProcesoCanvas() {
             ctx.beginPath();
             ctx.moveTo(projected[i].x, projected[i].y);
             ctx.lineTo(projected[j].x, projected[j].y);
-            ctx.strokeStyle = COLOR_CONFIG.line.replace(
-              /[\d.]+\)$/,
-              `${alpha.toFixed(3)})`
-            );
+            ctx.strokeStyle = rgba(colors.line, alpha.toFixed(3));
             ctx.stroke();
           }
         }
@@ -441,30 +463,30 @@ export default function ProcesoCanvas() {
           0.55 + 0.45 * Math.sin(elapsed * p.twinkleSpeed + p.twinklePhase);
         const baseRadius = (isBigStar ? 2.4 : 1.3) * pt.depthScale;
         const radius = Math.max(baseRadius * (0.7 + 0.3 * twinkle), 0.4);
-        const glowColor = isBigStar
-          ? COLOR_CONFIG.starGlowAccent
-          : COLOR_CONFIG.starGlowPrimary;
+
+        const glowRgb = isBigStar ? colors.starGlowAccent : colors.starGlowPrimary;
+        const glowColor = rgba(glowRgb, isBigStar ? 0.95 : 0.9);
 
         ctx.save();
         ctx.globalAlpha = Math.min(1, twinkle + 0.15);
         ctx.shadowBlur = 8 * pt.depthScale * (isBigStar ? 1.6 : 1);
         ctx.shadowColor = glowColor;
 
-        // Halo suave
+        // Halo suave (termina en el mismo color con alpha 0, sin borde grisáceo)
         const grad = ctx.createRadialGradient(
           pt.x, pt.y, 0,
           pt.x, pt.y, radius * 3
         );
         grad.addColorStop(0, glowColor);
-        grad.addColorStop(1, 'rgba(0,0,0,0)');
+        grad.addColorStop(1, rgba(glowRgb, 0));
         ctx.fillStyle = grad;
         ctx.beginPath();
         ctx.arc(pt.x, pt.y, radius * 3, 0, Math.PI * 2);
         ctx.fill();
 
-        // Núcleo blanco brillante
+        // Núcleo de la estrella
         ctx.shadowBlur = 0;
-        ctx.fillStyle = COLOR_CONFIG.starCore;
+        ctx.fillStyle = rgba(colors.starCore, 0.95);
         ctx.beginPath();
         ctx.arc(pt.x, pt.y, radius, 0, Math.PI * 2);
         ctx.fill();
@@ -496,6 +518,7 @@ export default function ProcesoCanvas() {
       window.removeEventListener('resize', handleResize);
       cancelAnimationFrame(animationFrameId);
       observer.disconnect();
+      themeObserver.disconnect();
     };
   }, []);
 
