@@ -753,7 +753,7 @@ Google decidira en que puesto vas.
       </p>
 
       <p>
-        Oferta válida hasta el <span style={{ color: "var(--color-card-step)"}}>10 de octubre.</span>
+        ¡Oferta especial por inauguración! válida hasta el <span style={{ color: "var(--color-card-step)"}}>17 de octubre.</span>
       </p>
     </div>
 

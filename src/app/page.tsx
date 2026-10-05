@@ -139,7 +139,7 @@ export default function Home() {
           </h1>
 
           <p>
-            Pon tu negocio a la vista de todos. Liriun-UX posiciona tus productos en Google y agentes de IA para que te encuentren rápido.
+            Pon tu negocio a la vista de todos. Liriun-UX crea una herramienta que te permite conectar con tus clientes.
                 </p>
 
     <div className="card-button">
@@ -194,12 +194,12 @@ export default function Home() {
   </header>
 
   <div>
-    <h3>Lo que busca un cliente cuando quiere comprar ya:</h3>
+    <h3>Lo que quiere:</h3>
 
     <ul className="list">
-      <li>Ver tu catálogo de productos organizado y actualizado.</li>
+      <li>Ver tu catálogo de productos.</li>
       <li>Conocer tus precios, horarios y ubicación en segundos.</li>
-      <li>Tener una respuesta inmediata sin esperar a que le contesten un mensaje.</li>
+      <li>Tener una respuesta inmediata sin esperar un mensaje.</li>
       <li>Sentir la confianza de tener toda la información que nesesita al alcance.</li>
     </ul>
   </div>
@@ -226,7 +226,7 @@ export default function Home() {
   </header>
 
     <article>
-      <h3>Visibilidad permanente <br/>(Estar en internet)</h3>
+      <h3>Visibilidad permanente</h3>
       <p>
         Tu negocio deja de ser invisible. Tendrás un lugar propio disponible
         siempre para que miles de personas te encuentren al buscar en internet.
@@ -234,7 +234,7 @@ export default function Home() {
     </article>
 
     <article>
-      <h3>Claridad inmediata <br/>(Ser entendido)</h3>
+      <h3>Productos a la vista</h3>
       <p>
         Organiza tus productos, servicios, precios y catálogo de forma sencilla
         para que tus clientes entiendan en segundos qué vendes y por qué elegirte.
@@ -362,14 +362,13 @@ export default function Home() {
       </p>
 
       <p>
-        Oferta válida hasta el <span style={{ color: "var(--color-card-step)"}}>10 de octubre.</span>
+        ¡Oferta especial por inauguración! válida hasta el <span style={{ color: "var(--color-card-step)"}}>17 de octubre.</span>
       </p>
     </div>
 
   <p>
-    Sin complicaciones pronto tendras clientes a travez de google y agentes de ia.<br/>
+    Sin complicaciones pronto tendras una herramienta que te permite conectar con tus clientes<br/>
     <br/>
-    su consulta no molesta.
   </p>
     <div className="card-button">
     <a href="https://wa.me/59176760684?text=Hola, ¿Cómo hago para que mi negocio aparezca en Google?">
@@ -405,7 +404,7 @@ export default function Home() {
   />
   </div>
       <div className="card-button-e">
-        <a href="https://parr-nine.vercel.app/">Visitar sitio web</a>
+        <a href="https://parr-nine.vercel.app/">Ver diseño</a>
       </div>
     </article>
     <article>
@@ -418,7 +417,7 @@ export default function Home() {
   />
   </div>
       <div className="card-button-e">
-        <a href="https://pazz-ten.vercel.app/">Visitar sitio web</a>
+        <a href="https://pazz-ten.vercel.app/">Ver diseño</a>
       </div>
     </article>
     <article>
@@ -431,7 +430,7 @@ export default function Home() {
   />
   </div>
       <div className="card-button-e">
-        <a href="https://gim-rho.vercel.app/">Visitar sitio web</a>
+        <a href="https://gim-rho.vercel.app/">Ver diseño</a>
       </div>
     </article>
     <article>
@@ -444,7 +443,7 @@ export default function Home() {
   />
   </div>
       <div className="card-button-e">
-        <a href="https://tex-roan.vercel.app/">Visitar sitio web</a>
+        <a href="https://tex-roan.vercel.app/">Ver diseño</a>
       </div>
     </article>
     <article>
@@ -457,7 +456,7 @@ export default function Home() {
   />
   </div>
       <div className="card-button-e">
-        <a href="https://academia-omega-nine.vercel.app/">Visitar sitio web</a>
+        <a href="https://academia-omega-nine.vercel.app/">Ver diseño</a>
       </div>
     </article>
 
@@ -471,7 +470,7 @@ export default function Home() {
   />
   </div>
       <div className="card-button-e">
-        <a href="https://example-arq.vercel.app/">Visitar sitio web</a>
+        <a href="https://example-arq.vercel.app/">Ver diseño</a>
       </div>
     </article>
 
@@ -485,7 +484,7 @@ export default function Home() {
   />
   </div>
       <div className="card-button-e">
-        <a href="https://consul-sand.vercel.app/">Visitar sitio web</a>
+        <a href="https://consul-sand.vercel.app/">Ver diseño</a>
       </div>
     </article>
 
@@ -638,8 +637,8 @@ export default function Home() {
   <details>
     <summary>¿Cuánto cuesta el servicio y qué modalidades de pago hay?</summary>
     <p>
-      El precio normal es de 850 Bs, pero contamos con una oferta especial de
-      <strong> 450 Bs</strong> (válida hasta el 10 de octubre). Inicias el proyecto
+      El precio normal es de 850 Bs, pero contamos con una ¡Oferta especial por inauguración! de
+      <strong> 450 Bs</strong> (válida hasta el 17 de octubre). Inicias el proyecto
       con un adelanto de 200 Bs y cancelas el saldo al ver tu sitio terminado.
     </p>
   </details>

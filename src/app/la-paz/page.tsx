@@ -573,7 +573,9 @@ export default function LaPazPage() {
           <details>
             <summary>¿Cuánto cuesta una web especializada?</summary>
             <p>
-              El precio regular de la web especializada es de 850 Bs. Actualmente contamos con una tarifa especial de 450 Bs (válida hasta el 10 de octubre).
+      El precio normal es de 850 Bs, pero contamos con una ¡Oferta especial por inauguración! de
+      <strong> 450 Bs</strong> (válida hasta el 17 de octubre). Inicias el proyecto
+      con un adelanto de 200 Bs y cancelas el saldo al ver tu sitio terminado.
             </p>
           </details>
 
