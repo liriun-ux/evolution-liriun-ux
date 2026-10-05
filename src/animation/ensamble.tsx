@@ -11,7 +11,7 @@ const COLOR_CONFIG = {
   line: 'rgba(150, 70, 250, 1)',            // color base de las líneas entre estrellas (vertices)
 };
 
-const PARTICLE_COUNT = 140;
+const PARTICLE_COUNT = 40;
 // Distancia MÁXIMA en espacio 3D (no en pantalla) para trazar una línea entre dos estrellas.
 const CONNECTION_DISTANCE = 55;
 const LERP_SPEED = 0.03;
