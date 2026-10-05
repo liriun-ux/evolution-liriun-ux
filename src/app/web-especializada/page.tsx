@@ -2,6 +2,7 @@ import { Card3D } from "@/animation/card3d";
 import ProcesoCanvas from "@/animation/ensamble";
 import WhatsAppIcon from "@/icons/WhatsAppIcon";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -278,23 +279,54 @@ export default function WebEspecializada() {
     </header>
 
       <article>
-        <h3>Ser encontrado</h3>
+        <h3>Apareser en Google</h3>
 
         <p>
-          Tu negocio cuenta con un espacio propio en internet donde puede
+          Tu negocio cuenta con un espacio propio en Google donde puede
           presentar su información.
         </p>
+
+        <div className="article-image">
+          <Image
+    src="/img/example346.png"
+    alt="Personas encontrando tu negocio en Google"
+    width={600}
+    height={400}
+  /></div>
       </article>
 
       <article>
-        <h3>Ser entendido</h3>
+        <h3>Productos</h3>
 
         <p>
-          La información se organiza para que las personas puedan comprender
+          Tus productos se organiza para que las personas puedan comprender
           qué hace tu negocio y qué ofrece.
         </p>
       </article>
 
+<article>
+  <h3>Tus enlaces se verán profesionales al compartirlos</h3>
+  <p>
+    Así, tus clientes podrán reconocer fácilmente tu negocio, página,
+    producto o servicio antes de entrar.
+  </p>
+
+
+        <div className="article-image-two">
+          <Image
+    src="/img/mss1b.png"
+    alt="enlace en WhatsApp"
+    width={600}
+    height={400}
+  />
+          <Image
+    src="/img/mss2b.png"
+    alt="enlace en facebook"
+    width={600}
+    height={400}
+  />
+  </div>
+</article>
       <article>
         <h3>Facilitar el contacto</h3>
 
